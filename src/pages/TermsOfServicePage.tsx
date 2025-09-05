@@ -1,0 +1,479 @@
+import { motion } from 'framer-motion'
+import { FileText, Scale, AlertTriangle, Shield, Users, Globe, Mail, Phone, ExternalLink } from 'lucide-react'
+import { Card, CardContent, CardHeader, CardTitle } from '../components/ui/card'
+import { Button } from '../components/ui/button'
+import { Badge } from '../components/ui/badge'
+import { Alert, AlertDescription } from '../components/ui/alert'
+import { Link } from 'react-router-dom'
+
+const lastUpdated = 'January 15, 2025'
+const effectiveDate = 'January 15, 2025'
+
+const termsSections = [
+  {
+    id: 'acceptance',
+    title: 'Acceptance of Terms',
+    icon: Scale,
+    content: [
+      {
+        subtitle: 'Agreement to Terms',
+        text: 'By accessing and using Broker Analysis ("we," "our," or "us"), you accept and agree to be bound by the terms and provision of this agreement. If you do not agree to abide by the above, please do not use this service.'
+      },
+      {
+        subtitle: 'Modifications',
+        text: 'We reserve the right to modify these terms at any time. Changes will be effective immediately upon posting on our website. Your continued use of the service constitutes acceptance of any modifications.'
+      },
+      {
+        subtitle: 'Eligibility',
+        text: 'You must be at least 18 years old and have the legal capacity to enter into this agreement. By using our services, you represent and warrant that you meet these requirements.'
+      }
+    ]
+  },
+  {
+    id: 'services',
+    title: 'Description of Services',
+    icon: Globe,
+    content: [
+      {
+        subtitle: 'Broker Information and Reviews',
+        text: 'We provide information, reviews, and comparisons of forex brokers and trading platforms. Our content is for informational purposes only and should not be considered as financial advice.'
+      },
+      {
+        subtitle: 'Educational Content',
+        text: 'We offer educational materials, tutorials, and resources related to forex trading. This content is designed to help users understand trading concepts but does not constitute investment advice.'
+      },
+      {
+        subtitle: 'Trading Tools and Calculators',
+        text: 'We provide various trading tools, calculators, and simulators to help users analyze potential trades and understand market dynamics. Results from these tools are estimates and should not be relied upon for actual trading decisions.'
+      },
+      {
+        subtitle: 'Third-Party Services',
+        text: 'We may provide links to third-party websites and services, including broker platforms. We are not responsible for the content, policies, or practices of these third-party services.'
+      }
+    ]
+  },
+  {
+    id: 'user-responsibilities',
+    title: 'User Responsibilities and Conduct',
+    icon: Users,
+    content: [
+      {
+        subtitle: 'Account Security',
+        text: 'You are responsible for maintaining the confidentiality of your account credentials and for all activities that occur under your account. You must notify us immediately of any unauthorized use.'
+      },
+      {
+        subtitle: 'Accurate Information',
+        text: 'You agree to provide accurate, current, and complete information when creating an account or submitting reviews. You must update your information to maintain its accuracy.'
+      },
+      {
+        subtitle: 'Prohibited Activities',
+        text: 'You may not use our services for any unlawful purpose, to transmit harmful content, to impersonate others, to interfere with our systems, or to violate any applicable laws or regulations.'
+      },
+      {
+        subtitle: 'Review Guidelines',
+        text: 'When submitting reviews, you must provide honest, factual information based on your actual experience. Fake reviews, spam, or defamatory content are strictly prohibited.'
+      }
+    ]
+  },
+  {
+    id: 'disclaimers',
+    title: 'Disclaimers and Risk Warnings',
+    icon: AlertTriangle,
+    content: [
+      {
+        subtitle: 'No Financial Advice',
+        text: 'The information provided on our platform is for educational and informational purposes only. We do not provide financial, investment, or trading advice. You should consult with qualified financial advisors before making any investment decisions.'
+      },
+      {
+        subtitle: 'Trading Risks',
+        text: 'Forex trading involves substantial risk of loss and is not suitable for all investors. Past performance is not indicative of future results. You should carefully consider your financial situation and risk tolerance before engaging in trading.'
+      },
+      {
+        subtitle: 'Broker Information Accuracy',
+        text: 'While we strive to provide accurate and up-to-date information about brokers, we cannot guarantee the completeness or accuracy of all information. Broker terms, conditions, and offerings may change without notice.'
+      },
+      {
+        subtitle: 'Third-Party Relationships',
+        text: 'We may have affiliate relationships with some brokers featured on our platform. These relationships do not influence our reviews or ratings, but we may receive compensation when users sign up with these brokers.'
+      }
+    ]
+  },
+  {
+    id: 'intellectual-property',
+    title: 'Intellectual Property Rights',
+    icon: Shield,
+    content: [
+      {
+        subtitle: 'Our Content',
+        text: 'All content on our platform, including text, graphics, logos, images, and software, is the property of Broker Analysis or our licensors and is protected by copyright and other intellectual property laws.'
+      },
+      {
+        subtitle: 'Limited License',
+        text: 'We grant you a limited, non-exclusive, non-transferable license to access and use our services for personal, non-commercial purposes in accordance with these terms.'
+      },
+      {
+        subtitle: 'User-Generated Content',
+        text: 'By submitting content to our platform, you grant us a worldwide, royalty-free license to use, reproduce, modify, and distribute your content in connection with our services.'
+      },
+      {
+        subtitle: 'Trademark Rights',
+        text: 'Broker Analysis and our logos are trademarks of our company. You may not use our trademarks without our prior written consent.'
+      }
+    ]
+  },
+  {
+    id: 'limitation-liability',
+    title: 'Limitation of Liability',
+    icon: Scale,
+    content: [
+      {
+        subtitle: 'Service Availability',
+        text: 'We provide our services on an "as is" and "as available" basis. We do not warrant that our services will be uninterrupted, error-free, or completely secure.'
+      },
+      {
+        subtitle: 'Disclaimer of Warranties',
+        text: 'We disclaim all warranties, express or implied, including warranties of merchantability, fitness for a particular purpose, and non-infringement.'
+      },
+      {
+        subtitle: 'Limitation of Damages',
+        text: 'To the maximum extent permitted by law, we shall not be liable for any indirect, incidental, special, consequential, or punitive damages arising from your use of our services.'
+      },
+      {
+        subtitle: 'Maximum Liability',
+        text: 'Our total liability to you for any claims arising from these terms or your use of our services shall not exceed the amount you paid us in the twelve months preceding the claim.'
+      }
+    ]
+  },
+  {
+    id: 'termination',
+    title: 'Termination and Suspension',
+    icon: AlertTriangle,
+    content: [
+      {
+        subtitle: 'Termination by You',
+        text: 'You may terminate your account at any time by contacting us or using the account deletion feature in your profile settings.'
+      },
+      {
+        subtitle: 'Termination by Us',
+        text: 'We may suspend or terminate your account immediately, without prior notice, if you violate these terms or engage in activities that we determine are harmful to our platform or other users.'
+      },
+      {
+        subtitle: 'Effect of Termination',
+        text: 'Upon termination, your right to use our services will cease immediately. We may retain certain information as required by law or for legitimate business purposes.'
+      }
+    ]
+  },
+  {
+    id: 'governing-law',
+    title: 'Governing Law and Disputes',
+    icon: Scale,
+    content: [
+      {
+        subtitle: 'Governing Law',
+        text: 'These terms shall be governed by and construed in accordance with the laws of the State of Wyoming, United States, without regard to its conflict of law provisions.'
+      },
+      {
+        subtitle: 'Jurisdiction',
+        text: 'Any disputes arising from these terms or your use of our services shall be subject to the exclusive jurisdiction of the courts located in Sheridan County, Wyoming.'
+      },
+      {
+        subtitle: 'Dispute Resolution',
+        text: 'We encourage users to contact us directly to resolve any disputes. If a dispute cannot be resolved through direct communication, it may be subject to binding arbitration.'
+      }
+    ]
+  }
+]
+
+const contactMethods = [
+  {
+    icon: Mail,
+    title: 'Email Support',
+    description: 'Questions about terms',
+    contact: 'legal@brokeranalysis.com',
+    action: 'mailto:legal@brokeranalysis.com'
+  },
+  {
+    icon: Phone,
+    title: 'Phone Support',
+    description: 'Speak with our team',
+    contact: '(801) 893-2577',
+    action: 'tel:+18018932577'
+  }
+]
+
+export function TermsOfServicePage() {
+  return (
+    <div className="container mx-auto px-4 py-8">
+      {/* Header */}
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        className="text-center mb-12"
+      >
+        <div className="flex items-center justify-center gap-3 mb-4">
+          <div className="p-3 bg-primary/10 rounded-lg text-primary">
+            <FileText className="h-8 w-8" />
+          </div>
+          <h1 className="text-3xl md:text-4xl font-bold tracking-tighter">Terms of Service</h1>
+        </div>
+        <p className="text-muted-foreground text-lg max-w-3xl mx-auto mb-4">
+          These terms of service govern your use of Broker Analysis and outline the rights and responsibilities of both users and our platform.
+        </p>
+        <div className="flex items-center justify-center gap-2">
+          <Badge variant="outline">Last Updated: {lastUpdated}</Badge>
+          <Badge variant="secondary">Effective: {effectiveDate}</Badge>
+        </div>
+      </motion.div>
+
+      {/* Important Notice */}
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ delay: 0.1 }}
+        className="mb-12"
+      >
+        <Alert className="border-amber-200 bg-amber-50 dark:border-amber-800 dark:bg-amber-950">
+          <AlertTriangle className="h-4 w-4 text-amber-600 dark:text-amber-400" />
+          <AlertDescription className="text-amber-800 dark:text-amber-200">
+            <strong>Important:</strong> By using our services, you agree to these terms. Please read them carefully. 
+            If you do not agree with any part of these terms, you should not use our platform.
+          </AlertDescription>
+        </Alert>
+      </motion.div>
+
+      {/* Quick Overview */}
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ delay: 0.2 }}
+        className="mb-12"
+      >
+        <Card className="bg-primary/5 border-primary/20">
+          <CardHeader>
+            <CardTitle className="text-xl">Terms Overview</CardTitle>
+          </CardHeader>
+          <CardContent>
+            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
+              <div className="text-center">
+                <Globe className="h-8 w-8 text-primary mx-auto mb-2" />
+                <h3 className="font-semibold text-sm">Information Service</h3>
+                <p className="text-xs text-muted-foreground">Educational content only</p>
+              </div>
+              <div className="text-center">
+                <AlertTriangle className="h-8 w-8 text-primary mx-auto mb-2" />
+                <h3 className="font-semibold text-sm">No Financial Advice</h3>
+                <p className="text-xs text-muted-foreground">Not investment recommendations</p>
+              </div>
+              <div className="text-center">
+                <Users className="h-8 w-8 text-primary mx-auto mb-2" />
+                <h3 className="font-semibold text-sm">User Conduct</h3>
+                <p className="text-xs text-muted-foreground">Respectful and lawful use</p>
+              </div>
+              <div className="text-center">
+                <Scale className="h-8 w-8 text-primary mx-auto mb-2" />
+                <h3 className="font-semibold text-sm">Legal Framework</h3>
+                <p className="text-xs text-muted-foreground">Wyoming law governs</p>
+              </div>
+            </div>
+          </CardContent>
+        </Card>
+      </motion.div>
+
+      {/* Main Content */}
+      <div className="grid lg:grid-cols-4 gap-8">
+        {/* Table of Contents */}
+        <div className="lg:col-span-1">
+          <motion.div
+            initial={{ opacity: 0, x: -20 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ delay: 0.3 }}
+            className="sticky top-8"
+          >
+            <Card>
+              <CardHeader>
+                <CardTitle className="text-lg">Contents</CardTitle>
+              </CardHeader>
+              <CardContent className="space-y-2">
+                {termsSections.map((section) => {
+                  const Icon = section.icon
+                  return (
+                    <a
+                      key={section.id}
+                      href={`#${section.id}`}
+                      className="flex items-center gap-2 p-2 rounded hover:bg-muted/50 transition-colors text-sm"
+                    >
+                      <Icon className="h-4 w-4 text-primary" />
+                      <span>{section.title}</span>
+                    </a>
+                  )
+                })}
+              </CardContent>
+            </Card>
+          </motion.div>
+        </div>
+
+        {/* Terms Content */}
+        <div className="lg:col-span-3 space-y-8">
+          {termsSections.map((section, sectionIndex) => {
+            const Icon = section.icon
+            return (
+              <motion.div
+                key={section.id}
+                id={section.id}
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 0.1 * (sectionIndex + 4) }}
+              >
+                <Card>
+                  <CardHeader>
+                    <div className="flex items-center gap-3">
+                      <div className="p-2 bg-primary/10 rounded-lg text-primary">
+                        <Icon className="h-5 w-5" />
+                      </div>
+                      <CardTitle className="text-xl">{section.title}</CardTitle>
+                    </div>
+                  </CardHeader>
+                  <CardContent className="space-y-6">
+                    {section.content.map((item, itemIndex) => (
+                      <div key={itemIndex}>
+                        <h4 className="font-semibold mb-2 text-primary">{item.subtitle}</h4>
+                        <p className="text-muted-foreground leading-relaxed">{item.text}</p>
+                      </div>
+                    ))}
+                  </CardContent>
+                </Card>
+              </motion.div>
+            )
+          })}
+
+          {/* Contact Section */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 1.2 }}
+          >
+            <Card>
+              <CardHeader>
+                <CardTitle className="text-xl">Questions About These Terms?</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="text-muted-foreground mb-6">
+                  If you have any questions about these terms of service or need clarification on any provisions, please contact us.
+                </p>
+                
+                <div className="grid md:grid-cols-2 gap-4 mb-6">
+                  {contactMethods.map((method, index) => {
+                    const Icon = method.icon
+                    return (
+                      <div key={index} className="flex items-center gap-3 p-4 border rounded-lg">
+                        <Icon className="h-5 w-5 text-primary" />
+                        <div>
+                          <h4 className="font-semibold text-sm">{method.title}</h4>
+                          <p className="text-xs text-muted-foreground mb-1">{method.description}</p>
+                          <a 
+                            href={method.action}
+                            className="text-sm text-primary hover:underline"
+                          >
+                            {method.contact}
+                          </a>
+                        </div>
+                      </div>
+                    )
+                  })}
+                </div>
+
+                <div className="border-t pt-6">
+                  <h4 className="font-semibold mb-2">Legal Address</h4>
+                  <div className="text-sm text-muted-foreground">
+                    <p>Broker Analysis</p>
+                    <p>30 N Gould St Ste R</p>
+                    <p>Sheridan, WY 82801, US</p>
+                    <p>EIN: 384298140</p>
+                  </div>
+                </div>
+
+                <div className="flex gap-4 mt-6">
+                  <Button asChild>
+                    <Link to="/contact">Contact Us</Link>
+                  </Button>
+                  <Button variant="outline" asChild>
+                    <Link to="/privacy-policy">Privacy Policy</Link>
+                  </Button>
+                </div>
+              </CardContent>
+            </Card>
+          </motion.div>
+
+          {/* Additional Resources */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 1.3 }}
+          >
+            <Card className="bg-muted/30">
+              <CardHeader>
+                <CardTitle className="text-lg">Related Resources</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <div className="grid md:grid-cols-2 gap-4">
+                  <div>
+                    <h4 className="font-semibold mb-2 flex items-center gap-2">
+                      <Shield className="h-4 w-4" />
+                      Privacy & Security
+                    </h4>
+                    <ul className="space-y-1 text-sm text-muted-foreground">
+                      <li>
+                        <Link to="/privacy-policy" className="hover:text-primary flex items-center gap-1">
+                          Privacy Policy <ExternalLink className="h-3 w-3" />
+                        </Link>
+                      </li>
+                      <li>
+                        <Link to="/help" className="hover:text-primary flex items-center gap-1">
+                          Security Guidelines <ExternalLink className="h-3 w-3" />
+                        </Link>
+                      </li>
+                    </ul>
+                  </div>
+                  <div>
+                    <h4 className="font-semibold mb-2 flex items-center gap-2">
+                      <FileText className="h-4 w-4" />
+                      Platform Policies
+                    </h4>
+                    <ul className="space-y-1 text-sm text-muted-foreground">
+                      <li>
+                        <Link to="/help" className="hover:text-primary flex items-center gap-1">
+                          Review Guidelines <ExternalLink className="h-3 w-3" />
+                        </Link>
+                      </li>
+                      <li>
+                        <Link to="/help" className="hover:text-primary flex items-center gap-1">
+                          Community Standards <ExternalLink className="h-3 w-3" />
+                        </Link>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+          </motion.div>
+
+          {/* Terms Updates Notice */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 1.4 }}
+          >
+            <Alert>
+              <FileText className="h-4 w-4" />
+              <AlertDescription>
+                <strong>Terms Updates:</strong> We may update these terms from time to time. 
+                Material changes will be communicated through our website and email notifications. 
+                Your continued use of our services constitutes acceptance of any updates.
+              </AlertDescription>
+            </Alert>
+          </motion.div>
+        </div>
+      </div>
+    </div>
+  )
+}

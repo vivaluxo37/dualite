@@ -1,0 +1,378 @@
+import { useState } from 'react'
+import { motion } from 'framer-motion'
+import { Search, HelpCircle, MessageCircle, Mail, Phone, FileText, Users, Shield, TrendingUp, Calculator, Bot, ChevronRight, ExternalLink } from 'lucide-react'
+import { Card, CardContent, CardHeader, CardTitle } from '../components/ui/card'
+import { Button } from '../components/ui/button'
+import { Input } from '../components/ui/input'
+import { Badge } from '../components/ui/badge'
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '../components/ui/accordion'
+import { Link } from 'react-router-dom'
+
+const helpCategories = [
+  {
+    id: 'getting-started',
+    title: 'Getting Started',
+    description: 'New to forex trading? Start here',
+    icon: Users,
+    color: 'bg-blue-500',
+    articles: [
+      { title: 'How to Choose Your First Broker', slug: 'choose-first-broker' },
+      { title: 'Understanding Forex Basics', slug: 'forex-basics' },
+      { title: 'Setting Up Your Trading Account', slug: 'setup-account' },
+      { title: 'Making Your First Trade', slug: 'first-trade' }
+    ]
+  },
+  {
+    id: 'broker-reviews',
+    title: 'Broker Reviews',
+    description: 'Understanding our review process',
+    icon: Shield,
+    color: 'bg-green-500',
+    articles: [
+      { title: 'How We Rate Brokers', slug: 'rating-methodology' },
+      { title: 'Trust Score Explained', slug: 'trust-score' },
+      { title: 'Regulation and Safety', slug: 'regulation-safety' },
+      { title: 'Reading Broker Profiles', slug: 'reading-profiles' }
+    ]
+  },
+  {
+    id: 'trading-tools',
+    title: 'Trading Tools',
+    description: 'Make the most of our tools',
+    icon: Calculator,
+    color: 'bg-purple-500',
+    articles: [
+      { title: 'Using the Broker Comparison Tool', slug: 'comparison-tool' },
+      { title: 'Trading Calculators Guide', slug: 'calculators-guide' },
+      { title: 'AI Broker Matcher', slug: 'ai-matcher' },
+      { title: 'Trading Simulator Tutorial', slug: 'simulator-tutorial' }
+    ]
+  },
+  {
+    id: 'market-analysis',
+    title: 'Market Analysis',
+    description: 'Learn to analyze the markets',
+    icon: TrendingUp,
+    color: 'bg-orange-500',
+    articles: [
+      { title: 'Technical Analysis Basics', slug: 'technical-analysis' },
+      { title: 'Fundamental Analysis Guide', slug: 'fundamental-analysis' },
+      { title: 'Reading Market News', slug: 'market-news' },
+      { title: 'Economic Calendar Usage', slug: 'economic-calendar' }
+    ]
+  },
+  {
+    id: 'account-help',
+    title: 'Account & Technical',
+    description: 'Account and website issues',
+    icon: FileText,
+    color: 'bg-red-500',
+    articles: [
+      { title: 'Creating an Account', slug: 'create-account' },
+      { title: 'Managing Your Profile', slug: 'manage-profile' },
+      { title: 'Troubleshooting Login Issues', slug: 'login-issues' },
+      { title: 'Browser Compatibility', slug: 'browser-compatibility' }
+    ]
+  }
+]
+
+const popularArticles = [
+  { title: 'How to Choose the Best Forex Broker', category: 'Getting Started', readTime: '8 min' },
+  { title: 'Understanding Spreads and Commissions', category: 'Broker Reviews', readTime: '6 min' },
+  { title: 'Forex Trading for Beginners', category: 'Getting Started', readTime: '12 min' },
+  { title: 'Regulation: Why It Matters', category: 'Broker Reviews', readTime: '5 min' },
+  { title: 'Using Stop Loss Orders', category: 'Market Analysis', readTime: '7 min' }
+]
+
+const faqs = [
+  {
+    question: 'How do you rate and review brokers?',
+    answer: 'We use a comprehensive methodology that evaluates brokers across multiple criteria including regulation, trading costs, platform quality, customer service, and educational resources. Our trust score is calculated based on over 100 data points and real user reviews.'
+  },
+  {
+    question: 'Are your broker reviews unbiased?',
+    answer: 'Yes, our reviews are completely independent and unbiased. While we may earn commissions from some brokers, this never influences our ratings or recommendations. Our editorial team maintains strict independence from our commercial operations.'
+  },
+  {
+    question: 'How often do you update broker information?',
+    answer: 'We continuously monitor and update broker information. Major changes are updated immediately, while comprehensive reviews are refreshed quarterly. We also respond quickly to user reports of outdated information.'
+  },
+  {
+    question: 'Can I trust the user reviews on your site?',
+    answer: 'We have strict verification processes for user reviews. All reviews are moderated, and we use various techniques to detect and prevent fake reviews. We also encourage detailed, constructive feedback rather than simple ratings.'
+  },
+  {
+    question: 'Do you offer trading advice or signals?',
+    answer: 'No, we do not provide trading advice or signals. We focus on broker reviews, educational content, and tools to help you make informed decisions. Always consult with qualified financial advisors for investment advice.'
+  },
+  {
+    question: 'How can I report incorrect broker information?',
+    answer: 'You can report incorrect information through our contact form or by emailing us directly. We take accuracy seriously and will investigate and update any verified inaccuracies promptly.'
+  }
+]
+
+export function HelpPage() {
+  const [searchQuery, setSearchQuery] = useState('')
+  const [selectedCategory, setSelectedCategory] = useState<string | null>(null)
+
+  const filteredCategories = helpCategories.filter(category =>
+    category.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
+    category.description.toLowerCase().includes(searchQuery.toLowerCase()) ||
+    category.articles.some(article => 
+      article.title.toLowerCase().includes(searchQuery.toLowerCase())
+    )
+  )
+
+  return (
+    <div className="container mx-auto px-4 py-8">
+      {/* Header */}
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        className="text-center mb-12"
+      >
+        <div className="flex items-center justify-center gap-3 mb-4">
+          <div className="p-3 bg-primary/10 rounded-lg text-primary">
+            <HelpCircle className="h-8 w-8" />
+          </div>
+          <h1 className="text-3xl md:text-4xl font-bold tracking-tighter">Help Center</h1>
+        </div>
+        <p className="text-muted-foreground text-lg max-w-2xl mx-auto mb-8">
+          Find answers to your questions about forex trading, broker reviews, and using our platform.
+        </p>
+
+        {/* Search */}
+        <div className="max-w-md mx-auto relative">
+          <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-muted-foreground h-4 w-4" />
+          <Input
+            placeholder="Search for help articles..."
+            value={searchQuery}
+            onChange={(e) => setSearchQuery(e.target.value)}
+            className="pl-10"
+          />
+        </div>
+      </motion.div>
+
+      {/* Quick Actions */}
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ delay: 0.1 }}
+        className="grid md:grid-cols-3 gap-4 mb-12"
+      >
+        <Card className="hover:shadow-lg transition-shadow cursor-pointer">
+          <CardContent className="p-6 text-center">
+            <MessageCircle className="h-12 w-12 text-primary mx-auto mb-4" />
+            <h3 className="font-semibold mb-2">Live Chat</h3>
+            <p className="text-sm text-muted-foreground mb-4">Get instant help from our support team</p>
+            <Button size="sm">Start Chat</Button>
+          </CardContent>
+        </Card>
+
+        <Card className="hover:shadow-lg transition-shadow cursor-pointer">
+          <CardContent className="p-6 text-center">
+            <Mail className="h-12 w-12 text-primary mx-auto mb-4" />
+            <h3 className="font-semibold mb-2">Email Support</h3>
+            <p className="text-sm text-muted-foreground mb-4">Send us a detailed message</p>
+            <Button size="sm" variant="outline" asChild>
+              <Link to="/contact">Contact Us</Link>
+            </Button>
+          </CardContent>
+        </Card>
+
+        <Card className="hover:shadow-lg transition-shadow cursor-pointer">
+          <CardContent className="p-6 text-center">
+            <Phone className="h-12 w-12 text-primary mx-auto mb-4" />
+            <h3 className="font-semibold mb-2">Phone Support</h3>
+            <p className="text-sm text-muted-foreground mb-4">Call us during business hours</p>
+            <Button size="sm" variant="outline">
+              <a href="tel:+18018932577">(801) 893-2577</a>
+            </Button>
+          </CardContent>
+        </Card>
+      </motion.div>
+
+      <div className="grid lg:grid-cols-3 gap-8">
+        {/* Main Content */}
+        <div className="lg:col-span-2">
+          {/* Help Categories */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.2 }}
+            className="mb-12"
+          >
+            <h2 className="text-2xl font-bold mb-6">Browse by Category</h2>
+            <div className="grid md:grid-cols-2 gap-4">
+              {filteredCategories.map((category) => {
+                const Icon = category.icon
+                return (
+                  <motion.div
+                    key={category.id}
+                    initial={{ opacity: 0, scale: 0.95 }}
+                    animate={{ opacity: 1, scale: 1 }}
+                    transition={{ delay: 0.1 }}
+                  >
+                    <Card 
+                      className="hover:shadow-lg transition-all cursor-pointer group"
+                      onClick={() => setSelectedCategory(
+                        selectedCategory === category.id ? null : category.id
+                      )}
+                    >
+                      <CardHeader className="pb-3">
+                        <div className="flex items-center gap-3">
+                          <div className={`p-2 rounded-lg ${category.color} text-white`}>
+                            <Icon className="h-5 w-5" />
+                          </div>
+                          <div className="flex-1">
+                            <CardTitle className="text-lg group-hover:text-primary transition-colors">
+                              {category.title}
+                            </CardTitle>
+                            <p className="text-sm text-muted-foreground">{category.description}</p>
+                          </div>
+                          <ChevronRight className={`h-4 w-4 transition-transform ${
+                            selectedCategory === category.id ? 'rotate-90' : ''
+                          }`} />
+                        </div>
+                      </CardHeader>
+                      {selectedCategory === category.id && (
+                        <CardContent className="pt-0">
+                          <div className="space-y-2">
+                            {category.articles.map((article) => (
+                              <div
+                                key={article.slug}
+                                className="flex items-center justify-between p-2 rounded hover:bg-muted/50 cursor-pointer"
+                              >
+                                <span className="text-sm">{article.title}</span>
+                                <ExternalLink className="h-3 w-3 text-muted-foreground" />
+                              </div>
+                            ))}
+                          </div>
+                        </CardContent>
+                      )}
+                    </Card>
+                  </motion.div>
+                )
+              })}
+            </div>
+          </motion.div>
+
+          {/* FAQ Section */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.3 }}
+          >
+            <h2 className="text-2xl font-bold mb-6">Frequently Asked Questions</h2>
+            <Accordion type="single" collapsible className="space-y-4">
+              {faqs.map((faq, index) => (
+                <AccordionItem key={index} value={`faq-${index}`} className="border rounded-lg px-4">
+                  <AccordionTrigger className="text-left hover:no-underline">
+                    {faq.question}
+                  </AccordionTrigger>
+                  <AccordionContent className="text-muted-foreground">
+                    {faq.answer}
+                  </AccordionContent>
+                </AccordionItem>
+              ))}
+            </Accordion>
+          </motion.div>
+        </div>
+
+        {/* Sidebar */}
+        <div className="space-y-8">
+          {/* Popular Articles */}
+          <motion.div
+            initial={{ opacity: 0, x: 20 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ delay: 0.4 }}
+          >
+            <Card>
+              <CardHeader>
+                <CardTitle className="text-lg">Popular Articles</CardTitle>
+              </CardHeader>
+              <CardContent className="space-y-4">
+                {popularArticles.map((article, index) => (
+                  <div key={index} className="border-b last:border-b-0 pb-4 last:pb-0">
+                    <h4 className="font-medium text-sm mb-1 hover:text-primary cursor-pointer">
+                      {article.title}
+                    </h4>
+                    <div className="flex items-center gap-2">
+                      <Badge variant="secondary" className="text-xs">{article.category}</Badge>
+                      <span className="text-xs text-muted-foreground">{article.readTime}</span>
+                    </div>
+                  </div>
+                ))}
+              </CardContent>
+            </Card>
+          </motion.div>
+
+          {/* Quick Links */}
+          <motion.div
+            initial={{ opacity: 0, x: 20 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ delay: 0.5 }}
+          >
+            <Card>
+              <CardHeader>
+                <CardTitle className="text-lg">Quick Links</CardTitle>
+              </CardHeader>
+              <CardContent className="space-y-3">
+                <Button variant="ghost" className="w-full justify-start" asChild>
+                  <Link to="/ai-match">
+                    <Bot className="h-4 w-4 mr-2" />
+                    AI Broker Matcher
+                  </Link>
+                </Button>
+                <Button variant="ghost" className="w-full justify-start" asChild>
+                  <Link to="/calculators">
+                    <Calculator className="h-4 w-4 mr-2" />
+                    Trading Calculators
+                  </Link>
+                </Button>
+                <Button variant="ghost" className="w-full justify-start" asChild>
+                  <Link to="/learn">
+                    <FileText className="h-4 w-4 mr-2" />
+                    Learning Hub
+                  </Link>
+                </Button>
+                <Button variant="ghost" className="w-full justify-start" asChild>
+                  <Link to="/regulation-guide">
+                    <Shield className="h-4 w-4 mr-2" />
+                    Regulation Guide
+                  </Link>
+                </Button>
+              </CardContent>
+            </Card>
+          </motion.div>
+
+          {/* Contact Info */}
+          <motion.div
+            initial={{ opacity: 0, x: 20 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ delay: 0.6 }}
+          >
+            <Card>
+              <CardHeader>
+                <CardTitle className="text-lg">Still Need Help?</CardTitle>
+              </CardHeader>
+              <CardContent className="space-y-4">
+                <div className="text-sm">
+                  <p className="font-medium mb-2">Contact Information:</p>
+                  <div className="space-y-1 text-muted-foreground">
+                    <p>📧 support@brokeranalysis.com</p>
+                    <p>📞 (801) 893-2577</p>
+                    <p>📍 30 N Gould St Ste R<br />Sheridan, WY 82801, US</p>
+                  </div>
+                </div>
+                <Button className="w-full" asChild>
+                  <Link to="/contact">Get in Touch</Link>
+                </Button>
+              </CardContent>
+            </Card>
+          </motion.div>
+        </div>
+      </div>
+    </div>
+  )
+}

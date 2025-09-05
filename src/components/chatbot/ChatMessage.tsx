@@ -1,0 +1,36 @@
+import { cn } from '@/lib/utils';
+import { Avatar, AvatarFallback } from '@/components/ui/avatar';
+import { Bot, User } from 'lucide-react';
+import { ChatMessage as ChatMessageType } from '@/types';
+
+interface ChatMessageProps {
+  message: ChatMessageType;
+}
+
+export function ChatMessage({ message }: ChatMessageProps) {
+  const isUser = message.sender === 'user';
+  return (
+    <div className={cn('flex items-start gap-3', isUser ? 'justify-end' : 'justify-start')}>
+      {!isUser && (
+        <Avatar className="h-8 w-8 bg-primary text-primary-foreground">
+          <AvatarFallback><Bot className="h-5 w-5" /></AvatarFallback>
+        </Avatar>
+      )}
+      <div
+        className={cn(
+          'max-w-xs rounded-lg px-4 py-2 text-sm md:max-w-md',
+          isUser
+            ? 'rounded-br-none bg-primary text-primary-foreground'
+            : 'rounded-bl-none bg-secondary'
+        )}
+      >
+        <p>{message.text}</p>
+      </div>
+       {isUser && (
+        <Avatar className="h-8 w-8 bg-muted text-muted-foreground">
+          <AvatarFallback><User className="h-5 w-5" /></AvatarFallback>
+        </Avatar>
+      )}
+    </div>
+  );
+}
