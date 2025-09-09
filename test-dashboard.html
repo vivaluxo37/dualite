@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Test</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.6;
+        }
+        .test-section {
+            margin: 20px 0;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .test-result {
+            margin: 10px 0;
+            padding: 10px;
+            border-radius: 3px;
+        }
+        .pass { background-color: #d4edda; color: #155724; }
+        .fail { background-color: #f8d7da; color: #721c24; }
+        .pending { background-color: #fff3cd; color: #856404; }
+        button {
+            background: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 5px;
+        }
+        button:hover { background: #0056b3; }
+        .instructions {
+            background: #e9ecef;
+            padding: 15px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Dashboard Testing Guide</h1>
+    
+    <div class="instructions">
+        <h3>Manual Testing Instructions</h3>
+        <p>Follow these steps to test the dashboard functionality:</p>
+        <ol>
+            <li>Open the application at <a href="http://localhost:5173/" target="_blank">http://localhost:5173/</a></li>
+            <li>Click "Log In" button in the header</li>
+            <li>Try to register a new account or use existing credentials</li>
+            <li>Navigate to Dashboard after successful login</li>
+            <li>Test each tab and functionality as outlined below</li>
+        </ol>
+    </div>
+
+    <div class="test-section">
+        <h3>1. Authentication Flow</h3>
+        <div class="test-result pending">✓ Login dialog opens when clicking "Log In"</div>
+        <div class="test-result pending">✓ Registration dialog opens when clicking "Sign Up"</div>
+        <div class="test-result pending">✓ User can successfully register/login</div>
+        <div class="test-result pending">✓ Dashboard link appears in user dropdown after login</div>
+        <div class="test-result pending">✓ Unauthenticated users are redirected from /dashboard</div>
+    </div>
+
+    <div class="test-section">
+        <h3>2. Dashboard Navigation</h3>
+        <div class="test-result pending">✓ Overview tab loads and displays user stats</div>
+        <div class="test-result pending">✓ Saved Brokers tab is accessible</div>
+        <div class="test-result pending">✓ Match History tab is accessible</div>
+        <div class="test-result pending">✓ Learning Progress tab is accessible</div>
+        <div class="test-result pending">✓ Tab switching works smoothly</div>
+    </div>
+
+    <div class="test-section">
+        <h3>3. Saved Brokers Component</h3>
+        <div class="test-result pending">✓ Component loads without errors</div>
+        <div class="test-result pending">✓ Search functionality works</div>
+        <div class="test-result pending">✓ Broker cards display properly</div>
+        <div class="test-result pending">✓ Remove broker functionality works</div>
+        <div class="test-result pending">✓ Empty state displays when no brokers</div>
+        <div class="test-result pending">✓ Loading state displays during data fetch</div>
+    </div>
+
+    <div class="test-section">
+        <h3>4. Match History Component</h3>
+        <div class="test-result pending">✓ Component loads without errors</div>
+        <div class="test-result pending">✓ Match results display properly</div>
+        <div class="test-result pending">✓ Expand/collapse functionality works</div>
+        <div class="test-result pending">✓ New Match button is functional</div>
+        <div class="test-result pending">✓ Empty state displays when no history</div>
+        <div class="test-result pending">✓ Refresh functionality works</div>
+    </div>
+
+    <div class="test-section">
+        <h3>5. Learning Progress Component</h3>
+        <div class="test-result pending">✓ Component loads without errors</div>
+        <div class="test-result pending">✓ Learning statistics display correctly</div>
+        <div class="test-result pending">✓ Category filtering works</div>
+        <div class="test-result pending">✓ Progress bars display correctly</div>
+        <div class="test-result pending">✓ Continue/Review buttons work</div>
+        <div class="test-result pending">✓ Empty state displays when no progress</div>
+    </div>
+
+    <div class="test-section">
+        <h3>6. Responsive Design</h3>
+        <div class="test-result pending">✓ Dashboard works on mobile (< 768px)</div>
+        <div class="test-result pending">✓ Dashboard works on tablet (768px - 1024px)</div>
+        <div class="test-result pending">✓ Dashboard works on desktop (> 1024px)</div>
+        <div class="test-result pending">✓ Navigation adapts to screen size</div>
+        <div class="test-result pending">✓ Cards and components are responsive</div>
+    </div>
+
+    <div class="test-section">
+        <h3>7. Error Handling</h3>
+        <div class="test-result pending">✓ Network errors are handled gracefully</div>
+        <div class="test-result pending">✓ Loading states are shown appropriately</div>
+        <div class="test-result pending">✓ Error messages are user-friendly</div>
+        <div class="test-result pending">✓ Retry mechanisms work when available</div>
+    </div>
+
+    <div class="test-section">
+        <h3>8. Performance</h3>
+        <div class="test-result pending">✓ Dashboard loads within 3 seconds</div>
+        <div class="test-result pending">✓ Tab switching is smooth (< 500ms)</div>
+        <div class="test-result pending">✓ No memory leaks during navigation</div>
+        <div class="test-result pending">✓ Images and assets load efficiently</div>
+    </div>
+
+    <div class="test-section">
+        <h3>Quick Actions</h3>
+        <button onclick="window.open('http://localhost:5173/', '_blank')">Open Application</button>
+        <button onclick="window.open('http://localhost:5173/dashboard', '_blank')">Test Dashboard Direct</button>
+        <button onclick="checkConsole()">Check Console Logs</button>
+    </div>
+
+    <script>
+        function checkConsole() {
+            alert('Open browser DevTools (F12) and check the Console tab for any errors or warnings.');
+        }
+        
+        // Function to mark test as passed (for manual testing)
+        function markPassed(element) {
+            element.className = 'test-result pass';
+            element.innerHTML = element.innerHTML.replace('✓', '✅');
+        }
+        
+        // Function to mark test as failed (for manual testing)
+        function markFailed(element) {
+            element.className = 'test-result fail';
+            element.innerHTML = element.innerHTML.replace('✓', '❌');
+        }
+        
+        // Add click handlers to test results for manual marking
+        document.addEventListener('DOMContentLoaded', function() {
+            const testResults = document.querySelectorAll('.test-result');
+            testResults.forEach(result => {
+                result.style.cursor = 'pointer';
+                result.title = 'Click to mark as passed/failed';
+                result.addEventListener('click', function() {
+                    if (this.classList.contains('pending')) {
+                        markPassed(this);
+                    } else if (this.classList.contains('pass')) {
+                        markFailed(this);
+                    } else {
+                        this.className = 'test-result pending';
+                        this.innerHTML = this.innerHTML.replace(/[✅❌]/, '✓');
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,263 @@
+import React, { useState } from 'react';
+import { useQuery, useMutation, useQueryClient } from '@tanstack/react-query';
+import { supabase } from '../../lib/supabase';
+import { useAuthContext } from '../../contexts/AuthContext';
+import { Button } from '../ui/button';
+import { Input } from '../ui/input';
+import { Card, CardContent, CardHeader, CardTitle } from '../ui/card';
+import { Badge } from '../ui/badge';
+import { Trash2, Search, Star, ExternalLink } from 'lucide-react';
+import { toast } from 'sonner';
+
+interface Broker {
+  id: string;
+  name: string;
+  rating: number;
+  regulation: string;
+  min_deposit: number;
+  spread_eur_usd: number;
+  leverage: string;
+  website_url: string;
+  logo_url?: string;
+}
+
+interface SavedBroker {
+  id: string;
+  broker_id: string;
+  created_at: string;
+  broker: Broker;
+}
+
+export const SavedBrokers: React.FC = () => {
+  const { user } = useAuthContext();
+  const queryClient = useQueryClient();
+  const [searchTerm, setSearchTerm] = useState('');
+
+  // Fetch saved brokers
+  const { data: savedBrokers, isLoading, error } = useQuery({
+    queryKey: ['savedBrokers', user?.id],
+    queryFn: async () => {
+      if (!user?.id) throw new Error('User not authenticated');
+      
+      const { data, error } = await supabase
+        .from('user_shortlists')
+        .select(`
+          id,
+          broker_id,
+          created_at,
+          broker:brokers(
+            id,
+            name,
+            rating,
+            regulation,
+            min_deposit,
+            spread_eur_usd,
+            leverage,
+            website_url,
+            logo_url
+          )
+        `)
+        .eq('user_id', user.id)
+        .order('created_at', { ascending: false });
+
+      if (error) throw error;
+      return data as SavedBroker[];
+    },
+    enabled: !!user?.id,
+    staleTime: 5 * 60 * 1000, // 5 minutes
+    gcTime: 10 * 60 * 1000, // 10 minutes
+  });
+
+  // Remove broker from saved list
+  const removeBrokerMutation = useMutation({
+    mutationFn: async (shortlistId: string) => {
+      const { error } = await supabase
+        .from('user_shortlists')
+        .delete()
+        .eq('id', shortlistId)
+        .eq('user_id', user?.id);
+
+      if (error) throw error;
+    },
+    onSuccess: () => {
+      queryClient.invalidateQueries({ queryKey: ['savedBrokers'] });
+      toast.success('Broker removed from saved list');
+    },
+    onError: (error) => {
+      console.error('Error removing broker:', error);
+      toast.error('Failed to remove broker');
+    },
+  });
+
+  const filteredBrokers = savedBrokers?.filter(item =>
+    item.broker.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
+    item.broker.regulation.toLowerCase().includes(searchTerm.toLowerCase())
+  ) || [];
+
+  const handleRemoveBroker = (shortlistId: string) => {
+    removeBrokerMutation.mutate(shortlistId);
+  };
+
+  const renderStars = (rating: number) => {
+    return Array.from({ length: 5 }, (_, i) => (
+      <Star
+        key={i}
+        className={`w-4 h-4 ${
+          i < rating ? 'fill-yellow-400 text-yellow-400' : 'text-gray-300'
+        }`}
+      />
+    ));
+  };
+
+  if (isLoading) {
+    return (
+      <div className="space-y-4">
+        <div className="flex items-center space-x-2">
+          <Search className="w-4 h-4 text-gray-400" />
+          <Input
+            placeholder="Search saved brokers..."
+            className="flex-1"
+            disabled
+          />
+        </div>
+        <div className="grid gap-4">
+          {[...Array(3)].map((_, i) => (
+            <Card key={i} className="animate-pulse">
+              <CardContent className="p-6">
+                <div className="h-4 bg-gray-200 rounded w-1/3 mb-2"></div>
+                <div className="h-3 bg-gray-200 rounded w-1/2 mb-4"></div>
+                <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+                  <div className="h-3 bg-gray-200 rounded"></div>
+                  <div className="h-3 bg-gray-200 rounded"></div>
+                  <div className="h-3 bg-gray-200 rounded"></div>
+                  <div className="h-3 bg-gray-200 rounded"></div>
+                </div>
+              </CardContent>
+            </Card>
+          ))}
+        </div>
+      </div>
+    );
+  }
+
+  if (error) {
+    return (
+      <div className="text-center py-8">
+        <p className="text-red-600 mb-4">Failed to load saved brokers</p>
+        <Button 
+          onClick={() => queryClient.invalidateQueries({ queryKey: ['savedBrokers'] })}
+          variant="outline"
+        >
+          Try Again
+        </Button>
+      </div>
+    );
+  }
+
+  return (
+    <div className="space-y-6">
+      {/* Search */}
+      <div className="flex items-center space-x-2">
+        <Search className="w-4 h-4 text-gray-400" />
+        <Input
+          placeholder="Search saved brokers..."
+          value={searchTerm}
+          onChange={(e) => setSearchTerm(e.target.value)}
+          className="flex-1"
+        />
+      </div>
+
+      {/* Saved Brokers List */}
+      {filteredBrokers.length === 0 ? (
+        <div className="text-center py-12">
+          <div className="text-gray-400 mb-4">
+            {searchTerm ? 'No brokers match your search' : 'No saved brokers yet'}
+          </div>
+          {!searchTerm && (
+            <p className="text-sm text-gray-500">
+              Use the AI matcher or browse brokers to save your favorites
+            </p>
+          )}
+        </div>
+      ) : (
+        <div className="grid gap-4">
+          {filteredBrokers.map((item) => (
+            <Card key={item.id} className="hover:shadow-md transition-shadow">
+              <CardContent className="p-6">
+                <div className="flex items-start justify-between mb-4">
+                  <div className="flex items-center space-x-3">
+                    {item.broker.logo_url && (
+                      <img
+                        src={item.broker.logo_url}
+                        alt={`${item.broker.name} logo`}
+                        className="w-12 h-12 object-contain rounded"
+                      />
+                    )}
+                    <div>
+                      <h3 className="font-semibold text-lg">{item.broker.name}</h3>
+                      <div className="flex items-center space-x-1">
+                        {renderStars(item.broker.rating)}
+                        <span className="text-sm text-gray-600 ml-2">
+                          ({item.broker.rating}/5)
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="flex items-center space-x-2">
+                    <Button
+                      variant="outline"
+                      size="sm"
+                      onClick={() => window.open(item.broker.website_url, '_blank')}
+                    >
+                      <ExternalLink className="w-4 h-4 mr-1" />
+                      Visit
+                    </Button>
+                    <Button
+                      variant="outline"
+                      size="sm"
+                      onClick={() => handleRemoveBroker(item.id)}
+                      disabled={removeBrokerMutation.isPending}
+                    >
+                      <Trash2 className="w-4 h-4" />
+                    </Button>
+                  </div>
+                </div>
+
+                <div className="grid grid-cols-2 md:grid-cols-4 gap-4 text-sm">
+                  <div>
+                    <span className="text-gray-500">Regulation:</span>
+                    <Badge variant="secondary" className="ml-2">
+                      {item.broker.regulation}
+                    </Badge>
+                  </div>
+                  <div>
+                    <span className="text-gray-500">Min Deposit:</span>
+                    <span className="ml-2 font-medium">
+                      ${item.broker.min_deposit.toLocaleString()}
+                    </span>
+                  </div>
+                  <div>
+                    <span className="text-gray-500">EUR/USD Spread:</span>
+                    <span className="ml-2 font-medium">
+                      {item.broker.spread_eur_usd} pips
+                    </span>
+                  </div>
+                  <div>
+                    <span className="text-gray-500">Max Leverage:</span>
+                    <span className="ml-2 font-medium">
+                      {item.broker.leverage}
+                    </span>
+                  </div>
+                </div>
+
+                <div className="mt-4 text-xs text-gray-500">
+                  Saved on {new Date(item.created_at).toLocaleDateString()}
+                </div>
+              </CardContent>
+            </Card>
+          ))}
+        </div>
+      )}
+    </div>
+  );
+};

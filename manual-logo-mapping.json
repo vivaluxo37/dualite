@@ -1,0 +1,11 @@
+{
+  "instructions": "Update the 'correctBrokerName' field for each logo with the exact broker name from your database",
+  "unmappedLogos": [
+    {
+      "filename": "instaforex-ltd.png",
+      "scrapedName": "Instaforex Ltd",
+      "correctBrokerName": "UPDATE_THIS_FIELD",
+      "logoPath": "/logos/scraped/instaforex-ltd.png"
+    }
+  ]
+}

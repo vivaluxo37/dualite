@@ -1,0 +1,280 @@
+/* Performance-optimized styles for broker templates */
+
+/* Critical CSS for above-the-fold content */
+.broker-header {
+  contain: layout style;
+  will-change: transform;
+}
+
+/* Optimize image loading */
+.broker-logo {
+  contain: layout;
+  aspect-ratio: 16 / 9;
+  object-fit: contain;
+  transition: opacity 0.3s ease;
+}
+
+.broker-logo.loading {
+  opacity: 0.5;
+  background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite;
+}
+
+.broker-logo.loaded {
+  opacity: 1;
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+/* Optimize layout shifts */
+.trading-chart-container {
+  min-height: 400px;
+  contain: layout;
+}
+
+.reviews-section {
+  min-height: 300px;
+  contain: layout;
+}
+
+/* Optimize scrolling performance */
+.broker-content {
+  transform: translateZ(0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+}
+
+/* Optimize animations */
+.fade-in {
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Optimize tab switching */
+.tabs-content {
+  contain: layout style;
+}
+
+.tabs-content[data-state="inactive"] {
+  display: none;
+}
+
+/* Optimize card layouts */
+.broker-card {
+  contain: layout;
+  transform: translateZ(0);
+}
+
+/* Optimize text rendering */
+.broker-text {
+  text-rendering: optimizeSpeed;
+  font-display: swap;
+}
+
+/* Optimize button interactions */
+.broker-button {
+  contain: layout;
+  will-change: transform, background-color;
+  transition: all 0.2s ease;
+}
+
+.broker-button:hover {
+  transform: translateY(-1px);
+}
+
+/* Optimize grid layouts */
+.broker-grid {
+  contain: layout;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1rem;
+}
+
+/* Optimize mobile performance */
+@media (max-width: 768px) {
+  .broker-content {
+    contain: layout;
+  }
+  
+  .broker-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .trading-chart-container {
+    min-height: 300px;
+  }
+}
+
+/* Optimize print styles */
+@media print {
+  .broker-interactive {
+    display: none;
+  }
+  
+  .broker-content {
+    color: black;
+    background: white;
+  }
+}
+
+/* Optimize reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  .fade-in,
+  .broker-button,
+  .broker-logo {
+    animation: none;
+    transition: none;
+  }
+}
+
+/* Optimize high contrast mode */
+@media (prefers-contrast: high) {
+  .broker-card {
+    border: 2px solid;
+  }
+  
+  .broker-button {
+    border: 2px solid;
+  }
+}
+
+/* Critical resource hints */
+.preload-fonts {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+/* Optimize focus indicators */
+.broker-focusable:focus-visible {
+  outline: 2px solid #2563eb;
+  outline-offset: 2px;
+}
+
+/* Optimize loading states */
+.skeleton {
+  background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite;
+  border-radius: 4px;
+}
+
+.skeleton-text {
+  height: 1em;
+  margin-bottom: 0.5em;
+}
+
+.skeleton-title {
+  height: 1.5em;
+  width: 60%;
+  margin-bottom: 1em;
+}
+
+.skeleton-paragraph {
+  height: 1em;
+  margin-bottom: 0.5em;
+}
+
+.skeleton-paragraph:last-child {
+  width: 80%;
+}
+
+/* Optimize virtual scrolling */
+.virtual-list {
+  overflow-y: auto;
+  height: 400px;
+  contain: strict;
+}
+
+.virtual-item {
+  contain: layout style;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  padding: 0 1rem;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+/* Optimize image galleries */
+.image-gallery {
+  contain: layout;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 0.5rem;
+}
+
+.image-gallery img {
+  width: 100%;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 4px;
+  loading: lazy;
+}
+
+/* Optimize data tables */
+.data-table {
+  contain: layout;
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+.data-table th,
+.data-table td {
+  padding: 0.5rem 1rem;
+  text-align: left;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+/* Optimize modal performance */
+.modal-overlay {
+  backdrop-filter: blur(4px);
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+  contain: layout style;
+  transform: translateZ(0);
+}
+
+/* Optimize tooltip performance */
+.tooltip {
+  contain: layout style;
+  pointer-events: none;
+  z-index: 1000;
+}
+
+/* Optimize dropdown performance */
+.dropdown-content {
+  contain: layout;
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+/* Optimize search performance */
+.search-results {
+  contain: layout;
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+.search-highlight {
+  background-color: #fef3c7;
+  padding: 0 2px;
+  border-radius: 2px;
+}

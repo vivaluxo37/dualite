@@ -1,0 +1,1489 @@
+import { createClient } from '@supabase/supabase-js'
+import fs from 'fs/promises'
+import path from 'path'
+
+// Supabase configuration
+const supabaseUrl = process.env.VITE_SUPABASE_URL || 'your-supabase-url'
+const supabaseKey = process.env.VITE_SUPABASE_ANON_KEY || 'your-supabase-anon-key'
+const supabase = createClient(supabaseUrl, supabaseKey)
+
+interface BrokerData {
+  id: string
+  name: string
+  slug: string
+  country: string
+  founded_year?: number
+  regulations?: string
+  min_deposit?: number
+  max_leverage?: number
+  spreads_avg?: number
+  commission_per_lot?: number
+  trust_score?: number
+  avg_rating?: number
+  total_reviews?: number
+  logo_url?: string
+  description?: string
+  is_active: boolean
+  website_url?: string
+  headquarters?: string
+  license_number?: string
+  deposit_methods?: string[]
+  withdrawal_methods?: string[]
+  trading_platforms?: string[]
+  account_types?: string[]
+  instruments?: string[]
+  education_resources?: boolean
+  demo_account?: boolean
+  mobile_app?: boolean
+  copy_trading?: boolean
+  social_trading?: boolean
+  islamic_account?: boolean
+  vps_hosting?: boolean
+  api_trading?: boolean
+  negative_balance_protection?: boolean
+  segregated_accounts?: boolean
+  deposit_protection?: number
+  execution_model?: string
+  order_execution_speed?: number
+  uptime_percentage?: number
+  customer_support_hours?: string
+  support_languages?: string[]
+  support_channels?: string[]
+  minimum_trade_size?: number
+  maximum_trade_size?: number
+  scalping_allowed?: boolean
+  hedging_allowed?: boolean
+  ea_allowed?: boolean
+  swap_free?: boolean
+  bonus_offered?: boolean
+  withdrawal_fee?: number
+  inactivity_fee?: number
+  currency_base?: string
+  margin_call_level?: number
+  stop_out_level?: number
+  created_at?: string
+  updated_at?: string
+}
+
+// Enhanced broker template with 2025 SEO optimization
+const generateBrokerTemplate = (broker: BrokerData): string => {
+  const currentYear = new Date().getFullYear()
+  const establishedText = broker.founded_year ? `established in ${broker.founded_year}` : 'established'
+  const regulationText = broker.regulations ? `regulated by ${broker.regulations}` : 'regulated'
+  const countryText = broker.country || 'international'
+  
+  // Generate long-tail keywords for SEO
+  const longTailKeywords = [
+    `${broker.name.toLowerCase()} broker review ${currentYear}`,
+    `${broker.name.toLowerCase()} trading platform analysis`,
+    `${broker.name.toLowerCase()} fees and spreads comparison`,
+    `${broker.name.toLowerCase()} ${countryText.toLowerCase()} forex broker`,
+    `${broker.name.toLowerCase()} minimum deposit requirements`,
+    `${broker.name.toLowerCase()} maximum leverage trading`,
+    `${broker.name.toLowerCase()} customer support review`,
+    `${broker.name.toLowerCase()} demo account features`,
+    `${broker.name.toLowerCase()} mobile trading app`,
+    `${broker.name.toLowerCase()} regulation and safety`,
+    `best ${countryText.toLowerCase()} forex brokers ${currentYear}`,
+    `${broker.name.toLowerCase()} vs competitors comparison`,
+    `${broker.name.toLowerCase()} withdrawal methods and fees`,
+    `${broker.name.toLowerCase()} trading conditions review`,
+    `${broker.name.toLowerCase()} educational resources quality`
+  ]
+
+  // Internal linking opportunities
+  const internalLinks = [
+    `<a href="/brokers/${countryText.toLowerCase().replace(/\s+/g, '-')}">best ${countryText} forex brokers</a>`,
+    `<a href="/compare/${broker.slug}">compare ${broker.name} with other brokers</a>`,
+    `<a href="/learn/forex-trading-basics">forex trading fundamentals</a>`,
+    `<a href="/calculators/pip-calculator">pip value calculator</a>`,
+    `<a href="/learn/risk-management">forex risk management strategies</a>`,
+    `<a href="/brokers/regulated">regulated forex brokers list</a>`,
+    `<a href="/learn/trading-platforms">trading platform comparison guide</a>`,
+    `<a href="/calculators/margin-calculator">margin requirement calculator</a>`,
+    `<a href="/learn/market-analysis">technical and fundamental analysis</a>`,
+    `<a href="/brokers/low-spread">low spread forex brokers</a>`
+  ]
+
+  return `
+import { useState, useEffect } from 'react'
+import { useParams, Link, useNavigate } from 'react-router-dom'
+import { useQuery } from '@tanstack/react-query'
+import { motion } from 'framer-motion'
+import { Helmet } from 'react-helmet-async'
+import { supabase } from '../lib/supabase'
+import { Broker } from '../types'
+import { Card, CardContent, CardHeader, CardTitle } from '../components/ui/card'
+import { Button } from '../components/ui/button'
+import { Badge } from '../components/ui/badge'
+import { Progress } from '../components/ui/progress'
+import { Tabs, TabsContent, TabsList, TabsTrigger } from '../components/ui/tabs'
+import { 
+  Star, Shield, MapPin, ExternalLink, ArrowLeft, TrendingUp, DollarSign, 
+  Globe, CheckCircle, XCircle, AlertTriangle, BarChart3, Smartphone, 
+  Monitor, CreditCard, Banknote, GraduationCap, HeadphonesIcon, Clock, 
+  Users, Award, FileText, Lock, Zap, Target, TrendingDown, Calculator, 
+  BookOpen, MessageCircle, Phone, Mail, Calendar, Building, Flag, 
+  Percent, Timer, Activity, Database, Wifi, ShieldCheck
+} from 'lucide-react'
+import { Alert, AlertDescription } from '../components/ui/alert'
+import { Separator } from '../components/ui/separator'
+
+/**
+ * ${broker.name} Broker Review ${currentYear} - Comprehensive Analysis
+ * 
+ * This page provides an in-depth review of ${broker.name}, a ${regulationText} 
+ * forex and CFD broker ${establishedText}. Our analysis covers trading conditions,
+ * platform features, fees, security measures, and overall user experience.
+ * 
+ * Key Topics Covered:
+ * - ${broker.name} trading platform review and features
+ * - Detailed fee structure and spread analysis
+ * - Regulatory compliance and safety measures
+ * - Customer support quality and availability
+ * - Account types and minimum deposit requirements
+ * - Mobile trading app functionality and performance
+ * - Educational resources and learning materials
+ * - Comparison with other ${countryText} forex brokers
+ * 
+ * SEO Keywords: ${longTailKeywords.slice(0, 10).join(', ')}
+ */
+
+export function ${broker.name.replace(/[^a-zA-Z0-9]/g, '')}BrokerPage() {
+  const navigate = useNavigate()
+  const [activeTab, setActiveTab] = useState('overview')
+
+  // Static broker data for ${broker.name}
+  const brokerData: Broker = {
+    id: '${broker.id}',
+    name: '${broker.name}',
+    slug: '${broker.slug}',
+    country: '${broker.country}',
+    founded_year: ${broker.founded_year || 'null'},
+    regulations: '${broker.regulations || ''}',
+    min_deposit: ${broker.min_deposit || 0},
+    max_leverage: ${broker.max_leverage || 0},
+    spreads_avg: ${broker.spreads_avg || 0},
+    commission_per_lot: ${broker.commission_per_lot || 0},
+    trust_score: ${broker.trust_score || 0},
+    avg_rating: ${broker.avg_rating || 0},
+    total_reviews: ${broker.total_reviews || 0},
+    logo_url: '${broker.logo_url || ''}',
+    description: \`${broker.description || `${broker.name} is a ${regulationText} forex and CFD broker offering comprehensive trading services to retail and institutional clients worldwide. ${establishedText.charAt(0).toUpperCase() + establishedText.slice(1)}, the company provides competitive trading conditions, advanced platforms, and professional customer support.`}\`,
+    is_active: ${broker.is_active},
+    website_url: '${broker.website_url || ''}',
+    headquarters: '${broker.headquarters || broker.country}',
+    license_number: '${broker.license_number || ''}',
+    deposit_methods: ${JSON.stringify(broker.deposit_methods || ['Credit Card', 'Bank Transfer', 'E-wallets'])},
+    withdrawal_methods: ${JSON.stringify(broker.withdrawal_methods || ['Bank Transfer', 'Credit Card', 'E-wallets'])},
+    trading_platforms: ${JSON.stringify(broker.trading_platforms || ['MetaTrader 4', 'MetaTrader 5', 'WebTrader'])},
+    account_types: ${JSON.stringify(broker.account_types || ['Standard', 'ECN', 'VIP'])},
+    instruments: ${JSON.stringify(broker.instruments || ['Forex', 'CFDs', 'Commodities', 'Indices'])},
+    education_resources: ${broker.education_resources !== false},
+    demo_account: ${broker.demo_account !== false},
+    mobile_app: ${broker.mobile_app !== false},
+    copy_trading: ${broker.copy_trading || false},
+    social_trading: ${broker.social_trading || false},
+    islamic_account: ${broker.islamic_account || false},
+    vps_hosting: ${broker.vps_hosting || false},
+    api_trading: ${broker.api_trading || false},
+    negative_balance_protection: ${broker.negative_balance_protection !== false},
+    segregated_accounts: ${broker.segregated_accounts !== false},
+    deposit_protection: ${broker.deposit_protection || 0},
+    execution_model: '${broker.execution_model || 'Market Execution'}',
+    order_execution_speed: ${broker.order_execution_speed || 50},
+    uptime_percentage: ${broker.uptime_percentage || 99.9},
+    customer_support_hours: '${broker.customer_support_hours || '24/5'}',
+    support_languages: ${JSON.stringify(broker.support_languages || ['English'])},
+    support_channels: ${JSON.stringify(broker.support_channels || ['Phone', 'Email', 'Live Chat'])},
+    minimum_trade_size: ${broker.minimum_trade_size || 0.01},
+    maximum_trade_size: ${broker.maximum_trade_size || 100},
+    scalping_allowed: ${broker.scalping_allowed !== false},
+    hedging_allowed: ${broker.hedging_allowed !== false},
+    ea_allowed: ${broker.ea_allowed !== false},
+    swap_free: ${broker.swap_free || false},
+    bonus_offered: ${broker.bonus_offered || false},
+    withdrawal_fee: ${broker.withdrawal_fee || 0},
+    inactivity_fee: ${broker.inactivity_fee || 0},
+    currency_base: '${broker.currency_base || 'USD'}',
+    margin_call_level: ${broker.margin_call_level || 100},
+    stop_out_level: ${broker.stop_out_level || 50},
+    created_at: '${broker.created_at || new Date().toISOString()}',
+    updated_at: '${broker.updated_at || new Date().toISOString()}'
+  }
+
+  // SEO Meta Tags optimized for ${broker.name}
+  const metaTags = {
+    title: \`${broker.name} Review ${currentYear} - Trading Conditions, Fees & Platform Analysis | Broker Analysis\`,
+    description: \`Comprehensive ${broker.name} broker review covering trading platforms, fees, regulation, and user experience. ${establishedText.charAt(0).toUpperCase() + establishedText.slice(1)}, ${countryText} ${regulationText} forex broker with \${brokerData.trust_score}/100 trust score. Compare spreads from \${brokerData.spreads_avg} pips, minimum deposit \$\${brokerData.min_deposit}, and maximum leverage 1:\${brokerData.max_leverage}.\`,
+    keywords: \`${longTailKeywords.join(', ')}\`,
+    canonical: \`https://brokeranalysis.com/review/${broker.slug}\`
+  }
+
+  // Structured Data for enhanced SEO
+  const structuredData = {
+    '@context': 'https://schema.org',
+    '@type': 'FinancialService',
+    'name': brokerData.name,
+    'description': brokerData.description,
+    'url': \`https://brokeranalysis.com/review/${broker.slug}\`,
+    'logo': brokerData.logo_url,
+    'foundingDate': brokerData.founded_year?.toString(),
+    'address': {
+      '@type': 'PostalAddress',
+      'addressCountry': brokerData.country,
+      'addressLocality': brokerData.headquarters
+    },
+    'aggregateRating': {
+      '@type': 'AggregateRating',
+      'ratingValue': brokerData.avg_rating || 0,
+      'reviewCount': brokerData.total_reviews || 0,
+      'bestRating': 5,
+      'worstRating': 1
+    },
+    'offers': {
+      '@type': 'Offer',
+      'description': \`Forex and CFD trading services with minimum deposit of \$\${brokerData.min_deposit}\`,
+      'price': brokerData.min_deposit || 0,
+      'priceCurrency': 'USD'
+    },
+    'serviceType': 'Forex Trading',
+    'areaServed': 'Global',
+    'hasOfferCatalog': {
+      '@type': 'OfferCatalog',
+      'name': 'Trading Instruments',
+      'itemListElement': brokerData.instruments?.map(instrument => ({
+        '@type': 'Offer',
+        'itemOffered': {
+          '@type': 'Service',
+          'name': \`\${instrument} Trading\`
+        }
+      })) || []
+    },
+    'contactPoint': {
+      '@type': 'ContactPoint',
+      'telephone': '+1-801-893-2577',
+      'contactType': 'customer service',
+      'availableLanguage': brokerData.support_languages
+    }
+  }
+
+  // Trading conditions with enhanced data
+  const tradingConditions = [
+    {
+      label: 'Minimum Deposit',
+      value: \`\$\${brokerData.min_deposit}\`,
+      icon: <DollarSign className="h-4 w-4" />,
+      description: 'Minimum amount required to open a live trading account',
+      highlight: brokerData.min_deposit <= 100,
+      seoText: \`${broker.name} minimum deposit requirement\`
+    },
+    {
+      label: 'Average Spreads',
+      value: \`\${brokerData.spreads_avg} pips\`,
+      icon: <BarChart3 className="h-4 w-4" />,
+      description: 'Typical spread on EUR/USD during London session',
+      highlight: brokerData.spreads_avg <= 1.5,
+      seoText: \`${broker.name} competitive forex spreads\`
+    },
+    {
+      label: 'Maximum Leverage',
+      value: \`1:\${brokerData.max_leverage}\`,
+      icon: <TrendingUp className="h-4 w-4" />,
+      description: 'Maximum leverage available for retail clients',
+      highlight: brokerData.max_leverage >= 500,
+      seoText: \`${broker.name} high leverage trading options\`
+    },
+    {
+      label: 'Commission Structure',
+      value: brokerData.commission_per_lot ? \`\$\${brokerData.commission_per_lot}/lot\` : 'Spread Only',
+      icon: <Banknote className="h-4 w-4" />,
+      description: 'Commission structure for standard accounts',
+      seoText: \`${broker.name} transparent fee structure\`
+    }
+  ]
+
+  // Platform information with SEO optimization
+  const platforms = [
+    {
+      name: 'MetaTrader 4',
+      type: 'desktop' as const,
+      features: ['Expert Advisors', 'Custom Indicators', 'One-Click Trading', 'Advanced Charting'],
+      rating: 4.5,
+      seoDescription: \`${broker.name} MetaTrader 4 platform with advanced trading tools\`
+    },
+    {
+      name: 'MetaTrader 5',
+      type: 'desktop' as const,
+      features: ['Multi-Asset Trading', 'Advanced Analytics', 'Economic Calendar', 'Copy Trading'],
+      rating: 4.7,
+      seoDescription: \`${broker.name} MetaTrader 5 multi-asset trading platform\`
+    },
+    {
+      name: 'Mobile Trading App',
+      type: 'mobile' as const,
+      features: ['iOS & Android', 'Push Notifications', 'Touch ID Login', 'Real-time Quotes'],
+      rating: 4.3,
+      seoDescription: \`${broker.name} mobile trading app for iOS and Android\`
+    },
+    {
+      name: 'WebTrader Platform',
+      type: 'web' as const,
+      features: ['No Download Required', 'Cross-Platform', 'Real-time Charts', 'Order Management'],
+      rating: 4.1,
+      seoDescription: \`${broker.name} web-based trading platform\`
+    }
+  ]
+
+  // Security features with trust indicators
+  const securityFeatures = [
+    {
+      name: 'Regulatory Compliance',
+      status: brokerData.regulations ? 'available' as const : 'unavailable' as const,
+      description: \`Regulated by \${brokerData.regulations || 'No regulation information available'}\`,
+      seoText: \`${broker.name} regulatory compliance and licensing\`
+    },
+    {
+      name: 'Client Fund Protection',
+      status: 'available' as const,
+      description: 'Client funds segregated from company operational funds',
+      seoText: \`${broker.name} client fund segregation and protection\`
+    },
+    {
+      name: 'Negative Balance Protection',
+      status: brokerData.negative_balance_protection ? 'available' as const : 'unavailable' as const,
+      description: 'Cannot lose more than your account balance',
+      seoText: \`${broker.name} negative balance protection policy\`
+    },
+    {
+      name: 'SSL Encryption',
+      status: 'available' as const,
+      description: 'Bank-grade 256-bit SSL encryption for all transactions',
+      seoText: \`${broker.name} advanced security encryption\`
+    },
+    {
+      name: 'Two-Factor Authentication',
+      status: 'available' as const,
+      description: 'Additional security layer for account access',
+      seoText: \`${broker.name} two-factor authentication security\`
+    }
+  ]
+
+  // Fee structure with detailed breakdown
+  const feeStructure = [
+    {
+      type: 'Trading Spreads',
+      amount: \`From \${brokerData.spreads_avg} pips\`,
+      description: 'Variable spreads on major currency pairs',
+      frequency: 'Per trade',
+      seoText: \`${broker.name} competitive trading spreads\`
+    },
+    {
+      type: 'Commission Fees',
+      amount: brokerData.commission_per_lot ? \`\$\${brokerData.commission_per_lot} per lot\` : 'No commission',
+      description: 'Commission charged on ECN/Raw spread accounts',
+      frequency: 'Per lot',
+      seoText: \`${broker.name} transparent commission structure\`
+    },
+    {
+      type: 'Overnight Swap Fees',
+      amount: 'Variable',
+      description: 'Swap rates applied to positions held overnight',
+      frequency: 'Daily',
+      seoText: \`${broker.name} overnight financing costs\`
+    },
+    {
+      type: 'Deposit Fees',
+      amount: 'Free',
+      description: 'No fees for most deposit methods',
+      frequency: 'Per deposit',
+      seoText: \`${broker.name} free deposit methods\`
+    },
+    {
+      type: 'Withdrawal Fees',
+      amount: brokerData.withdrawal_fee ? \`\$\${brokerData.withdrawal_fee}\` : 'Variable',
+      description: 'Depends on withdrawal method and amount',
+      frequency: 'Per withdrawal',
+      seoText: \`${broker.name} withdrawal fee structure\`
+    },
+    {
+      type: 'Inactivity Fees',
+      amount: brokerData.inactivity_fee ? \`\$\${brokerData.inactivity_fee}\` : 'Variable',
+      description: 'Charged after extended periods of inactivity',
+      frequency: 'Monthly',
+      seoText: \`${broker.name} account maintenance fees\`
+    }
+  ]
+
+  // Trust score calculation and display
+  const getTrustScoreColor = (score: number) => {
+    if (score >= 80) return 'text-green-600'
+    if (score >= 60) return 'text-yellow-600'
+    return 'text-red-600'
+  }
+
+  const getTrustScoreLabel = (score: number) => {
+    if (score >= 80) return 'Excellent'
+    if (score >= 60) return 'Good'
+    if (score >= 40) return 'Fair'
+    return 'Poor'
+  }
+
+  return (
+    <div className="min-h-screen bg-background">
+      {/* Enhanced SEO Meta Tags */}
+      <Helmet>
+        <title>{metaTags.title}</title>
+        <meta name="description" content={metaTags.description} />
+        <meta name="keywords" content={metaTags.keywords} />
+        <link rel="canonical" href={metaTags.canonical} />
+        
+        {/* Open Graph Tags */}
+        <meta property="og:title" content={metaTags.title} />
+        <meta property="og:description" content={metaTags.description} />
+        <meta property="og:url" content={metaTags.canonical} />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content={brokerData.logo_url} />
+        <meta property="og:site_name" content="Broker Analysis" />
+        
+        {/* Twitter Card Tags */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content={metaTags.title} />
+        <meta name="twitter:description" content={metaTags.description} />
+        <meta name="twitter:image" content={brokerData.logo_url} />
+        
+        {/* Additional SEO Tags */}
+        <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+        <meta name="author" content="Broker Analysis" />
+        <meta name="publisher" content="Broker Analysis" />
+        <meta name="language" content="en" />
+        <meta name="geo.region" content="US" />
+        <meta name="geo.placename" content="Sheridan, Wyoming" />
+        
+        {/* Structured Data */}
+        <script type="application/ld+json">
+          {JSON.stringify(structuredData)}
+        </script>
+      </Helmet>
+
+      <div className="container mx-auto px-4 py-8">
+        {/* Enhanced Breadcrumb Navigation with Schema */}
+        <nav className="flex items-center space-x-2 text-sm text-muted-foreground mb-6" itemScope itemType="https://schema.org/BreadcrumbList">
+          <span itemProp="itemListElement" itemScope itemType="https://schema.org/ListItem">
+            <Link to="/" itemProp="item" className="hover:text-foreground transition-colors">
+              <span itemProp="name">Home</span>
+            </Link>
+            <meta itemProp="position" content="1" />
+          </span>
+          <span>/</span>
+          <span itemProp="itemListElement" itemScope itemType="https://schema.org/ListItem">
+            <Link to="/brokers" itemProp="item" className="hover:text-foreground transition-colors">
+              <span itemProp="name">Forex Brokers</span>
+            </Link>
+            <meta itemProp="position" content="2" />
+          </span>
+          <span>/</span>
+          <span itemProp="itemListElement" itemScope itemType="https://schema.org/ListItem">
+            <span itemProp="name" className="text-foreground">${broker.name} Review</span>
+            <meta itemProp="position" content="3" />
+          </span>
+        </nav>
+
+        {/* Header Section with Enhanced SEO */}
+        <motion.div 
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          className="mb-8"
+        >
+          <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-6 mb-6">
+            <div className="flex items-center gap-4">
+              <div className="w-16 h-16 rounded-lg overflow-hidden bg-muted flex items-center justify-center">
+                {brokerData.logo_url ? (
+                  <img 
+                    src={brokerData.logo_url} 
+                    alt={\`\${brokerData.name} logo - \${regulationText} forex broker\`}
+                    className="w-full h-full object-contain"
+                    loading="eager"
+                    width="64"
+                    height="64"
+                  />
+                ) : (
+                  <Building className="h-8 w-8 text-muted-foreground" />
+                )}
+              </div>
+              <div>
+                <h1 className="text-3xl font-bold text-foreground mb-2">
+                  ${broker.name} Review ${currentYear} - Comprehensive Broker Analysis
+                </h1>
+                <div className="flex items-center gap-4 text-sm text-muted-foreground">
+                  <div className="flex items-center gap-1">
+                    <MapPin className="h-4 w-4" />
+                    <span>{brokerData.country} {regulationText} broker</span>
+                  </div>
+                  {brokerData.founded_year && (
+                    <div className="flex items-center gap-1">
+                      <Calendar className="h-4 w-4" />
+                      <span>Founded {brokerData.founded_year}</span>
+                    </div>
+                  )}
+                  <div className="flex items-center gap-1">
+                    <Star className="h-4 w-4 fill-yellow-400 text-yellow-400" />
+                    <span>{brokerData.avg_rating?.toFixed(1) || '0.0'}</span>
+                    <span>({brokerData.total_reviews || 0} reviews)</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div className="flex flex-col sm:flex-row gap-3">
+              <Button size="lg" className="bg-primary hover:bg-primary/90">
+                <ExternalLink className="h-4 w-4 mr-2" />
+                Visit ${broker.name} Official Site
+              </Button>
+              <Button variant="outline" size="lg">
+                <BarChart3 className="h-4 w-4 mr-2" />
+                Compare with Other Brokers
+              </Button>
+            </div>
+          </div>
+
+          {/* Enhanced Quick Stats with SEO-optimized content */}
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-6">
+            {tradingConditions.map((condition, index) => (
+              <Card key={index} className={\`\${condition.highlight ? 'ring-2 ring-green-500' : ''}\`}>
+                <CardContent className="p-4">
+                  <div className="flex items-center gap-2 mb-2">
+                    {condition.icon}
+                    <span className="text-sm font-medium text-muted-foreground">
+                      {condition.label}
+                    </span>
+                  </div>
+                  <div className="text-xl font-bold text-foreground" title={condition.seoText}>
+                    {condition.value}
+                  </div>
+                  <div className="text-xs text-muted-foreground mt-1">
+                    {condition.description}
+                  </div>
+                  {condition.highlight && (
+                    <Badge variant="secondary" className="mt-1 text-xs">
+                      Competitive Rate
+                    </Badge>
+                  )}
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+
+          {/* Enhanced Trust Score Section */}
+          <Card className="mb-6">
+            <CardContent className="p-6">
+              <div className="flex items-center justify-between mb-4">
+                <div>
+                  <h2 className="text-lg font-semibold mb-1">${broker.name} Trust Score ${currentYear}</h2>
+                  <p className="text-sm text-muted-foreground">
+                    Based on regulation, security measures, user feedback, and trading conditions
+                  </p>
+                </div>
+                <div className="text-right">
+                  <div className={\`text-3xl font-bold \${getTrustScoreColor(brokerData.trust_score)}\`}>
+                    {brokerData.trust_score}/100
+                  </div>
+                  <div className="text-sm text-muted-foreground">
+                    {getTrustScoreLabel(brokerData.trust_score)}
+                  </div>
+                </div>
+              </div>
+              <Progress 
+                value={brokerData.trust_score} 
+                className="h-2"
+                aria-label={\`${broker.name} trust score: \${brokerData.trust_score} out of 100\`}
+              />
+              <div className="mt-3 text-xs text-muted-foreground">
+                Trust score factors: Regulatory compliance, fund protection, platform reliability, customer feedback
+              </div>
+            </CardContent>
+          </Card>
+        </motion.div>
+
+        {/* Enhanced Content Tabs with SEO optimization */}
+        <Tabs value={activeTab} onValueChange={setActiveTab} className="space-y-6">
+          <TabsList className="grid w-full grid-cols-2 md:grid-cols-6">
+            <TabsTrigger value="overview">Overview</TabsTrigger>
+            <TabsTrigger value="trading">Trading Conditions</TabsTrigger>
+            <TabsTrigger value="fees">Fees & Pricing</TabsTrigger>
+            <TabsTrigger value="platforms">Trading Platforms</TabsTrigger>
+            <TabsTrigger value="security">Security & Safety</TabsTrigger>
+            <TabsTrigger value="support">Customer Support</TabsTrigger>
+          </TabsList>
+
+          {/* Overview Tab with Enhanced Content */}
+          <TabsContent value="overview" className="space-y-6">
+            <div className="grid md:grid-cols-3 gap-6">
+              <div className="md:col-span-2 space-y-6">
+                {/* Enhanced Broker Overview with Internal Links */}
+                <Card>
+                  <CardHeader>
+                    <CardTitle className="flex items-center gap-2">
+                      <Building className="h-5 w-5" />
+                      ${broker.name} Company Background & History
+                    </CardTitle>
+                  </CardHeader>
+                  <CardContent className="space-y-4">
+                    <div className="prose prose-sm max-w-none">
+                      <p className="text-muted-foreground leading-relaxed">
+                        {brokerData.description}
+                      </p>
+                      
+                      <p className="text-muted-foreground leading-relaxed">
+                        As one of the {internalLinks[0]}, ${broker.name} offers comprehensive trading services 
+                        including forex, CFDs, and other financial instruments. The broker's commitment to 
+                        regulatory compliance and client protection makes it a popular choice among both 
+                        beginner and experienced traders looking for reliable trading conditions.
+                      </p>
+                      
+                      <p className="text-muted-foreground leading-relaxed">
+                        Traders interested in {internalLinks[2]} will find ${broker.name}'s educational 
+                        resources particularly valuable. The broker also provides access to advanced 
+                        {internalLinks[6]} and comprehensive {internalLinks[8]} to help traders make 
+                        informed decisions.
+                      </p>
+                    </div>
+                    
+                    <div className="grid md:grid-cols-2 gap-4 mt-6">
+                      <div className="space-y-2">
+                        <h3 className="font-semibold text-sm">Company Information</h3>
+                        <div className="space-y-1 text-sm text-muted-foreground">
+                          <div className="flex justify-between">
+                            <span>Established:</span>
+                            <span>{brokerData.founded_year || 'N/A'}</span>
+                          </div>
+                          <div className="flex justify-between">
+                            <span>Headquarters:</span>
+                            <span>{brokerData.headquarters}</span>
+                          </div>
+                          <div className="flex justify-between">
+                            <span>Regulation:</span>
+                            <span>{brokerData.regulations || 'N/A'}</span>
+                          </div>
+                          <div className="flex justify-between">
+                            <span>License Number:</span>
+                            <span>{brokerData.license_number || 'N/A'}</span>
+                          </div>
+                        </div>
+                      </div>
+                      
+                      <div className="space-y-2">
+                        <h3 className="font-semibold text-sm">Trading Performance</h3>
+                        <div className="space-y-1 text-sm text-muted-foreground">
+                          <div className="flex justify-between">
+                            <span>Average Rating:</span>
+                            <span>{brokerData.avg_rating?.toFixed(1) || '0.0'}/5.0</span>
+                          </div>
+                          <div className="flex justify-between">
+                            <span>Total Reviews:</span>
+                            <span>{brokerData.total_reviews || 0}</span>
+                          </div>
+                          <div className="flex justify-between">
+                            <span>Trust Score:</span>
+                            <span className={getTrustScoreColor(brokerData.trust_score)}>
+                              {brokerData.trust_score}/100
+                            </span>
+                          </div>
+                          <div className="flex justify-between">
+                            <span>Execution Speed:</span>
+                            <span>{brokerData.order_execution_speed}ms</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </CardContent>
+                </Card>
+
+                {/* Enhanced Key Features with SEO content */}
+                <Card>
+                  <CardHeader>
+                    <CardTitle className="flex items-center gap-2">
+                      <Award className="h-5 w-5" />
+                      ${broker.name} Key Features & Trading Advantages
+                    </CardTitle>
+                  </CardHeader>
+                  <CardContent>
+                    <div className="prose prose-sm max-w-none mb-4">
+                      <p className="text-muted-foreground">
+                        ${broker.name} stands out among {internalLinks[5]} with its competitive trading 
+                        conditions and comprehensive feature set. Here are the key advantages that make 
+                        this broker attractive to traders:
+                      </p>
+                    </div>
+                    
+                    <div className="grid md:grid-cols-2 gap-4">
+                      <div className="space-y-3">
+                        <div className="flex items-center gap-2">
+                          <CheckCircle className="h-4 w-4 text-green-600" />
+                          <span className="text-sm">Competitive spreads starting from {brokerData.spreads_avg} pips</span>
+                        </div>
+                        <div className="flex items-center gap-2">
+                          <CheckCircle className="h-4 w-4 text-green-600" />
+                          <span className="text-sm">High leverage up to 1:{brokerData.max_leverage} for retail clients</span>
+                        </div>
+                        <div className="flex items-center gap-2">
+                          <CheckCircle className="h-4 w-4 text-green-600" />
+                          <span className="text-sm">Low minimum deposit requirement of \${brokerData.min_deposit}</span>
+                        </div>
+                        <div className="flex items-center gap-2">
+                          <CheckCircle className="h-4 w-4 text-green-600" />
+                          <span className="text-sm">Multiple account types for different trading styles</span>
+                        </div>
+                      </div>
+                      <div className="space-y-3">
+                        <div className="flex items-center gap-2">
+                          <CheckCircle className="h-4 w-4 text-green-600" />
+                          <span className="text-sm">Advanced trading platforms including MT4/MT5</span>
+                        </div>
+                        <div className="flex items-center gap-2">
+                          <CheckCircle className="h-4 w-4 text-green-600" />
+                          <span className="text-sm">Comprehensive regulatory compliance and licensing</span>
+                        </div>
+                        <div className="flex items-center gap-2">
+                          <CheckCircle className="h-4 w-4 text-green-600" />
+                          <span className="text-sm">24/5 multilingual customer support</span>
+                        </div>
+                        <div className="flex items-center gap-2">
+                          <CheckCircle className="h-4 w-4 text-green-600" />
+                          <span className="text-sm">Extensive educational resources and market analysis</span>
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <div className="mt-4 p-3 bg-muted rounded-lg">
+                      <p className="text-xs text-muted-foreground">
+                        💡 <strong>Pro Tip:</strong> Use our {internalLinks[3]} and {internalLinks[7]} 
+                        to better understand your trading costs and margin requirements with ${broker.name}.
+                      </p>
+                    </div>
+                  </CardContent>
+                </Card>
+
+                {/* Pros and Cons Section */}
+                <Card>
+                  <CardHeader>
+                    <CardTitle className="flex items-center gap-2">
+                      <Target className="h-5 w-5" />
+                      ${broker.name} Pros and Cons Analysis
+                    </CardTitle>
+                  </CardHeader>
+                  <CardContent>
+                    <div className="grid md:grid-cols-2 gap-6">
+                      <div className="space-y-3">
+                        <h4 className="font-semibold text-green-600 flex items-center gap-2">
+                          <CheckCircle className="h-4 w-4" />
+                          Advantages
+                        </h4>
+                        <div className="space-y-2 text-sm">
+                          <div>• Competitive spreads and low trading costs</div>
+                          <div>• Strong regulatory compliance and safety</div>
+                          <div>• Multiple trading platforms available</div>
+                          <div>• Comprehensive educational resources</div>
+                          <div>• Professional customer support</div>
+                          <div>• Wide range of trading instruments</div>
+                        </div>
+                      </div>
+                      <div className="space-y-3">
+                        <h4 className="font-semibold text-red-600 flex items-center gap-2">
+                          <XCircle className="h-4 w-4" />
+                          Considerations
+                        </h4>
+                        <div className="space-y-2 text-sm">
+                          <div>• Limited cryptocurrency offerings</div>
+                          <div>• Withdrawal fees may apply</div>
+                          <div>• Inactivity fees for dormant accounts</div>
+                          <div>• Some advanced features require higher deposits</div>
+                          <div>• Limited social trading options</div>
+                          <div>• Regional restrictions may apply</div>
+                        </div>
+                      </div>
+                    </div>
+                  </CardContent>
+                </Card>
+              </div>
+
+              {/* Enhanced Sidebar with Internal Links */}
+              <div className="space-y-6">
+                {/* Quick Actions */}
+                <Card>
+                  <CardHeader>
+                    <CardTitle className="text-lg">Quick Actions</CardTitle>
+                  </CardHeader>
+                  <CardContent className="space-y-3">
+                    <Button className="w-full" size="lg">
+                      <ExternalLink className="h-4 w-4 mr-2" />
+                      Visit ${broker.name} Official Site
+                    </Button>
+                    <Button variant="outline" className="w-full">
+                      <FileText className="h-4 w-4 mr-2" />
+                      Download Full Review PDF
+                    </Button>
+                    <Button variant="outline" className="w-full">
+                      <BarChart3 className="h-4 w-4 mr-2" />
+                      {internalLinks[1]}
+                    </Button>
+                  </CardContent>
+                </Card>
+
+                {/* Related Content with Internal Links */}
+                <Card>
+                  <CardHeader>
+                    <CardTitle className="text-lg">Related Resources</CardTitle>
+                  </CardHeader>
+                  <CardContent className="space-y-3">
+                    <div className="text-sm text-muted-foreground mb-3">
+                      Explore more trading resources and tools:
+                    </div>
+                    <div className="space-y-2">
+                      <div dangerouslySetInnerHTML={{ __html: \`→ \${internalLinks[0]}\` }} className="text-sm" />
+                      <div dangerouslySetInnerHTML={{ __html: \`→ \${internalLinks[2]}\` }} className="text-sm" />
+                      <div dangerouslySetInnerHTML={{ __html: \`→ \${internalLinks[4]}\` }} className="text-sm" />
+                      <div dangerouslySetInnerHTML={{ __html: \`→ \${internalLinks[9]}\` }} className="text-sm" />
+                      <Link to="/ai-match" className="block text-sm text-primary hover:underline">
+                        → Find your perfect broker match
+                      </Link>
+                    </div>
+                  </CardContent>
+                </Card>
+
+                {/* Market Analysis Widget */}
+                <Card>
+                  <CardHeader>
+                    <CardTitle className="text-lg">Market Insights</CardTitle>
+                  </CardHeader>
+                  <CardContent className="space-y-3">
+                    <div className="text-sm text-muted-foreground">
+                      Stay updated with the latest market trends:
+                    </div>
+                    <div className="space-y-2">
+                      <Link to="/market-analysis" className="block text-sm text-primary hover:underline">
+                        → Daily Market Analysis
+                      </Link>
+                      <Link to="/economic-calendar" className="block text-sm text-primary hover:underline">
+                        → Economic Calendar
+                      </Link>
+                      <Link to="/trading-signals" className="block text-sm text-primary hover:underline">
+                        → Free Trading Signals
+                      </Link>
+                    </div>
+                  </CardContent>
+                </Card>
+              </div>
+            </div>
+          </TabsContent>
+
+          {/* Enhanced Trading Tab */}
+          <TabsContent value="trading" className="space-y-6">
+            <div className="prose prose-sm max-w-none mb-6">
+              <h2 className="text-xl font-bold mb-3">${broker.name} Trading Conditions & Account Types</h2>
+              <p className="text-muted-foreground">
+                ${broker.name} offers diverse account types designed to meet the needs of different trading styles 
+                and experience levels. From beginner-friendly standard accounts to professional ECN accounts with 
+                institutional-grade execution, traders can choose the option that best suits their requirements.
+              </p>
+            </div>
+
+            <div className="grid md:grid-cols-2 gap-6">
+              {/* Enhanced Account Types */}
+              <Card>
+                <CardHeader>
+                  <CardTitle className="flex items-center gap-2">
+                    <Users className="h-5 w-5" />
+                    Account Types & Features
+                  </CardTitle>
+                </CardHeader>
+                <CardContent className="space-y-4">
+                  {brokerData.account_types?.map((accountType, index) => (
+                    <div key={index} className="p-4 border rounded-lg">
+                      <h4 className="font-semibold mb-2">{accountType} Account</h4>
+                      <div className="space-y-1 text-sm text-muted-foreground">
+                        <div className="flex justify-between">
+                          <span>Minimum Deposit:</span>
+                          <span>\${index === 0 ? brokerData.min_deposit : brokerData.min_deposit * (index + 1) * 5}</span>
+                        </div>
+                        <div className="flex justify-between">
+                          <span>Spreads:</span>
+                          <span>{index === 0 ? \`From \${brokerData.spreads_avg} pips\` : 'From 0.0 pips'}</span>
+                        </div>
+                        <div className="flex justify-between">
+                          <span>Commission:</span>
+                          <span>{index === 0 ? (brokerData.commission_per_lot ? \`\$\${brokerData.commission_per_lot}/lot\` : 'No commission') : '\$7/lot round turn'}</span>
+                        </div>
+                        <div className="flex justify-between">
+                          <span>Max Leverage:</span>
+                          <span>1:{brokerData.max_leverage}</span>
+                        </div>
+                      </div>
+                    </div>
+                  )) || [
+                    <div key="standard" className="p-4 border rounded-lg">
+                      <h4 className="font-semibold mb-2">Standard Account</h4>
+                      <div className="space-y-1 text-sm text-muted-foreground">
+                        <div className="flex justify-between">
+                          <span>Minimum Deposit:</span>
+                          <span>\${brokerData.min_deposit}</span>
+                        </div>
+                        <div className="flex justify-between">
+                          <span>Spreads:</span>
+                          <span>From {brokerData.spreads_avg} pips</span>
+                        </div>
+                        <div className="flex justify-between">
+                          <span>Commission:</span>
+                          <span>{brokerData.commission_per_lot ? \`\$\${brokerData.commission_per_lot}/lot\` : 'No commission'}</span>
+                        </div>
+                      </div>
+                    </div>
+                  ]}
+                </CardContent>
+              </Card>
+
+              {/* Enhanced Trading Instruments */}
+              <Card>
+                <CardHeader>
+                  <CardTitle className="flex items-center gap-2">
+                    <Globe className="h-5 w-5" />
+                    Available Trading Instruments
+                  </CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <div className="space-y-4">
+                    {brokerData.instruments?.map((instrument, index) => (
+                      <div key={index} className="space-y-2">
+                        <h4 className="font-semibold text-sm">{instrument}</h4>
+                        <div className="text-sm text-muted-foreground">
+                          {instrument === 'Forex' && (
+                            <div>
+                              <div>• Major pairs (EUR/USD, GBP/USD, USD/JPY)</div>
+                              <div>• Minor pairs (EUR/GBP, AUD/JPY, GBP/JPY)</div>
+                              <div>• Exotic pairs (USD/TRY, EUR/ZAR, USD/MXN)</div>
+                            </div>
+                          )}
+                          {instrument === 'CFDs' && (
+                            <div>
+                              <div>• Stock indices (S&P 500, NASDAQ, FTSE 100)</div>
+                              <div>• Individual stocks (Apple, Google, Tesla)</div>
+                              <div>• ETFs and sector-specific instruments</div>
+                            </div>
+                          )}
+                          {instrument === 'Commodities' && (
+                            <div>
+                              <div>• Precious metals (Gold, Silver, Platinum)</div>
+                              <div>• Energy (Crude Oil, Natural Gas)</div>
+                              <div>• Agricultural (Wheat, Corn, Coffee)</div>
+                            </div>
+                          )}
+                          {instrument === 'Indices' && (
+                            <div>
+                              <div>• US indices (Dow Jones, S&P 500, NASDAQ)</div>
+                              <div>• European indices (DAX, FTSE, CAC)</div>
+                              <div>• Asian indices (Nikkei, Hang Seng)</div>
+                            </div>
+                          )}
+                        </div>
+                      </div>
+                    )) || (
+                      <div className="grid grid-cols-2 gap-4">
+                        <div className="space-y-2">
+                          <h4 className="font-semibold text-sm">Forex Pairs</h4>
+                          <div className="text-sm text-muted-foreground">
+                            <div>• Major pairs (EUR/USD, GBP/USD)</div>
+                            <div>• Minor pairs (EUR/GBP, AUD/JPY)</div>
+                            <div>• Exotic pairs (USD/TRY, EUR/ZAR)</div>
+                          </div>
+                        </div>
+                        <div className="space-y-2">
+                          <h4 className="font-semibold text-sm">CFDs</h4>
+                          <div className="text-sm text-muted-foreground">
+                            <div>• Stock indices</div>
+                            <div>• Commodities</div>
+                            <div>• Individual stocks</div>
+                          </div>
+                        </div>
+                      </div>
+                    )}
+                  </div>
+                </CardContent>
+              </Card>
+            </div>
+
+            {/* Enhanced Trading Conditions Details */}
+            <Card>
+              <CardHeader>
+                <CardTitle className="flex items-center gap-2">
+                  <Target className="h-5 w-5" />
+                  Detailed Trading Specifications
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
+                <div className="grid md:grid-cols-4 gap-6">
+                  {tradingConditions.map((condition, index) => (
+                    <div key={index} className="text-center space-y-2">
+                      <div className="flex justify-center">
+                        {condition.icon}
+                      </div>
+                      <div className="font-semibold">{condition.label}</div>
+                      <div className="text-2xl font-bold text-primary">{condition.value}</div>
+                      <div className="text-xs text-muted-foreground">{condition.description}</div>
+                      {condition.highlight && (
+                        <Badge variant="secondary" className="text-xs">Industry Leading</Badge>
+                      )}
+                    </div>
+                  ))}
+                </div>
+                
+                <Separator className="my-6" />
+                
+                <div className="grid md:grid-cols-3 gap-4">
+                  <div className="text-center space-y-2">
+                    <div className="text-lg font-bold">{brokerData.execution_model}</div>
+                    <div className="text-sm text-muted-foreground">Execution Model</div>
+                  </div>
+                  <div className="text-center space-y-2">
+                    <div className="text-lg font-bold">{brokerData.order_execution_speed}ms</div>
+                    <div className="text-sm text-muted-foreground">Average Execution Speed</div>
+                  </div>
+                  <div className="text-center space-y-2">
+                    <div className="text-lg font-bold">{brokerData.uptime_percentage}%</div>
+                    <div className="text-sm text-muted-foreground">Platform Uptime</div>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+          </TabsContent>
+
+          {/* Enhanced Fees Tab */}
+          <TabsContent value="fees" className="space-y-6">
+            <div className="prose prose-sm max-w-none mb-6">
+              <h2 className="text-xl font-bold mb-3">${broker.name} Fee Structure & Trading Costs</h2>
+              <p className="text-muted-foreground">
+                Understanding the complete fee structure is crucial for calculating your trading costs with ${broker.name}. 
+                This comprehensive breakdown covers all potential charges including spreads, commissions, overnight fees, 
+                and account maintenance costs.
+              </p>
+            </div>
+
+            <Card>
+              <CardHeader>
+                <CardTitle className="flex items-center gap-2">
+                  <Calculator className="h-5 w-5" />
+                  Complete Fee Breakdown
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
+                <div className="space-y-4">
+                  {feeStructure.map((fee, index) => (
+                    <div key={index} className="flex items-center justify-between p-4 border rounded-lg">
+                      <div className="space-y-1">
+                        <div className="font-semibold">{fee.type}</div>
+                        <div className="text-sm text-muted-foreground">{fee.description}</div>
+                        <div className="flex gap-2">
+                          {fee.frequency && (
+                            <Badge variant="outline" className="text-xs">{fee.frequency}</Badge>
+                          )}
+                          <span className="text-xs text-muted-foreground" title={fee.seoText}>
+                            {fee.seoText}
+                          </span>
+                        </div>
+                      </div>
+                      <div className="text-right">
+                        <div className="font-bold text-lg">{fee.amount}</div>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </CardContent>
+            </Card>
+
+            {/* Enhanced Cost Comparison */}
+            <Card>
+              <CardHeader>
+                <CardTitle className="flex items-center gap-2">
+                  <Percent className="h-5 w-5" />
+                  Trading Cost Calculator Examples
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
+                <div className="space-y-4">
+                  <div className="text-sm text-muted-foreground mb-4">
+                    Estimated trading costs for common scenarios with ${broker.name}:
+                  </div>
+                  
+                  <div className="grid md:grid-cols-3 gap-4">
+                    <div className="p-4 border rounded-lg text-center">
+                      <div className="font-semibold mb-2">1 Lot EUR/USD Trade</div>
+                      <div className="text-2xl font-bold text-primary mb-1">
+                        \${((brokerData.spreads_avg * 10) + (brokerData.commission_per_lot || 0)).toFixed(2)}
+                      </div>
+                      <div className="text-xs text-muted-foreground">Total cost (spread + commission)</div>
+                      <div className="text-xs text-muted-foreground mt-1">
+                        Spread: \${(brokerData.spreads_avg * 10).toFixed(2)} | Commission: \${brokerData.commission_per_lot || 0}
+                      </div>
+                    </div>
+                    
+                    <div className="p-4 border rounded-lg text-center">
+                      <div className="font-semibold mb-2">10 Lots Monthly Volume</div>
+                      <div className="text-2xl font-bold text-primary mb-1">
+                        \${(((brokerData.spreads_avg * 10) + (brokerData.commission_per_lot || 0)) * 10).toFixed(2)}
+                      </div>
+                      <div className="text-xs text-muted-foreground">Monthly trading costs</div>
+                      <div className="text-xs text-muted-foreground mt-1">
+                        Based on 10 standard lots per month
+                      </div>
+                    </div>
+                    
+                    <div className="p-4 border rounded-lg text-center">
+                      <div className="font-semibold mb-2">100 Lots Annual Volume</div>
+                      <div className="text-2xl font-bold text-primary mb-1">
+                        \${(((brokerData.spreads_avg * 10) + (brokerData.commission_per_lot || 0)) * 100).toFixed(2)}
+                      </div>
+                      <div className="text-xs text-muted-foreground">Annual trading costs</div>
+                      <div className="text-xs text-muted-foreground mt-1">
+                        High-volume trader estimate
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div className="mt-4 p-3 bg-muted rounded-lg">
+                    <p className="text-xs text-muted-foreground">
+                      💡 <strong>Cost Optimization Tip:</strong> Use our {internalLinks[3]} to calculate 
+                      exact trading costs for your specific trading volume and preferred instruments.
+                    </p>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+          </TabsContent>
+
+          {/* Enhanced Platforms Tab */}
+          <TabsContent value="platforms" className="space-y-6">
+            <div className="prose prose-sm max-w-none mb-6">
+              <h2 className="text-xl font-bold mb-3">${broker.name} Trading Platforms & Technology</h2>
+              <p className="text-muted-foreground">
+                ${broker.name} provides access to industry-leading trading platforms designed for both 
+                beginner and professional traders. Each platform offers unique features and capabilities 
+                to enhance your trading experience.
+              </p>
+            </div>
+
+            <div className="grid md:grid-cols-2 gap-6">
+              {platforms.map((platform, index) => (
+                <Card key={index}>
+                  <CardHeader>
+                    <CardTitle className="flex items-center gap-2">
+                      {platform.type === 'desktop' && <Monitor className="h-5 w-5" />}
+                      {platform.type === 'mobile' && <Smartphone className="h-5 w-5" />}
+                      {platform.type === 'web' && <Globe className="h-5 w-5" />}
+                      {platform.name}
+                    </CardTitle>
+                    <div className="flex items-center gap-2">
+                      <div className="flex items-center">
+                        {[...Array(5)].map((_, i) => (
+                          <Star 
+                            key={i} 
+                            className={`h-4 w-4 ${
+                              i < Math.floor(platform.rating) 
+                                ? 'fill-yellow-400 text-yellow-400' 
+                                : 'text-gray-300'
+                            }`} 
+                          />
+                        ))}
+                      </div>
+                      <span className="text-sm text-muted-foreground">
+                        {platform.rating}/5.0
+                      </span>
+                    </div>
+                  </CardHeader>
+                  <CardContent>
+                    <div className="space-y-3">
+                      <div className="text-sm text-muted-foreground" title={platform.seoDescription}>
+                        {platform.seoDescription}
+                      </div>
+                      <div className="space-y-2">
+                        <h4 className="font-semibold text-sm">Key Features:</h4>
+                        <div className="grid grid-cols-2 gap-1">
+                          {platform.features.map((feature, featureIndex) => (
+                            <div key={featureIndex} className="flex items-center gap-1 text-xs">
+                              <CheckCircle className="h-3 w-3 text-green-600" />
+                              <span>{feature}</span>
+                            </div>
+                          ))}
+                        </div>
+                      </div>
+                    </div>
+                  </CardContent>
+                </Card>
+              ))}
+            </div>
+          </TabsContent>
+
+          {/* Enhanced Security Tab */}
+          <TabsContent value="security" className="space-y-6">
+            <div className="prose prose-sm max-w-none mb-6">
+              <h2 className="text-xl font-bold mb-3">${broker.name} Security & Fund Protection</h2>
+              <p className="text-muted-foreground">
+                Security and fund protection are paramount when choosing a forex broker. ${broker.name} 
+                implements comprehensive security measures to protect client funds and personal information.
+              </p>
+            </div>
+
+            <div className="grid md:grid-cols-2 gap-6">
+              {securityFeatures.map((feature, index) => (
+                <Card key={index}>
+                  <CardContent className="p-6">
+                    <div className="flex items-start gap-3">
+                      <div className={`p-2 rounded-lg ${
+                        feature.status === 'available' 
+                          ? 'bg-green-100 text-green-600' 
+                          : 'bg-red-100 text-red-600'
+                      }`}>
+                        {feature.status === 'available' ? (
+                          <ShieldCheck className="h-5 w-5" />
+                        ) : (
+                          <AlertTriangle className="h-5 w-5" />
+                        )}
+                      </div>
+                      <div className="flex-1">
+                        <h3 className="font-semibold mb-1">{feature.name}</h3>
+                        <p className="text-sm text-muted-foreground mb-2">
+                          {feature.description}
+                        </p>
+                        <Badge 
+                          variant={feature.status === 'available' ? 'default' : 'destructive'}
+                          className="text-xs"
+                        >
+                          {feature.status === 'available' ? 'Available' : 'Not Available'}
+                        </Badge>
+                        <div className="text-xs text-muted-foreground mt-1" title={feature.seoText}>
+                          {feature.seoText}
+                        </div>
+                      </div>
+                    </div>
+                  </CardContent>
+                </Card>
+              ))}
+            </div>
+          </TabsContent>
+
+          {/* Enhanced Support Tab */}
+          <TabsContent value="support" className="space-y-6">
+            <div className="prose prose-sm max-w-none mb-6">
+              <h2 className="text-xl font-bold mb-3">${broker.name} Customer Support & Service</h2>
+              <p className="text-muted-foreground">
+                Professional customer support is essential for successful trading. ${broker.name} provides 
+                comprehensive support services to assist traders with technical issues, account management, 
+                and trading-related questions.
+              </p>
+            </div>
+
+            <div className="grid md:grid-cols-3 gap-6">
+              <Card>
+                <CardHeader>
+                  <CardTitle className="flex items-center gap-2">
+                    <Clock className="h-5 w-5" />
+                    Support Hours
+                  </CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <div className="text-center space-y-2">
+                    <div className="text-2xl font-bold">{brokerData.customer_support_hours}</div>
+                    <div className="text-sm text-muted-foreground">
+                      Monday to Friday
+                    </div>
+                    <div className="text-xs text-muted-foreground">
+                      Extended hours during market volatility
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+
+              <Card>
+                <CardHeader>
+                  <CardTitle className="flex items-center gap-2">
+                    <MessageCircle className="h-5 w-5" />
+                    Contact Methods
+                  </CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <div className="space-y-2">
+                    {brokerData.support_channels?.map((channel, index) => (
+                      <div key={index} className="flex items-center gap-2">
+                        {channel === 'Phone' && <Phone className="h-4 w-4" />}
+                        {channel === 'Email' && <Mail className="h-4 w-4" />}
+                        {channel === 'Live Chat' && <MessageCircle className="h-4 w-4" />}
+                        <span className="text-sm">{channel}</span>
+                      </div>
+                    )) || (
+                      <div className="space-y-2">
+                        <div className="flex items-center gap-2">
+                          <Phone className="h-4 w-4" />
+                          <span className="text-sm">Phone Support</span>
+                        </div>
+                        <div className="flex items-center gap-2">
+                          <Mail className="h-4 w-4" />
+                          <span className="text-sm">Email Support</span>
+                        </div>
+                        <div className="flex items-center gap-2">
+                          <MessageCircle className="h-4 w-4" />
+                          <span className="text-sm">Live Chat</span>
+                        </div>
+                      </div>
+                    )}
+                  </div>
+                </CardContent>
+              </Card>
+
+              <Card>
+                <CardHeader>
+                  <CardTitle className="flex items-center gap-2">
+                    <Globe className="h-5 w-5" />
+                    Languages
+                  </CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <div className="space-y-1">
+                    {brokerData.support_languages?.map((language, index) => (
+                      <div key={index} className="text-sm">{language}</div>
+                    )) || (
+                      <div className="text-sm">English</div>
+                    )}
+                  </div>
+                </CardContent>
+              </Card>
+            </div>
+          </TabsContent>
+        </Tabs>
+
+        {/* Enhanced Footer with Internal Links */}
+        <div className="mt-12 space-y-6">
+          <Separator />
+          
+          <div className="prose prose-sm max-w-none">
+            <h2 className="text-xl font-bold mb-4">${broker.name} Review Conclusion ${currentYear}</h2>
+            <p className="text-muted-foreground leading-relaxed">
+              ${broker.name} presents a comprehensive trading solution for forex and CFD traders seeking 
+              reliable execution, competitive pricing, and professional support. With its strong regulatory 
+              framework, advanced trading platforms, and commitment to client protection, the broker 
+              maintains a solid position among {internalLinks[0]}.
+            </p>
+            
+            <p className="text-muted-foreground leading-relaxed">
+              Whether you're a beginner looking to start your trading journey with {internalLinks[2]} 
+              or an experienced trader seeking advanced features and institutional-grade execution, 
+              ${broker.name} offers the tools and support necessary for successful trading.
+            </p>
+            
+            <div className="mt-6 p-4 bg-muted rounded-lg">
+              <h3 className="font-semibold mb-2">Ready to Start Trading with ${broker.name}?</h3>
+              <p className="text-sm text-muted-foreground mb-3">
+                Take advantage of competitive spreads, professional platforms, and comprehensive support. 
+                Use our {internalLinks[3]} and {internalLinks[7]} to plan your trading strategy.
+              </p>
+              <div className="flex gap-3">
+                <Button size="lg">
+                  <ExternalLink className="h-4 w-4 mr-2" />
+                  Open ${broker.name} Account
+                </Button>
+                <Button variant="outline" size="lg">
+                  <FileText className="h-4 w-4 mr-2" />
+                  Download Full Review
+                </Button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  )
+}
+
+export default ${broker.name.replace(/[^a-zA-Z0-9]/g, '')}BrokerPage
+`
+}
+
+// Main function to generate all broker templates
+async function generateAllBrokerTemplates() {
+  try {
+    console.log('🚀 Starting broker template generation...')
+    
+    // Fetch all brokers from Supabase
+    const { data: brokers, error } = await supabase
+      .from('brokers')
+      .select('*')
+      .eq('is_active', true)
+      .order('name')
+    
+    if (error) {
+      throw new Error(`Failed to fetch brokers: ${error.message}`)
+    }
+    
+    if (!brokers || brokers.length === 0) {
+      throw new Error('No active brokers found in database')
+    }
+    
+    console.log(`📊 Found ${brokers.length} active brokers to process`)
+    
+    // Create output directory
+    const outputDir = path.join(process.cwd(), 'src', 'pages', 'brokers')
+    await fs.mkdir(outputDir, { recursive: true })
+    
+    // Generate template for each broker
+    let successCount = 0
+    let errorCount = 0
+    
+    for (const broker of brokers) {
+      try {
+        console.log(`📝 Generating template for ${broker.name}...`)
+        
+        const template = generateBrokerTemplate(broker)
+        const fileName = `${broker.slug.replace(/[^a-zA-Z0-9-]/g, '')}.tsx`
+        const filePath = path.join(outputDir, fileName)
+        
+        await fs.writeFile(filePath, template, 'utf8')
+        
+        console.log(`✅ Generated: ${fileName}`)
+        successCount++
+        
+      } catch (error) {
+        console.error(`❌ Error generating template for ${broker.name}:`, error)
+        errorCount++
+      }
+    }
+    
+    // Generate index file for all broker pages
+    const indexContent = generateBrokerIndex(brokers)
+    await fs.writeFile(path.join(outputDir, 'index.ts'), indexContent, 'utf8')
+    
+    console.log('\n📈 Generation Summary:')
+    console.log(`✅ Successfully generated: ${successCount} templates`)
+    console.log(`❌ Errors encountered: ${errorCount} templates`)
+    console.log(`📁 Output directory: ${outputDir}`)
+    console.log('🎉 Broker template generation completed!')
+    
+  } catch (error) {
+    console.error('💥 Fatal error during template generation:', error)
+    process.exit(1)
+  }
+}
+
+// Generate index file for broker pages
+function generateBrokerIndex(brokers: BrokerData[]): string {
+  const imports = brokers.map(broker => {
+    const componentName = broker.name.replace(/[^a-zA-Z0-9]/g, '')
+    const fileName = broker.slug.replace(/[^a-zA-Z0-9-]/g, '')
+    return `export { default as ${componentName}BrokerPage } from './${fileName}'`
+  }).join('\n')
+  
+  return `// Auto-generated broker page exports\n// Generated on ${new Date().toISOString()}\n\n${imports}\n`
+}
+
+// Run the generation if this file is executed directly
+if (require.main === module) {
+  generateAllBrokerTemplates()
+}
+
+export { generateAllBrokerTemplates, generateBrokerTemplate }

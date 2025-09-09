@@ -1,0 +1,634 @@
+{
+  "summary": {
+    "totalBrokers": 124,
+    "brokersWithRealLogos": 53,
+    "brokersWithDefaultLogos": 71,
+    "brokersWithoutLogos": 0,
+    "successRate": "42.7%",
+    "availableLogoFiles": 837
+  },
+  "brokersWithRealLogos": [
+    {
+      "name": ".com",
+      "slug": "com-year",
+      "logoUrl": "https://efxpwrnxdorgzcqhbnfn.supabase.co/storage/v1/object/public/broker-logos/com-year.jpg"
+    },
+    {
+      "name": "10 Top Regulated s & Trading Platforms",
+      "slug": "10-top-regulated-s-trading-platforms",
+      "logoUrl": "../files/logo_110x40/fp%20markets%2020%20years%20110x40%20.webp"
+    },
+    {
+      "name": "Admirals",
+      "slug": "admirals-year",
+      "logoUrl": "https://efxpwrnxdorgzcqhbnfn.supabase.co/storage/v1/object/public/broker-logos/admirals-year.png"
+    },
+    {
+      "name": "AvaTrade",
+      "slug": "avatrade-year",
+      "logoUrl": "https://efxpwrnxdorgzcqhbnfn.supabase.co/storage/v1/object/public/broker-logos/avatrade-year.png"
+    },
+    {
+      "name": "Axi",
+      "slug": "axi-year",
+      "logoUrl": "https://efxpwrnxdorgzcqhbnfn.supabase.co/storage/v1/object/public/broker-logos/axi-year.png"
+    },
+    {
+      "name": "Best s that Accept Credit Cards",
+      "slug": "best-s-that-accept-credit-cards",
+      "logoUrl": "../files/logo_110x40/fxtm%20new%20transparent%20dark%20110x40.webp"
+    },
+    {
+      "name": "BlackBull Markets",
+      "slug": "blackbull-markets-year",
+      "logoUrl": "https://efxpwrnxdorgzcqhbnfn.supabase.co/storage/v1/object/public/broker-logos/blackbull-markets-year.png"
+    },
+    {
+      "name": "CFI",
+      "slug": "cfi-year-pros-cons-revealed",
+      "logoUrl": "https://efxpwrnxdorgzcqhbnfn.supabase.co/storage/v1/object/public/broker-logos/cfi-year-pros-cons-revealed.webp"
+    },
+    {
+      "name": "City Index",
+      "slug": "city-index-year",
+      "logoUrl": "https://efxpwrnxdorgzcqhbnfn.supabase.co/storage/v1/object/public/broker-logos/city-index-year.png"
+    },
+    {
+      "name": "Coinbase",
+      "slug": "coinbase-year",
+      "logoUrl": "https://efxpwrnxdorgzcqhbnfn.supabase.co/storage/v1/object/public/broker-logos/coinbase-year.webp"
+    },
+    {
+      "name": "cTrader",
+      "slug": "ctrader-year",
+      "logoUrl": "https://efxpwrnxdorgzcqhbnfn.supabase.co/storage/v1/object/public/broker-logos/ctrader-year.webp"
+    },
+    {
+      "name": "Degiro",
+      "slug": "degiro-year",
+      "logoUrl": "https://efxpwrnxdorgzcqhbnfn.supabase.co/storage/v1/object/public/broker-logos/degiro-year.png"
+    },
+    {
+      "name": "DNA Funded",
+      "slug": "dna-funded-year-pros-cons-revealed",
+      "logoUrl": "https://efxpwrnxdorgzcqhbnfn.supabase.co/storage/v1/object/public/broker-logos/dna-funded-year-pros-cons-revealed.webp"
+    },
+    {
+      "name": "Dukascopy",
+      "slug": "dukascopy-year",
+      "logoUrl": "https://efxpwrnxdorgzcqhbnfn.supabase.co/storage/v1/object/public/broker-logos/dukascopy-year.webp"
+    },
+    {
+      "name": "E*TRADE",
+      "slug": "e-trade-year-pros-cons-revealed",
+      "logoUrl": "https://efxpwrnxdorgzcqhbnfn.supabase.co/storage/v1/object/public/broker-logos/e-trade-year-pros-cons-revealed.png"
+    },
+    {
+      "name": "Eightcap",
+      "slug": "eightcap-year",
+      "logoUrl": "https://efxpwrnxdorgzcqhbnfn.supabase.co/storage/v1/object/public/broker-logos/eightcap-year.png"
+    },
+    {
+      "name": "eToro",
+      "slug": "etoro-year",
+      "logoUrl": "https://efxpwrnxdorgzcqhbnfn.supabase.co/storage/v1/object/public/broker-logos/etoro-year.png"
+    },
+    {
+      "name": "Exness",
+      "slug": "exness",
+      "logoUrl": "https://example.com/exness-logo.png"
+    },
+    {
+      "name": "FBS",
+      "slug": "fbs-year",
+      "logoUrl": "https://efxpwrnxdorgzcqhbnfn.supabase.co/storage/v1/object/public/broker-logos/fbs-year.png"
+    },
+    {
+      "name": "Fidelity",
+      "slug": "fidelity-year",
+      "logoUrl": "https://efxpwrnxdorgzcqhbnfn.supabase.co/storage/v1/object/public/broker-logos/fidelity-year.png"
+    },
+    {
+      "name": "FP Markets",
+      "slug": "fp-markets-year",
+      "logoUrl": "https://efxpwrnxdorgzcqhbnfn.supabase.co/storage/v1/object/public/broker-logos/fp-markets-year.png"
+    },
+    {
+      "name": "Freetrade",
+      "slug": "freetrade-year",
+      "logoUrl": "https://efxpwrnxdorgzcqhbnfn.supabase.co/storage/v1/object/public/broker-logos/freetrade-year.png"
+    },
+    {
+      "name": "fundedprime",
+      "slug": "fundedprime-year-pros-cons-revealed",
+      "logoUrl": "https://efxpwrnxdorgzcqhbnfn.supabase.co/storage/v1/object/public/broker-logos/fundedprime-year-pros-cons-revealed.webp"
+    },
+    {
+      "name": "Fusion Markets 2023",
+      "slug": "fusion-markets-2023-pros-cons-revealed",
+      "logoUrl": "https://efxpwrnxdorgzcqhbnfn.supabase.co/storage/v1/object/public/broker-logos/fusion-markets-2023-pros-cons-revealed.png"
+    },
+    {
+      "name": "FXCM",
+      "slug": "fxcm-year",
+      "logoUrl": "https://efxpwrnxdorgzcqhbnfn.supabase.co/storage/v1/object/public/broker-logos/fxcm-year.png"
+    },
+    {
+      "name": "FxPro",
+      "slug": "fxpro-year",
+      "logoUrl": "https://efxpwrnxdorgzcqhbnfn.supabase.co/storage/v1/object/public/broker-logos/fxpro-year.png"
+    },
+    {
+      "name": "FXTM",
+      "slug": "fxtm",
+      "logoUrl": "https://example.com/fxtm-logo.png"
+    },
+    {
+      "name": "FXTM",
+      "slug": "fxtm-year",
+      "logoUrl": "https://efxpwrnxdorgzcqhbnfn.supabase.co/storage/v1/object/public/broker-logos/fxtm-year.webp"
+    },
+    {
+      "name": "Hola Prime",
+      "slug": "hola-prime-year-pros-cons-revealed",
+      "logoUrl": "https://efxpwrnxdorgzcqhbnfn.supabase.co/storage/v1/object/public/broker-logos/hola-prime-year-pros-cons-revealed.webp"
+    },
+    {
+      "name": "IG",
+      "slug": "ig-year",
+      "logoUrl": "https://efxpwrnxdorgzcqhbnfn.supabase.co/storage/v1/object/public/broker-logos/ig-year.png"
+    },
+    {
+      "name": "IG Markets",
+      "slug": "ig-markets",
+      "logoUrl": "https://example.com/ig-logo.png"
+    },
+    {
+      "name": "Mart",
+      "slug": "mart-year",
+      "logoUrl": "https://efxpwrnxdorgzcqhbnfn.supabase.co/storage/v1/object/public/broker-logos/mart-year.jpg"
+    },
+    {
+      "name": "Moomoo",
+      "slug": "moomoo-year",
+      "logoUrl": "https://efxpwrnxdorgzcqhbnfn.supabase.co/storage/v1/object/public/broker-logos/moomoo-year.png"
+    },
+    {
+      "name": "OANDA",
+      "slug": "oanda-year",
+      "logoUrl": "https://efxpwrnxdorgzcqhbnfn.supabase.co/storage/v1/object/public/broker-logos/oanda-year.png"
+    },
+    {
+      "name": "Pepperstone",
+      "slug": "pepperstone",
+      "logoUrl": "https://example.com/pepperstone-logo.png"
+    },
+    {
+      "name": "Plus500",
+      "slug": "plus500-year",
+      "logoUrl": "https://efxpwrnxdorgzcqhbnfn.supabase.co/storage/v1/object/public/broker-logos/plus500-year.png"
+    },
+    {
+      "name": "PrimeXBT",
+      "slug": "primexbt-year",
+      "logoUrl": "https://efxpwrnxdorgzcqhbnfn.supabase.co/storage/v1/object/public/broker-logos/primexbt-year.webp"
+    },
+    {
+      "name": "Profitex",
+      "slug": "profitex-year-pros-cons-revealed",
+      "logoUrl": "https://efxpwrnxdorgzcqhbnfn.supabase.co/storage/v1/object/public/broker-logos/profitex-year-pros-cons-revealed.webp"
+    },
+    {
+      "name": "Questrade",
+      "slug": "questrade-year",
+      "logoUrl": "https://efxpwrnxdorgzcqhbnfn.supabase.co/storage/v1/object/public/broker-logos/questrade-year.png"
+    },
+    {
+      "name": "Revolut",
+      "slug": "revolut-year",
+      "logoUrl": "https://efxpwrnxdorgzcqhbnfn.supabase.co/storage/v1/object/public/broker-logos/revolut-year.png"
+    },
+    {
+      "name": "Robinhood",
+      "slug": "robinhood-year",
+      "logoUrl": "https://efxpwrnxdorgzcqhbnfn.supabase.co/storage/v1/object/public/broker-logos/robinhood-year.png"
+    },
+    {
+      "name": "Robo",
+      "slug": "robo-year",
+      "logoUrl": "https://efxpwrnxdorgzcqhbnfn.supabase.co/storage/v1/object/public/broker-logos/robo-year.webp"
+    },
+    {
+      "name": "Saxo Bank",
+      "slug": "saxo-bank-year",
+      "logoUrl": "https://efxpwrnxdorgzcqhbnfn.supabase.co/storage/v1/object/public/broker-logos/saxo-bank-year.png"
+    },
+    {
+      "name": "Swissquote",
+      "slug": "swissquote-year",
+      "logoUrl": "https://efxpwrnxdorgzcqhbnfn.supabase.co/storage/v1/object/public/broker-logos/swissquote-year.png"
+    },
+    {
+      "name": "Tickmill",
+      "slug": "tickmill-year",
+      "logoUrl": "https://efxpwrnxdorgzcqhbnfn.supabase.co/storage/v1/object/public/broker-logos/tickmill-year.png"
+    },
+    {
+      "name": "Trade Nation",
+      "slug": "trade-nation-year-pros-cons-revealed",
+      "logoUrl": "https://efxpwrnxdorgzcqhbnfn.supabase.co/storage/v1/object/public/broker-logos/trade-nation-year-pros-cons-revealed.png"
+    },
+    {
+      "name": "TradeStation",
+      "slug": "tradestation-year",
+      "logoUrl": "https://efxpwrnxdorgzcqhbnfn.supabase.co/storage/v1/object/public/broker-logos/tradestation-year.png"
+    },
+    {
+      "name": "Trading 212",
+      "slug": "trading-212-year",
+      "logoUrl": "https://efxpwrnxdorgzcqhbnfn.supabase.co/storage/v1/object/public/broker-logos/trading-212-year.png"
+    },
+    {
+      "name": "Vanguard",
+      "slug": "vanguard-year",
+      "logoUrl": "https://efxpwrnxdorgzcqhbnfn.supabase.co/storage/v1/object/public/broker-logos/vanguard-year.png"
+    },
+    {
+      "name": "Webull",
+      "slug": "webull-year",
+      "logoUrl": "https://efxpwrnxdorgzcqhbnfn.supabase.co/storage/v1/object/public/broker-logos/webull-year.png"
+    },
+    {
+      "name": "XM",
+      "slug": "xm-year",
+      "logoUrl": "https://efxpwrnxdorgzcqhbnfn.supabase.co/storage/v1/object/public/broker-logos/xm-year.png"
+    },
+    {
+      "name": "XM Group",
+      "slug": "xm-group",
+      "logoUrl": "https://example.com/xm-logo.png"
+    },
+    {
+      "name": "XTB",
+      "slug": "xtb-year",
+      "logoUrl": "https://efxpwrnxdorgzcqhbnfn.supabase.co/storage/v1/object/public/broker-logos/xtb-year.png"
+    }
+  ],
+  "brokersNeedingLogos": [
+    {
+      "name": "Alpari (Comoros) Ltd.",
+      "slug": "alpari-comoros-ltd-year",
+      "currentLogo": "/images/brokers/default-logo.png"
+    },
+    {
+      "name": "Apex Trader Funding",
+      "slug": "apex-trader-funding-year",
+      "currentLogo": "/images/brokers/default-logo.png"
+    },
+    {
+      "name": "BDSwiss",
+      "slug": "bdswiss-year",
+      "currentLogo": "/images/brokers/default-logo.png"
+    },
+    {
+      "name": "Binance",
+      "slug": "binance-year-pros-cons-revealed",
+      "currentLogo": "/images/brokers/default-logo.png"
+    },
+    {
+      "name": "Capital.com",
+      "slug": "capital-com-year",
+      "currentLogo": "/images/brokers/default-logo.png"
+    },
+    {
+      "name": "CFT",
+      "slug": "cft-year-pros-cons-revealed",
+      "currentLogo": "/images/brokers/default-logo.png"
+    },
+    {
+      "name": "CMC Markets",
+      "slug": "cmc-markets-year",
+      "currentLogo": "/images/brokers/default-logo.png"
+    },
+    {
+      "name": "CMTrading",
+      "slug": "cmtrading-year",
+      "currentLogo": "/images/brokers/default-logo.png"
+    },
+    {
+      "name": "Crypto.com",
+      "slug": "crypto-com-year",
+      "currentLogo": "/images/brokers/default-logo.png"
+    },
+    {
+      "name": "Deriv",
+      "slug": "deriv-year",
+      "currentLogo": "/images/brokers/default-logo.png"
+    },
+    {
+      "name": "E8 Funding",
+      "slug": "e8-funding-year-pros-cons-revealed",
+      "currentLogo": "/images/brokers/default-logo.png"
+    },
+    {
+      "name": "easyMarkets",
+      "slug": "easymarkets-year",
+      "currentLogo": "/images/brokers/default-logo.png"
+    },
+    {
+      "name": "ETX Capital",
+      "slug": "etx-capital-year",
+      "currentLogo": "/images/brokers/default-logo.png"
+    },
+    {
+      "name": "EuropeFX",
+      "slug": "europefx-year",
+      "currentLogo": "/images/brokers/default-logo.png"
+    },
+    {
+      "name": "Exness",
+      "slug": "exness-year-pros-cons-revealed",
+      "currentLogo": "/images/brokers/default-logo.png"
+    },
+    {
+      "name": "Fineco Bank",
+      "slug": "fineco-bank-year",
+      "currentLogo": "/images/brokers/default-logo.png"
+    },
+    {
+      "name": "Fondex",
+      "slug": "fondex-year",
+      "currentLogo": "/images/brokers/default-logo.png"
+    },
+    {
+      "name": "Friedberg Direct",
+      "slug": "friedberg-direct-year",
+      "currentLogo": "/images/brokers/default-logo.png"
+    },
+    {
+      "name": "FTMO",
+      "slug": "ftmo-year-pros-cons-revealed",
+      "currentLogo": "/images/brokers/default-logo.png"
+    },
+    {
+      "name": "Funded Traders Global",
+      "slug": "funded-traders-global-year",
+      "currentLogo": "/images/brokers/default-logo.png"
+    },
+    {
+      "name": "FundedNext",
+      "slug": "fundednext",
+      "currentLogo": "/images/brokers/default-logo.png"
+    },
+    {
+      "name": "FX Club",
+      "slug": "fx-club-year",
+      "currentLogo": "/images/brokers/default-logo.png"
+    },
+    {
+      "name": "FXCC",
+      "slug": "fxcc-year",
+      "currentLogo": "/images/brokers/default-logo.png"
+    },
+    {
+      "name": "FXGT",
+      "slug": "fxgt-year",
+      "currentLogo": "/images/brokers/default-logo.png"
+    },
+    {
+      "name": "FXIFY",
+      "slug": "fxify-year",
+      "currentLogo": "/images/brokers/default-logo.png"
+    },
+    {
+      "name": "FXPRIMUS",
+      "slug": "fxprimus-year",
+      "currentLogo": "/images/brokers/default-logo.png"
+    },
+    {
+      "name": "Goat Funded Trader",
+      "slug": "goat-funded-trader",
+      "currentLogo": "/images/brokers/default-logo.png"
+    },
+    {
+      "name": "HFM",
+      "slug": "hfm-year",
+      "currentLogo": "/images/brokers/default-logo.png"
+    },
+    {
+      "name": "Hugo's way",
+      "slug": "hugo-s-way-year",
+      "currentLogo": "/images/brokers/default-logo.png"
+    },
+    {
+      "name": "IC Markets",
+      "slug": "ic-markets-year",
+      "currentLogo": "/images/brokers/default-logo.png"
+    },
+    {
+      "name": "IFC Markets",
+      "slug": "ifc-markets-year",
+      "currentLogo": "/images/brokers/default-logo.png"
+    },
+    {
+      "name": "Index of locally available sites:",
+      "slug": "index-of-locally-available-sites",
+      "currentLogo": "/images/brokers/default-logo.png"
+    },
+    {
+      "name": "Insta",
+      "slug": "insta-year",
+      "currentLogo": "/images/brokers/default-logo.png"
+    },
+    {
+      "name": "Insta LTD",
+      "slug": "insta-ltd-year",
+      "currentLogo": "/images/brokers/default-logo.png"
+    },
+    {
+      "name": "Interactive s",
+      "slug": "interactive-s-year",
+      "currentLogo": "/images/brokers/default-logo.png"
+    },
+    {
+      "name": "Investous",
+      "slug": "investous-year",
+      "currentLogo": "/images/brokers/default-logo.png"
+    },
+    {
+      "name": "IQ Option",
+      "slug": "iq-option-year",
+      "currentLogo": "/images/brokers/default-logo.png"
+    },
+    {
+      "name": "IronFX",
+      "slug": "ironfx-year-pros-cons-revealed",
+      "currentLogo": "/images/brokers/default-logo.png"
+    },
+    {
+      "name": "Kraken",
+      "slug": "kraken-year-pros-cons-revealed",
+      "currentLogo": "/images/brokers/default-logo.png"
+    },
+    {
+      "name": "Legacy FX",
+      "slug": "legacy-fx-year",
+      "currentLogo": "/images/brokers/default-logo.png"
+    },
+    {
+      "name": "Libertex",
+      "slug": "libertex-year",
+      "currentLogo": "/images/brokers/default-logo.png"
+    },
+    {
+      "name": "LiteFinance",
+      "slug": "litefinance-year",
+      "currentLogo": "/images/brokers/default-logo.png"
+    },
+    {
+      "name": "Markets.com",
+      "slug": "markets-com-year",
+      "currentLogo": "/images/brokers/default-logo.png"
+    },
+    {
+      "name": "MetaTrader 4 Product",
+      "slug": "metatrader-4-product-year",
+      "currentLogo": "/images/brokers/default-logo.png"
+    },
+    {
+      "name": "MTrading",
+      "slug": "mtrading-year",
+      "currentLogo": "/images/brokers/default-logo.png"
+    },
+    {
+      "name": "My Funded Futures",
+      "slug": "my-funded-futures",
+      "currentLogo": "/images/brokers/default-logo.png"
+    },
+    {
+      "name": "Nadex",
+      "slug": "nadex-year",
+      "currentLogo": "/images/brokers/default-logo.png"
+    },
+    {
+      "name": "NAGA",
+      "slug": "naga-year",
+      "currentLogo": "/images/brokers/default-logo.png"
+    },
+    {
+      "name": "Nord FX",
+      "slug": "nord-fx-year",
+      "currentLogo": "/images/brokers/default-logo.png"
+    },
+    {
+      "name": "Octa - Updated - All You Need to Know!",
+      "slug": "octa-updated-year-all-you-need-to-know",
+      "currentLogo": "/images/brokers/default-logo.png"
+    },
+    {
+      "name": "Page not found | Daily.com",
+      "slug": "page-not-found-daily-com",
+      "currentLogo": "/images/brokers/default-logo.png"
+    },
+    {
+      "name": "Pax",
+      "slug": "pax-year",
+      "currentLogo": "/images/brokers/default-logo.png"
+    },
+    {
+      "name": "Pepperstone",
+      "slug": "pepperstone-year",
+      "currentLogo": "/images/brokers/default-logo.png"
+    },
+    {
+      "name": "PipFarm 2024",
+      "slug": "pipfarm-2024-pros-cons-revealed",
+      "currentLogo": "/images/brokers/default-logo.png"
+    },
+    {
+      "name": "PU Prime",
+      "slug": "pu-prime-pros-cons-revealed",
+      "currentLogo": "/images/brokers/default-logo.png"
+    },
+    {
+      "name": "Purple Trading",
+      "slug": "purple-trading-year",
+      "currentLogo": "/images/brokers/default-logo.png"
+    },
+    {
+      "name": "Rebels Funding",
+      "slug": "rebels-funding-year",
+      "currentLogo": "/images/brokers/default-logo.png"
+    },
+    {
+      "name": "Regulations",
+      "slug": "regulations",
+      "currentLogo": "/images/brokers/default-logo.png"
+    },
+    {
+      "name": "Sabiotrade",
+      "slug": "sabiotrade-year",
+      "currentLogo": "/images/brokers/default-logo.png"
+    },
+    {
+      "name": "Saxo Capital Markets",
+      "slug": "saxo-capital-markets-year",
+      "currentLogo": "/images/brokers/default-logo.png"
+    },
+    {
+      "name": "Squared Financial",
+      "slug": "squared-financial-year",
+      "currentLogo": "/images/brokers/default-logo.png"
+    },
+    {
+      "name": "tastyfx and Rating",
+      "slug": "tastyfx-and-rating",
+      "currentLogo": "/images/brokers/default-logo.png"
+    },
+    {
+      "name": "TD Ameritrade",
+      "slug": "td-ameritrade-year",
+      "currentLogo": "/images/brokers/default-logo.png"
+    },
+    {
+      "name": "ThinkMarkets",
+      "slug": "thinkmarkets-year",
+      "currentLogo": "/images/brokers/default-logo.png"
+    },
+    {
+      "name": "Top s List",
+      "slug": "top-s-list",
+      "currentLogo": "/images/brokers/default-logo.png"
+    },
+    {
+      "name": "TopStep",
+      "slug": "topstep-pros-cons-revealed",
+      "currentLogo": "/images/brokers/default-logo.png"
+    },
+    {
+      "name": "TopTier Trader",
+      "slug": "toptier-trader-pros-cons-revealed",
+      "currentLogo": "/images/brokers/default-logo.png"
+    },
+    {
+      "name": "Trade360",
+      "slug": "trade360-year",
+      "currentLogo": "/images/brokers/default-logo.png"
+    },
+    {
+      "name": "Traders Way",
+      "slug": "traders-way-year",
+      "currentLogo": "/images/brokers/default-logo.png"
+    },
+    {
+      "name": "Vantage FX",
+      "slug": "vantage-fx-year",
+      "currentLogo": "/images/brokers/default-logo.png"
+    },
+    {
+      "name": "ZuluTrade",
+      "slug": "zulutrade-year",
+      "currentLogo": "/images/brokers/default-logo.png"
+    }
+  ]
+}

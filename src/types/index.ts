@@ -1,7 +1,9 @@
 export interface Broker {
     id: string;
     name: string;
+    slug?: string;
     logo_url: string | null;
+    website_url?: string;
     country: string;
     regulations: string[];
     spreads_avg: number;

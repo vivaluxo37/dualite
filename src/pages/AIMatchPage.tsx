@@ -1,10 +1,10 @@
 import { useState } from 'react'
 import { useQuery } from '@tanstack/react-query'
 import { motion } from 'framer-motion'
-import { Bot, ArrowRight, CheckCircle, Loader2, Star, ExternalLink } from 'lucide-react'
+import { Bot, ArrowRight, CheckCircle, Loader2, Star, ExternalLink, Lock, UserPlus, LogIn } from 'lucide-react'
 import { supabase } from '../lib/supabase'
 import { Broker } from '../types'
-import { Card, CardContent, CardHeader, CardTitle } from '../components/ui/card'
+import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '../components/ui/card'
 import { Button } from '../components/ui/button'
 import { Label } from '../components/ui/label'
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '../components/ui/select'
@@ -13,6 +13,10 @@ import { Checkbox } from '../components/ui/checkbox'
 import { Badge } from '../components/ui/badge'
 import { Progress } from '../components/ui/progress'
 import { Link } from 'react-router-dom'
+import { useAuthContext } from '../contexts/AuthContext'
+import { LoginDialog } from '../components/auth/LoginDialog'
+import { RegisterDialog } from '../components/auth/RegisterDialog'
+import { cn } from '../lib/utils'
 
 interface QuizData {
   experience: string
@@ -39,8 +43,11 @@ const steps = [
 ]
 
 export function AIMatchPage() {
+  const { user, loading } = useAuthContext()
   const [currentStep, setCurrentStep] = useState(1)
   const [isAnalyzing, setIsAnalyzing] = useState(false)
+  const [showLoginDialog, setShowLoginDialog] = useState(false)
+  const [showRegisterDialog, setShowRegisterDialog] = useState(false)
   const [quizData, setQuizData] = useState<QuizData>({
     experience: '',
     tradingStyle: '',
@@ -218,6 +225,94 @@ export function AIMatchPage() {
     if (score >= 80) return 'text-green-600'
     if (score >= 60) return 'text-yellow-600'
     return 'text-red-600'
+  }
+
+  // Show loading state while checking authentication
+  if (loading) {
+    return (
+      <div className="container mx-auto px-4 py-8">
+        <div className="flex items-center justify-center min-h-[400px]">
+          <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-primary"></div>
+        </div>
+      </div>
+    )
+  }
+
+  // Show authentication gate if user is not logged in
+  if (!user) {
+    return (
+      <div className="container mx-auto px-4 py-8">
+        {/* Header */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          className="text-center mb-8"
+        >
+          <div className="flex items-center justify-center gap-3 mb-4">
+            <div className="p-3 bg-primary/10 rounded-lg text-primary">
+              <Bot className="h-8 w-8" />
+            </div>
+            <h1 className="text-3xl md:text-4xl font-bold tracking-tighter">AI Broker Matcher</h1>
+          </div>
+          <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
+            Answer a few questions and let our AI find the perfect forex broker tailored to your trading style and preferences.
+          </p>
+        </motion.div>
+
+        {/* Authentication Gate */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.1 }}
+          className="max-w-md mx-auto"
+        >
+          <Card>
+            <CardHeader className="text-center">
+              <div className="mx-auto mb-4 p-3 bg-primary/10 rounded-full w-fit">
+                <Lock className="h-8 w-8 text-primary" />
+              </div>
+              <CardTitle>Sign In Required</CardTitle>
+              <CardDescription>
+                Please sign in to access the AI Broker Matcher and get personalized recommendations.
+              </CardDescription>
+            </CardHeader>
+            <CardContent className="space-y-4">
+              <Button 
+                onClick={() => setShowLoginDialog(true)}
+                className="w-full"
+                size="lg"
+              >
+                <LogIn className="mr-2 h-4 w-4" />
+                Sign In
+              </Button>
+              <div className="text-center">
+                <span className="text-sm text-muted-foreground">Don't have an account? </span>
+                <Button 
+                  variant="link" 
+                  className="p-0 h-auto text-sm"
+                  onClick={() => setShowRegisterDialog(true)}
+                >
+                  <UserPlus className="mr-1 h-3 w-3" />
+                  Create one
+                </Button>
+              </div>
+            </CardContent>
+          </Card>
+        </motion.div>
+
+        {/* Login Dialog */}
+        <LoginDialog 
+          open={showLoginDialog} 
+          onOpenChange={setShowLoginDialog}
+        />
+        
+        {/* Register Dialog */}
+        <RegisterDialog 
+          open={showRegisterDialog} 
+          onOpenChange={setShowRegisterDialog}
+        />
+      </div>
+    )
   }
 
   return (

@@ -1,0 +1,600 @@
+{
+  "timestamp": "2025-09-06T17:01:58.103Z",
+  "summary": {
+    "totalLogosProcessed": 30,
+    "sqlStatementsGenerated": 58,
+    "uniqueBrokerMappings": 30
+  },
+  "logoMappings": [
+    {
+      "scrapedName": "Avatrade",
+      "filename": "avatrade.jpg",
+      "logoPath": "/logos/scraped/avatrade.jpg",
+      "potentialNames": [
+        "AvaTrade",
+        "Ava Trade",
+        "Ava Capital"
+      ],
+      "filenameKey": "avatrade"
+    },
+    {
+      "scrapedName": "Axitrader",
+      "filename": "axitrader.webp",
+      "logoPath": "/logos/scraped/axitrader.webp",
+      "potentialNames": [
+        "AxiTrader",
+        "Axi Trader"
+      ],
+      "filenameKey": "axitrader"
+    },
+    {
+      "scrapedName": "Cfi Trade",
+      "filename": "cfi-trade.webp",
+      "logoPath": "/logos/scraped/cfi-trade.webp",
+      "potentialNames": [
+        "CFI Trade"
+      ],
+      "filenameKey": "cfitrade"
+    },
+    {
+      "scrapedName": "Dna Funded",
+      "filename": "dna-funded.webp",
+      "logoPath": "/logos/scraped/dna-funded.webp",
+      "potentialNames": [
+        "DNA Funded"
+      ],
+      "filenameKey": "dnafunded"
+    },
+    {
+      "scrapedName": "Easymarkets",
+      "filename": "easymarkets.png",
+      "logoPath": "/logos/scraped/easymarkets.png",
+      "potentialNames": [
+        "EasyMarkets",
+        "Easy Markets"
+      ],
+      "filenameKey": "easymarkets"
+    },
+    {
+      "scrapedName": "Etoro",
+      "filename": "etoro.jpg",
+      "logoPath": "/logos/scraped/etoro.jpg",
+      "potentialNames": [
+        "eToro",
+        "E Toro"
+      ],
+      "filenameKey": "etoro"
+    },
+    {
+      "scrapedName": "Europefx",
+      "filename": "europefx.jpg",
+      "logoPath": "/logos/scraped/europefx.jpg",
+      "potentialNames": [
+        "EuropeFX",
+        "Europe FX"
+      ],
+      "filenameKey": "europefx"
+    },
+    {
+      "scrapedName": "Exness",
+      "filename": "exness.webp",
+      "logoPath": "/logos/scraped/exness.webp",
+      "potentialNames": [
+        "Exness",
+        "Exness Group"
+      ],
+      "filenameKey": "exness"
+    },
+    {
+      "scrapedName": "Forex",
+      "filename": "forex.jpeg",
+      "logoPath": "/logos/scraped/forex.jpeg",
+      "potentialNames": [
+        "Forex.com",
+        "FOREX.com"
+      ],
+      "filenameKey": "forex"
+    },
+    {
+      "scrapedName": "Fp Markets",
+      "filename": "fp-markets.webp",
+      "logoPath": "/logos/scraped/fp-markets.webp",
+      "potentialNames": [
+        "FP Markets",
+        "First Prudential Markets"
+      ],
+      "filenameKey": "fpmarkets"
+    },
+    {
+      "scrapedName": "Funded Prime",
+      "filename": "funded-prime.webp",
+      "logoPath": "/logos/scraped/funded-prime.webp",
+      "potentialNames": [
+        "Funded Prime"
+      ],
+      "filenameKey": "fundedprime"
+    },
+    {
+      "scrapedName": "Fxcc",
+      "filename": "fxcc.jpg",
+      "logoPath": "/logos/scraped/fxcc.jpg",
+      "potentialNames": [
+        "FXCC",
+        "FX CC",
+        "FXCentral Clearing"
+      ],
+      "filenameKey": "fxcc"
+    },
+    {
+      "scrapedName": "Hola Prime",
+      "filename": "hola-prime.webp",
+      "logoPath": "/logos/scraped/hola-prime.webp",
+      "potentialNames": [
+        "Hola Prime"
+      ],
+      "filenameKey": "holaprime"
+    },
+    {
+      "scrapedName": "Ifc Markets",
+      "filename": "ifc-markets.webp",
+      "logoPath": "/logos/scraped/ifc-markets.webp",
+      "potentialNames": [
+        "IFC Markets"
+      ],
+      "filenameKey": "ifcmarkets"
+    },
+    {
+      "scrapedName": "Ig",
+      "filename": "ig.webp",
+      "logoPath": "/logos/scraped/ig.webp",
+      "potentialNames": [
+        "IG",
+        "IG Group",
+        "IG Markets"
+      ],
+      "filenameKey": "ig"
+    },
+    {
+      "scrapedName": "Instaforex Ltd",
+      "filename": "instaforex-ltd.png",
+      "logoPath": "/logos/scraped/instaforex-ltd.png",
+      "potentialNames": [
+        "Instaforex Ltd",
+        "Instaforex Ltd",
+        "Instaforex Ltd",
+        "Instaforex Ltd",
+        "Instaforex Ltd"
+      ],
+      "filenameKey": "instaforexltd"
+    },
+    {
+      "scrapedName": "Instaforex",
+      "filename": "instaforex.png",
+      "logoPath": "/logos/scraped/instaforex.png",
+      "potentialNames": [
+        "InstaForex",
+        "Insta Forex"
+      ],
+      "filenameKey": "instaforex"
+    },
+    {
+      "scrapedName": "Legacy Fx",
+      "filename": "legacy-fx.jpg",
+      "logoPath": "/logos/scraped/legacy-fx.jpg",
+      "potentialNames": [
+        "Legacy FX"
+      ],
+      "filenameKey": "legacyfx"
+    },
+    {
+      "scrapedName": "Mtrading",
+      "filename": "mtrading.jpg",
+      "logoPath": "/logos/scraped/mtrading.jpg",
+      "potentialNames": [
+        "MTrading",
+        "M Trading"
+      ],
+      "filenameKey": "mtrading"
+    },
+    {
+      "scrapedName": "Pepperstone",
+      "filename": "pepperstone.webp",
+      "logoPath": "/logos/scraped/pepperstone.webp",
+      "potentialNames": [
+        "Pepperstone",
+        "Pepper Stone"
+      ],
+      "filenameKey": "pepperstone"
+    },
+    {
+      "scrapedName": "Pipfarm",
+      "filename": "pipfarm.webp",
+      "logoPath": "/logos/scraped/pipfarm.webp",
+      "potentialNames": [
+        "PipFarm",
+        "Pip Farm"
+      ],
+      "filenameKey": "pipfarm"
+    },
+    {
+      "scrapedName": "Plus500",
+      "filename": "plus500.jpeg",
+      "logoPath": "/logos/scraped/plus500.jpeg",
+      "potentialNames": [
+        "Plus500",
+        "Plus 500"
+      ],
+      "filenameKey": "plus500"
+    },
+    {
+      "scrapedName": "Primexbt",
+      "filename": "primexbt.webp",
+      "logoPath": "/logos/scraped/primexbt.webp",
+      "potentialNames": [
+        "PrimeXBT",
+        "Prime XBT"
+      ],
+      "filenameKey": "primexbt"
+    },
+    {
+      "scrapedName": "Pu Prime",
+      "filename": "pu-prime.webp",
+      "logoPath": "/logos/scraped/pu-prime.webp",
+      "potentialNames": [
+        "PU Prime"
+      ],
+      "filenameKey": "puprime"
+    },
+    {
+      "scrapedName": "Rebels Funding",
+      "filename": "rebels-funding.webp",
+      "logoPath": "/logos/scraped/rebels-funding.webp",
+      "potentialNames": [
+        "Rebels Funding"
+      ],
+      "filenameKey": "rebelsfunding"
+    },
+    {
+      "scrapedName": "Roboforex",
+      "filename": "roboforex.webp",
+      "logoPath": "/logos/scraped/roboforex.webp",
+      "potentialNames": [
+        "RoboForex",
+        "Robo Forex"
+      ],
+      "filenameKey": "roboforex"
+    },
+    {
+      "scrapedName": "Saxo Bank",
+      "filename": "saxo-bank.png",
+      "logoPath": "/logos/scraped/saxo-bank.png",
+      "potentialNames": [
+        "Saxo Bank",
+        "Saxo"
+      ],
+      "filenameKey": "saxobank"
+    },
+    {
+      "scrapedName": "Tickmill",
+      "filename": "tickmill.png",
+      "logoPath": "/logos/scraped/tickmill.png",
+      "potentialNames": [
+        "Tickmill",
+        "Tick Mill"
+      ],
+      "filenameKey": "tickmill"
+    },
+    {
+      "scrapedName": "Trading 212",
+      "filename": "trading-212.png",
+      "logoPath": "/logos/scraped/trading-212.png",
+      "potentialNames": [
+        "Trading 212",
+        "Trading212"
+      ],
+      "filenameKey": "trading212"
+    },
+    {
+      "scrapedName": "Zulutrade",
+      "filename": "zulutrade.png",
+      "logoPath": "/logos/scraped/zulutrade.png",
+      "potentialNames": [
+        "ZuluTrade",
+        "Zulu Trade"
+      ],
+      "filenameKey": "zulutrade"
+    }
+  ],
+  "sqlStatements": [
+    {
+      "brokerName": "AvaTrade",
+      "filename": "avatrade.jpg",
+      "sql": "UPDATE brokers SET logo_url = '/logos/scraped/avatrade.jpg' WHERE LOWER(name) LIKE '%avatrade%' AND (logo_url IS NULL OR logo_url LIKE '%placeholder%' OR logo_url LIKE '%default%');"
+    },
+    {
+      "brokerName": "Ava Trade",
+      "filename": "avatrade.jpg",
+      "sql": "UPDATE brokers SET logo_url = '/logos/scraped/avatrade.jpg' WHERE LOWER(name) LIKE '%ava trade%' AND (logo_url IS NULL OR logo_url LIKE '%placeholder%' OR logo_url LIKE '%default%');"
+    },
+    {
+      "brokerName": "Ava Capital",
+      "filename": "avatrade.jpg",
+      "sql": "UPDATE brokers SET logo_url = '/logos/scraped/avatrade.jpg' WHERE LOWER(name) LIKE '%ava capital%' AND (logo_url IS NULL OR logo_url LIKE '%placeholder%' OR logo_url LIKE '%default%');"
+    },
+    {
+      "brokerName": "AxiTrader",
+      "filename": "axitrader.webp",
+      "sql": "UPDATE brokers SET logo_url = '/logos/scraped/axitrader.webp' WHERE LOWER(name) LIKE '%axitrader%' AND (logo_url IS NULL OR logo_url LIKE '%placeholder%' OR logo_url LIKE '%default%');"
+    },
+    {
+      "brokerName": "Axi Trader",
+      "filename": "axitrader.webp",
+      "sql": "UPDATE brokers SET logo_url = '/logos/scraped/axitrader.webp' WHERE LOWER(name) LIKE '%axi trader%' AND (logo_url IS NULL OR logo_url LIKE '%placeholder%' OR logo_url LIKE '%default%');"
+    },
+    {
+      "brokerName": "CFI Trade",
+      "filename": "cfi-trade.webp",
+      "sql": "UPDATE brokers SET logo_url = '/logos/scraped/cfi-trade.webp' WHERE LOWER(name) LIKE '%cfi trade%' AND (logo_url IS NULL OR logo_url LIKE '%placeholder%' OR logo_url LIKE '%default%');"
+    },
+    {
+      "brokerName": "DNA Funded",
+      "filename": "dna-funded.webp",
+      "sql": "UPDATE brokers SET logo_url = '/logos/scraped/dna-funded.webp' WHERE LOWER(name) LIKE '%dna funded%' AND (logo_url IS NULL OR logo_url LIKE '%placeholder%' OR logo_url LIKE '%default%');"
+    },
+    {
+      "brokerName": "EasyMarkets",
+      "filename": "easymarkets.png",
+      "sql": "UPDATE brokers SET logo_url = '/logos/scraped/easymarkets.png' WHERE LOWER(name) LIKE '%easymarkets%' AND (logo_url IS NULL OR logo_url LIKE '%placeholder%' OR logo_url LIKE '%default%');"
+    },
+    {
+      "brokerName": "Easy Markets",
+      "filename": "easymarkets.png",
+      "sql": "UPDATE brokers SET logo_url = '/logos/scraped/easymarkets.png' WHERE LOWER(name) LIKE '%easy markets%' AND (logo_url IS NULL OR logo_url LIKE '%placeholder%' OR logo_url LIKE '%default%');"
+    },
+    {
+      "brokerName": "eToro",
+      "filename": "etoro.jpg",
+      "sql": "UPDATE brokers SET logo_url = '/logos/scraped/etoro.jpg' WHERE LOWER(name) LIKE '%etoro%' AND (logo_url IS NULL OR logo_url LIKE '%placeholder%' OR logo_url LIKE '%default%');"
+    },
+    {
+      "brokerName": "E Toro",
+      "filename": "etoro.jpg",
+      "sql": "UPDATE brokers SET logo_url = '/logos/scraped/etoro.jpg' WHERE LOWER(name) LIKE '%e toro%' AND (logo_url IS NULL OR logo_url LIKE '%placeholder%' OR logo_url LIKE '%default%');"
+    },
+    {
+      "brokerName": "EuropeFX",
+      "filename": "europefx.jpg",
+      "sql": "UPDATE brokers SET logo_url = '/logos/scraped/europefx.jpg' WHERE LOWER(name) LIKE '%europefx%' AND (logo_url IS NULL OR logo_url LIKE '%placeholder%' OR logo_url LIKE '%default%');"
+    },
+    {
+      "brokerName": "Europe FX",
+      "filename": "europefx.jpg",
+      "sql": "UPDATE brokers SET logo_url = '/logos/scraped/europefx.jpg' WHERE LOWER(name) LIKE '%europe fx%' AND (logo_url IS NULL OR logo_url LIKE '%placeholder%' OR logo_url LIKE '%default%');"
+    },
+    {
+      "brokerName": "Exness",
+      "filename": "exness.webp",
+      "sql": "UPDATE brokers SET logo_url = '/logos/scraped/exness.webp' WHERE LOWER(name) LIKE '%exness%' AND (logo_url IS NULL OR logo_url LIKE '%placeholder%' OR logo_url LIKE '%default%');"
+    },
+    {
+      "brokerName": "Exness Group",
+      "filename": "exness.webp",
+      "sql": "UPDATE brokers SET logo_url = '/logos/scraped/exness.webp' WHERE LOWER(name) LIKE '%exness group%' AND (logo_url IS NULL OR logo_url LIKE '%placeholder%' OR logo_url LIKE '%default%');"
+    },
+    {
+      "brokerName": "Forex.com",
+      "filename": "forex.jpeg",
+      "sql": "UPDATE brokers SET logo_url = '/logos/scraped/forex.jpeg' WHERE LOWER(name) LIKE '%forex.com%' AND (logo_url IS NULL OR logo_url LIKE '%placeholder%' OR logo_url LIKE '%default%');"
+    },
+    {
+      "brokerName": "FOREX.com",
+      "filename": "forex.jpeg",
+      "sql": "UPDATE brokers SET logo_url = '/logos/scraped/forex.jpeg' WHERE LOWER(name) LIKE '%forex.com%' AND (logo_url IS NULL OR logo_url LIKE '%placeholder%' OR logo_url LIKE '%default%');"
+    },
+    {
+      "brokerName": "FP Markets",
+      "filename": "fp-markets.webp",
+      "sql": "UPDATE brokers SET logo_url = '/logos/scraped/fp-markets.webp' WHERE LOWER(name) LIKE '%fp markets%' AND (logo_url IS NULL OR logo_url LIKE '%placeholder%' OR logo_url LIKE '%default%');"
+    },
+    {
+      "brokerName": "First Prudential Markets",
+      "filename": "fp-markets.webp",
+      "sql": "UPDATE brokers SET logo_url = '/logos/scraped/fp-markets.webp' WHERE LOWER(name) LIKE '%first prudential markets%' AND (logo_url IS NULL OR logo_url LIKE '%placeholder%' OR logo_url LIKE '%default%');"
+    },
+    {
+      "brokerName": "Funded Prime",
+      "filename": "funded-prime.webp",
+      "sql": "UPDATE brokers SET logo_url = '/logos/scraped/funded-prime.webp' WHERE LOWER(name) LIKE '%funded prime%' AND (logo_url IS NULL OR logo_url LIKE '%placeholder%' OR logo_url LIKE '%default%');"
+    },
+    {
+      "brokerName": "FXCC",
+      "filename": "fxcc.jpg",
+      "sql": "UPDATE brokers SET logo_url = '/logos/scraped/fxcc.jpg' WHERE LOWER(name) LIKE '%fxcc%' AND (logo_url IS NULL OR logo_url LIKE '%placeholder%' OR logo_url LIKE '%default%');"
+    },
+    {
+      "brokerName": "FX CC",
+      "filename": "fxcc.jpg",
+      "sql": "UPDATE brokers SET logo_url = '/logos/scraped/fxcc.jpg' WHERE LOWER(name) LIKE '%fx cc%' AND (logo_url IS NULL OR logo_url LIKE '%placeholder%' OR logo_url LIKE '%default%');"
+    },
+    {
+      "brokerName": "FXCentral Clearing",
+      "filename": "fxcc.jpg",
+      "sql": "UPDATE brokers SET logo_url = '/logos/scraped/fxcc.jpg' WHERE LOWER(name) LIKE '%fxcentral clearing%' AND (logo_url IS NULL OR logo_url LIKE '%placeholder%' OR logo_url LIKE '%default%');"
+    },
+    {
+      "brokerName": "Hola Prime",
+      "filename": "hola-prime.webp",
+      "sql": "UPDATE brokers SET logo_url = '/logos/scraped/hola-prime.webp' WHERE LOWER(name) LIKE '%hola prime%' AND (logo_url IS NULL OR logo_url LIKE '%placeholder%' OR logo_url LIKE '%default%');"
+    },
+    {
+      "brokerName": "IFC Markets",
+      "filename": "ifc-markets.webp",
+      "sql": "UPDATE brokers SET logo_url = '/logos/scraped/ifc-markets.webp' WHERE LOWER(name) LIKE '%ifc markets%' AND (logo_url IS NULL OR logo_url LIKE '%placeholder%' OR logo_url LIKE '%default%');"
+    },
+    {
+      "brokerName": "IG",
+      "filename": "ig.webp",
+      "sql": "UPDATE brokers SET logo_url = '/logos/scraped/ig.webp' WHERE LOWER(name) LIKE '%ig%' AND (logo_url IS NULL OR logo_url LIKE '%placeholder%' OR logo_url LIKE '%default%');"
+    },
+    {
+      "brokerName": "IG Group",
+      "filename": "ig.webp",
+      "sql": "UPDATE brokers SET logo_url = '/logos/scraped/ig.webp' WHERE LOWER(name) LIKE '%ig group%' AND (logo_url IS NULL OR logo_url LIKE '%placeholder%' OR logo_url LIKE '%default%');"
+    },
+    {
+      "brokerName": "IG Markets",
+      "filename": "ig.webp",
+      "sql": "UPDATE brokers SET logo_url = '/logos/scraped/ig.webp' WHERE LOWER(name) LIKE '%ig markets%' AND (logo_url IS NULL OR logo_url LIKE '%placeholder%' OR logo_url LIKE '%default%');"
+    },
+    {
+      "brokerName": "Instaforex Ltd",
+      "filename": "instaforex-ltd.png",
+      "sql": "UPDATE brokers SET logo_url = '/logos/scraped/instaforex-ltd.png' WHERE LOWER(name) LIKE '%instaforex ltd%' AND (logo_url IS NULL OR logo_url LIKE '%placeholder%' OR logo_url LIKE '%default%');"
+    },
+    {
+      "brokerName": "Instaforex Ltd",
+      "filename": "instaforex-ltd.png",
+      "sql": "UPDATE brokers SET logo_url = '/logos/scraped/instaforex-ltd.png' WHERE LOWER(name) LIKE '%instaforex ltd%' AND (logo_url IS NULL OR logo_url LIKE '%placeholder%' OR logo_url LIKE '%default%');"
+    },
+    {
+      "brokerName": "Instaforex Ltd",
+      "filename": "instaforex-ltd.png",
+      "sql": "UPDATE brokers SET logo_url = '/logos/scraped/instaforex-ltd.png' WHERE LOWER(name) LIKE '%instaforex ltd%' AND (logo_url IS NULL OR logo_url LIKE '%placeholder%' OR logo_url LIKE '%default%');"
+    },
+    {
+      "brokerName": "Instaforex Ltd",
+      "filename": "instaforex-ltd.png",
+      "sql": "UPDATE brokers SET logo_url = '/logos/scraped/instaforex-ltd.png' WHERE LOWER(name) LIKE '%instaforex ltd%' AND (logo_url IS NULL OR logo_url LIKE '%placeholder%' OR logo_url LIKE '%default%');"
+    },
+    {
+      "brokerName": "Instaforex Ltd",
+      "filename": "instaforex-ltd.png",
+      "sql": "UPDATE brokers SET logo_url = '/logos/scraped/instaforex-ltd.png' WHERE LOWER(name) LIKE '%instaforex ltd%' AND (logo_url IS NULL OR logo_url LIKE '%placeholder%' OR logo_url LIKE '%default%');"
+    },
+    {
+      "brokerName": "InstaForex",
+      "filename": "instaforex.png",
+      "sql": "UPDATE brokers SET logo_url = '/logos/scraped/instaforex.png' WHERE LOWER(name) LIKE '%instaforex%' AND (logo_url IS NULL OR logo_url LIKE '%placeholder%' OR logo_url LIKE '%default%');"
+    },
+    {
+      "brokerName": "Insta Forex",
+      "filename": "instaforex.png",
+      "sql": "UPDATE brokers SET logo_url = '/logos/scraped/instaforex.png' WHERE LOWER(name) LIKE '%insta forex%' AND (logo_url IS NULL OR logo_url LIKE '%placeholder%' OR logo_url LIKE '%default%');"
+    },
+    {
+      "brokerName": "Legacy FX",
+      "filename": "legacy-fx.jpg",
+      "sql": "UPDATE brokers SET logo_url = '/logos/scraped/legacy-fx.jpg' WHERE LOWER(name) LIKE '%legacy fx%' AND (logo_url IS NULL OR logo_url LIKE '%placeholder%' OR logo_url LIKE '%default%');"
+    },
+    {
+      "brokerName": "MTrading",
+      "filename": "mtrading.jpg",
+      "sql": "UPDATE brokers SET logo_url = '/logos/scraped/mtrading.jpg' WHERE LOWER(name) LIKE '%mtrading%' AND (logo_url IS NULL OR logo_url LIKE '%placeholder%' OR logo_url LIKE '%default%');"
+    },
+    {
+      "brokerName": "M Trading",
+      "filename": "mtrading.jpg",
+      "sql": "UPDATE brokers SET logo_url = '/logos/scraped/mtrading.jpg' WHERE LOWER(name) LIKE '%m trading%' AND (logo_url IS NULL OR logo_url LIKE '%placeholder%' OR logo_url LIKE '%default%');"
+    },
+    {
+      "brokerName": "Pepperstone",
+      "filename": "pepperstone.webp",
+      "sql": "UPDATE brokers SET logo_url = '/logos/scraped/pepperstone.webp' WHERE LOWER(name) LIKE '%pepperstone%' AND (logo_url IS NULL OR logo_url LIKE '%placeholder%' OR logo_url LIKE '%default%');"
+    },
+    {
+      "brokerName": "Pepper Stone",
+      "filename": "pepperstone.webp",
+      "sql": "UPDATE brokers SET logo_url = '/logos/scraped/pepperstone.webp' WHERE LOWER(name) LIKE '%pepper stone%' AND (logo_url IS NULL OR logo_url LIKE '%placeholder%' OR logo_url LIKE '%default%');"
+    },
+    {
+      "brokerName": "PipFarm",
+      "filename": "pipfarm.webp",
+      "sql": "UPDATE brokers SET logo_url = '/logos/scraped/pipfarm.webp' WHERE LOWER(name) LIKE '%pipfarm%' AND (logo_url IS NULL OR logo_url LIKE '%placeholder%' OR logo_url LIKE '%default%');"
+    },
+    {
+      "brokerName": "Pip Farm",
+      "filename": "pipfarm.webp",
+      "sql": "UPDATE brokers SET logo_url = '/logos/scraped/pipfarm.webp' WHERE LOWER(name) LIKE '%pip farm%' AND (logo_url IS NULL OR logo_url LIKE '%placeholder%' OR logo_url LIKE '%default%');"
+    },
+    {
+      "brokerName": "Plus500",
+      "filename": "plus500.jpeg",
+      "sql": "UPDATE brokers SET logo_url = '/logos/scraped/plus500.jpeg' WHERE LOWER(name) LIKE '%plus500%' AND (logo_url IS NULL OR logo_url LIKE '%placeholder%' OR logo_url LIKE '%default%');"
+    },
+    {
+      "brokerName": "Plus 500",
+      "filename": "plus500.jpeg",
+      "sql": "UPDATE brokers SET logo_url = '/logos/scraped/plus500.jpeg' WHERE LOWER(name) LIKE '%plus 500%' AND (logo_url IS NULL OR logo_url LIKE '%placeholder%' OR logo_url LIKE '%default%');"
+    },
+    {
+      "brokerName": "PrimeXBT",
+      "filename": "primexbt.webp",
+      "sql": "UPDATE brokers SET logo_url = '/logos/scraped/primexbt.webp' WHERE LOWER(name) LIKE '%primexbt%' AND (logo_url IS NULL OR logo_url LIKE '%placeholder%' OR logo_url LIKE '%default%');"
+    },
+    {
+      "brokerName": "Prime XBT",
+      "filename": "primexbt.webp",
+      "sql": "UPDATE brokers SET logo_url = '/logos/scraped/primexbt.webp' WHERE LOWER(name) LIKE '%prime xbt%' AND (logo_url IS NULL OR logo_url LIKE '%placeholder%' OR logo_url LIKE '%default%');"
+    },
+    {
+      "brokerName": "PU Prime",
+      "filename": "pu-prime.webp",
+      "sql": "UPDATE brokers SET logo_url = '/logos/scraped/pu-prime.webp' WHERE LOWER(name) LIKE '%pu prime%' AND (logo_url IS NULL OR logo_url LIKE '%placeholder%' OR logo_url LIKE '%default%');"
+    },
+    {
+      "brokerName": "Rebels Funding",
+      "filename": "rebels-funding.webp",
+      "sql": "UPDATE brokers SET logo_url = '/logos/scraped/rebels-funding.webp' WHERE LOWER(name) LIKE '%rebels funding%' AND (logo_url IS NULL OR logo_url LIKE '%placeholder%' OR logo_url LIKE '%default%');"
+    },
+    {
+      "brokerName": "RoboForex",
+      "filename": "roboforex.webp",
+      "sql": "UPDATE brokers SET logo_url = '/logos/scraped/roboforex.webp' WHERE LOWER(name) LIKE '%roboforex%' AND (logo_url IS NULL OR logo_url LIKE '%placeholder%' OR logo_url LIKE '%default%');"
+    },
+    {
+      "brokerName": "Robo Forex",
+      "filename": "roboforex.webp",
+      "sql": "UPDATE brokers SET logo_url = '/logos/scraped/roboforex.webp' WHERE LOWER(name) LIKE '%robo forex%' AND (logo_url IS NULL OR logo_url LIKE '%placeholder%' OR logo_url LIKE '%default%');"
+    },
+    {
+      "brokerName": "Saxo Bank",
+      "filename": "saxo-bank.png",
+      "sql": "UPDATE brokers SET logo_url = '/logos/scraped/saxo-bank.png' WHERE LOWER(name) LIKE '%saxo bank%' AND (logo_url IS NULL OR logo_url LIKE '%placeholder%' OR logo_url LIKE '%default%');"
+    },
+    {
+      "brokerName": "Saxo",
+      "filename": "saxo-bank.png",
+      "sql": "UPDATE brokers SET logo_url = '/logos/scraped/saxo-bank.png' WHERE LOWER(name) LIKE '%saxo%' AND (logo_url IS NULL OR logo_url LIKE '%placeholder%' OR logo_url LIKE '%default%');"
+    },
+    {
+      "brokerName": "Tickmill",
+      "filename": "tickmill.png",
+      "sql": "UPDATE brokers SET logo_url = '/logos/scraped/tickmill.png' WHERE LOWER(name) LIKE '%tickmill%' AND (logo_url IS NULL OR logo_url LIKE '%placeholder%' OR logo_url LIKE '%default%');"
+    },
+    {
+      "brokerName": "Tick Mill",
+      "filename": "tickmill.png",
+      "sql": "UPDATE brokers SET logo_url = '/logos/scraped/tickmill.png' WHERE LOWER(name) LIKE '%tick mill%' AND (logo_url IS NULL OR logo_url LIKE '%placeholder%' OR logo_url LIKE '%default%');"
+    },
+    {
+      "brokerName": "Trading 212",
+      "filename": "trading-212.png",
+      "sql": "UPDATE brokers SET logo_url = '/logos/scraped/trading-212.png' WHERE LOWER(name) LIKE '%trading 212%' AND (logo_url IS NULL OR logo_url LIKE '%placeholder%' OR logo_url LIKE '%default%');"
+    },
+    {
+      "brokerName": "Trading212",
+      "filename": "trading-212.png",
+      "sql": "UPDATE brokers SET logo_url = '/logos/scraped/trading-212.png' WHERE LOWER(name) LIKE '%trading212%' AND (logo_url IS NULL OR logo_url LIKE '%placeholder%' OR logo_url LIKE '%default%');"
+    },
+    {
+      "brokerName": "ZuluTrade",
+      "filename": "zulutrade.png",
+      "sql": "UPDATE brokers SET logo_url = '/logos/scraped/zulutrade.png' WHERE LOWER(name) LIKE '%zulutrade%' AND (logo_url IS NULL OR logo_url LIKE '%placeholder%' OR logo_url LIKE '%default%');"
+    },
+    {
+      "brokerName": "Zulu Trade",
+      "filename": "zulutrade.png",
+      "sql": "UPDATE brokers SET logo_url = '/logos/scraped/zulutrade.png' WHERE LOWER(name) LIKE '%zulu trade%' AND (logo_url IS NULL OR logo_url LIKE '%placeholder%' OR logo_url LIKE '%default%');"
+    }
+  ]
+}

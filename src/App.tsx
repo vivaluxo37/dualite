@@ -11,6 +11,8 @@ import { Layout } from '@/components/layout/Layout'
 import { HomePage } from '@/pages/HomePage'
 import { BrokersPage } from '@/pages/BrokersPage'
 import { BrokerProfilePage } from '@/pages/BrokerProfilePage'
+import { EnhancedBrokerProfilePage } from '@/pages/EnhancedBrokerProfilePage'
+
 import { ComparePage } from '@/pages/ComparePage'
 import { CountryBrokerPage } from '@/pages/CountryBrokerPage'
 
@@ -36,7 +38,7 @@ import { TermsOfServicePage } from '@/pages/TermsOfServicePage'
 
 // User & Admin
 import { DashboardPage } from '@/pages/DashboardPage'
-import { AdminPage } from '@/pages/AdminPage'
+import AdminPage from '@/pages/AdminPage'
 import { ProtectedRoute } from '@/components/shared/ProtectedRoute'
 import './App.css'
 
@@ -56,7 +58,8 @@ function App() {
                 {/* Main */}
                 <Route index element={<HomePage />} />
                 <Route path="brokers" element={<BrokersPage />} />
-                <Route path="review/:slug" element={<BrokerProfilePage />} />
+
+                <Route path="review/:slug" element={<EnhancedBrokerProfilePage />} />
                 <Route path="compare" element={<ComparePage />} />
                 <Route path="brokers/:country" element={<CountryBrokerPage />} />
 

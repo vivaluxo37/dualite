@@ -1,0 +1,32 @@
+{
+  "extractedAt": "2025-09-06T08:36:41.686Z",
+  "totalBrokers": 1,
+  "errors": [],
+  "brokers": [
+    {
+      "filename": "index.html",
+      "brokerName": "Index of locally available sites:",
+      "rating": null,
+      "minDeposit": null,
+      "maxLeverage": null,
+      "spreadFrom": null,
+      "regulatedBy": null,
+      "tradingPlatforms": null,
+      "accountTypes": null,
+      "paymentMethods": null,
+      "supportedLanguages": null,
+      "foundedYear": null,
+      "headquarters": null,
+      "website": null,
+      "description": null,
+      "pros": null,
+      "cons": null,
+      "bonuses": null,
+      "instruments": [
+        "Forex"
+      ],
+      "fees": null,
+      "slug": "index-of-locally-available-sites"
+    }
+  ]
+}

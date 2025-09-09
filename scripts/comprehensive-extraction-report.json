@@ -1,0 +1,827 @@
+{
+  "timestamp": "2025-09-06T10:16:33.687Z",
+  "total_processed": 117,
+  "successful_extractions": 117,
+  "errors": [],
+  "brokers": [
+    {
+      "name": "Admirals [year]",
+      "slug": "admirals-year",
+      "regulation_tier": "tier_1",
+      "min_deposit": 100,
+      "overall_rating": null
+    },
+    {
+      "name": "Alpari (Comoros) Ltd. [year]",
+      "slug": "alpari-comoros-ltd-year",
+      "regulation_tier": "tier_1",
+      "min_deposit": 50,
+      "overall_rating": null
+    },
+    {
+      "name": "Apex Trader Funding [year]",
+      "slug": "apex-trader-funding-year",
+      "regulation_tier": "tier_1",
+      "min_deposit": null,
+      "overall_rating": null
+    },
+    {
+      "name": "AvaTrade [year]",
+      "slug": "avatrade-year",
+      "regulation_tier": "tier_1",
+      "min_deposit": 100,
+      "overall_rating": null
+    },
+    {
+      "name": "Axi [year]",
+      "slug": "axi-year",
+      "regulation_tier": "tier_1",
+      "min_deposit": 4,
+      "overall_rating": null
+    },
+    {
+      "name": "BDSwiss [year]",
+      "slug": "bdswiss-year",
+      "regulation_tier": "tier_1",
+      "min_deposit": 10,
+      "overall_rating": null
+    },
+    {
+      "name": "Binance [year] - Pros & Cons Revealed",
+      "slug": "binance-year-pros-cons-revealed",
+      "regulation_tier": "tier_1",
+      "min_deposit": 0,
+      "overall_rating": null
+    },
+    {
+      "name": "BlackBull Markets [year]",
+      "slug": "blackbull-markets-year",
+      "regulation_tier": "tier_1",
+      "min_deposit": 0,
+      "overall_rating": null
+    },
+    {
+      "name": "Top s List",
+      "slug": "top-s-list",
+      "regulation_tier": "tier_1",
+      "min_deposit": null,
+      "overall_rating": null
+    },
+    {
+      "name": "Capital.com [year]",
+      "slug": "capital-com-year",
+      "regulation_tier": "tier_1",
+      "min_deposit": 20,
+      "overall_rating": null
+    },
+    {
+      "name": "CFI [year] - Pros & Cons Revealed",
+      "slug": "cfi-year-pros-cons-revealed",
+      "regulation_tier": "tier_1",
+      "min_deposit": 0,
+      "overall_rating": null
+    },
+    {
+      "name": "CFT [year] - Pros & Cons Revealed",
+      "slug": "cft-year-pros-cons-revealed",
+      "regulation_tier": "tier_1",
+      "min_deposit": null,
+      "overall_rating": null
+    },
+    {
+      "name": "City Index [year]",
+      "slug": "city-index-year",
+      "regulation_tier": "tier_1",
+      "min_deposit": 0,
+      "overall_rating": null
+    },
+    {
+      "name": "CMC Markets [year]",
+      "slug": "cmc-markets-year",
+      "regulation_tier": "tier_1",
+      "min_deposit": 3,
+      "overall_rating": null
+    },
+    {
+      "name": "CMTrading [year]",
+      "slug": "cmtrading-year",
+      "regulation_tier": "tier_1",
+      "min_deposit": 0,
+      "overall_rating": null
+    },
+    {
+      "name": "Coinbase [year]",
+      "slug": "coinbase-year",
+      "regulation_tier": "tier_1",
+      "min_deposit": 1,
+      "overall_rating": null
+    },
+    {
+      "name": "Best s that Accept Credit Cards",
+      "slug": "best-s-that-accept-credit-cards",
+      "regulation_tier": "tier_1",
+      "min_deposit": 100,
+      "overall_rating": null
+    },
+    {
+      "name": "Crypto.com [year]",
+      "slug": "crypto-com-year",
+      "regulation_tier": "tier_1",
+      "min_deposit": 0,
+      "overall_rating": null
+    },
+    {
+      "name": "cTrader [year]",
+      "slug": "ctrader-year",
+      "regulation_tier": "tier_1",
+      "min_deposit": 1,
+      "overall_rating": null
+    },
+    {
+      "name": "Degiro [year]",
+      "slug": "degiro-year",
+      "regulation_tier": "tier_1",
+      "min_deposit": 16,
+      "overall_rating": null
+    },
+    {
+      "name": "Deriv [year]",
+      "slug": "deriv-year",
+      "regulation_tier": "tier_1",
+      "min_deposit": 5,
+      "overall_rating": null
+    },
+    {
+      "name": "DNA Funded [year] - Pros & Cons Revealed",
+      "slug": "dna-funded-year-pros-cons-revealed",
+      "regulation_tier": "tier_1",
+      "min_deposit": null,
+      "overall_rating": null
+    },
+    {
+      "name": "Dukascopy [year]",
+      "slug": "dukascopy-year",
+      "regulation_tier": "tier_1",
+      "min_deposit": 100,
+      "overall_rating": null
+    },
+    {
+      "name": "E*TRADE [year] - Pros & Cons Revealed",
+      "slug": "e-trade-year-pros-cons-revealed",
+      "regulation_tier": "tier_1",
+      "min_deposit": 0,
+      "overall_rating": null
+    },
+    {
+      "name": "Page not found | Daily.com",
+      "slug": "page-not-found-daily-com",
+      "regulation_tier": "tier_1",
+      "min_deposit": null,
+      "overall_rating": null
+    },
+    {
+      "name": "E8 Funding [year] - Pros & Cons Revealed",
+      "slug": "e8-funding-year-pros-cons-revealed",
+      "regulation_tier": "tier_1",
+      "min_deposit": null,
+      "overall_rating": null
+    },
+    {
+      "name": "easyMarkets [year]",
+      "slug": "easymarkets-year",
+      "regulation_tier": "tier_1",
+      "min_deposit": 100,
+      "overall_rating": null
+    },
+    {
+      "name": "Eightcap [year]",
+      "slug": "eightcap-year",
+      "regulation_tier": "tier_1",
+      "min_deposit": 0,
+      "overall_rating": null
+    },
+    {
+      "name": "eToro [year]",
+      "slug": "etoro-year",
+      "regulation_tier": "tier_1",
+      "min_deposit": 50,
+      "overall_rating": null
+    },
+    {
+      "name": "ETX Capital [year]",
+      "slug": "etx-capital-year",
+      "regulation_tier": "tier_1",
+      "min_deposit": 0,
+      "overall_rating": null
+    },
+    {
+      "name": "EuropeFX [year]",
+      "slug": "europefx-year",
+      "regulation_tier": "tier_1",
+      "min_deposit": 200,
+      "overall_rating": null
+    },
+    {
+      "name": "Exness [year] - Pros & Cons Revealed",
+      "slug": "exness-year-pros-cons-revealed",
+      "regulation_tier": "tier_1",
+      "min_deposit": 10,
+      "overall_rating": null
+    },
+    {
+      "name": "FBS [year]",
+      "slug": "fbs-year",
+      "regulation_tier": "tier_1",
+      "min_deposit": 200,
+      "overall_rating": null
+    },
+    {
+      "name": "Fidelity [year]",
+      "slug": "fidelity-year",
+      "regulation_tier": "tier_1",
+      "min_deposit": 1,
+      "overall_rating": null
+    },
+    {
+      "name": "Fineco Bank [year]",
+      "slug": "fineco-bank-year",
+      "regulation_tier": "tier_1",
+      "min_deposit": 0,
+      "overall_rating": null
+    },
+    {
+      "name": "Fondex [year]",
+      "slug": "fondex-year",
+      "regulation_tier": "tier_1",
+      "min_deposit": 0,
+      "overall_rating": null
+    },
+    {
+      "name": ".com [year]",
+      "slug": "com-year",
+      "regulation_tier": "tier_1",
+      "min_deposit": 0,
+      "overall_rating": null
+    },
+    {
+      "name": "Mart [year]",
+      "slug": "mart-year",
+      "regulation_tier": "tier_1",
+      "min_deposit": 1,
+      "overall_rating": null
+    },
+    {
+      "name": "FP Markets [year]",
+      "slug": "fp-markets-year",
+      "regulation_tier": "tier_1",
+      "min_deposit": 1,
+      "overall_rating": null
+    },
+    {
+      "name": "Freetrade [year]",
+      "slug": "freetrade-year",
+      "regulation_tier": "tier_1",
+      "min_deposit": 0,
+      "overall_rating": null
+    },
+    {
+      "name": "Friedberg Direct [year]",
+      "slug": "friedberg-direct-year",
+      "regulation_tier": "tier_1",
+      "min_deposit": 250,
+      "overall_rating": null
+    },
+    {
+      "name": "FTMO [year] - Pros & Cons Revealed",
+      "slug": "ftmo-year-pros-cons-revealed",
+      "regulation_tier": "tier_1",
+      "min_deposit": null,
+      "overall_rating": null
+    },
+    {
+      "name": "fundedprime [year] - Pros & Cons Revealed",
+      "slug": "fundedprime-year-pros-cons-revealed",
+      "regulation_tier": "tier_1",
+      "min_deposit": null,
+      "overall_rating": null
+    },
+    {
+      "name": "Funded Traders Global [year]",
+      "slug": "funded-traders-global-year",
+      "regulation_tier": "tier_1",
+      "min_deposit": null,
+      "overall_rating": null
+    },
+    {
+      "name": "FundedNext",
+      "slug": "fundednext",
+      "regulation_tier": "tier_1",
+      "min_deposit": null,
+      "overall_rating": null
+    },
+    {
+      "name": "Fusion Markets 2023 - Pros & Cons Revealed",
+      "slug": "fusion-markets-2023-pros-cons-revealed",
+      "regulation_tier": "tier_1",
+      "min_deposit": 0,
+      "overall_rating": null
+    },
+    {
+      "name": "FX Club [year]",
+      "slug": "fx-club-year",
+      "regulation_tier": "tier_1",
+      "min_deposit": 5,
+      "overall_rating": null
+    },
+    {
+      "name": "FXCC [year]",
+      "slug": "fxcc-year",
+      "regulation_tier": "tier_1",
+      "min_deposit": 50,
+      "overall_rating": null
+    },
+    {
+      "name": "FXCM [year]",
+      "slug": "fxcm-year",
+      "regulation_tier": "tier_1",
+      "min_deposit": 50,
+      "overall_rating": null
+    },
+    {
+      "name": "FXGT [year]",
+      "slug": "fxgt-year",
+      "regulation_tier": "tier_1",
+      "min_deposit": 0,
+      "overall_rating": null
+    },
+    {
+      "name": "FXIFY [year]",
+      "slug": "fxify-year",
+      "regulation_tier": "tier_1",
+      "min_deposit": null,
+      "overall_rating": null
+    },
+    {
+      "name": "FXPRIMUS [year]",
+      "slug": "fxprimus-year",
+      "regulation_tier": "tier_1",
+      "min_deposit": 1000,
+      "overall_rating": null
+    },
+    {
+      "name": "FxPro [year]",
+      "slug": "fxpro-year",
+      "regulation_tier": "tier_1",
+      "min_deposit": 100,
+      "overall_rating": null
+    },
+    {
+      "name": "FXTM [year]",
+      "slug": "fxtm-year",
+      "regulation_tier": "tier_1",
+      "min_deposit": 200,
+      "overall_rating": null
+    },
+    {
+      "name": "Goat Funded Trader",
+      "slug": "goat-funded-trader",
+      "regulation_tier": "tier_1",
+      "min_deposit": null,
+      "overall_rating": null
+    },
+    {
+      "name": "Hola Prime [year] - Pros & Cons Revealed",
+      "slug": "hola-prime-year-pros-cons-revealed",
+      "regulation_tier": "tier_1",
+      "min_deposit": 48,
+      "overall_rating": null
+    },
+    {
+      "name": "HFM [year]",
+      "slug": "hfm-year",
+      "regulation_tier": "tier_1",
+      "min_deposit": 0,
+      "overall_rating": null
+    },
+    {
+      "name": "Hugo's way [year]",
+      "slug": "hugo-s-way-year",
+      "regulation_tier": "tier_1",
+      "min_deposit": 10,
+      "overall_rating": null
+    },
+    {
+      "name": "IC Markets [year]",
+      "slug": "ic-markets-year",
+      "regulation_tier": "tier_1",
+      "min_deposit": 0,
+      "overall_rating": null
+    },
+    {
+      "name": "IFC Markets [year]",
+      "slug": "ifc-markets-year",
+      "regulation_tier": "tier_1",
+      "min_deposit": 2,
+      "overall_rating": null
+    },
+    {
+      "name": "IG [year]",
+      "slug": "ig-year",
+      "regulation_tier": "tier_1",
+      "min_deposit": 2,
+      "overall_rating": null
+    },
+    {
+      "name": "Insta LTD [year]",
+      "slug": "insta-ltd-year",
+      "regulation_tier": "tier_1",
+      "min_deposit": 1,
+      "overall_rating": null
+    },
+    {
+      "name": "Insta [year]",
+      "slug": "insta-year",
+      "regulation_tier": "tier_1",
+      "min_deposit": 1,
+      "overall_rating": null
+    },
+    {
+      "name": "Interactive s [year]",
+      "slug": "interactive-s-year",
+      "regulation_tier": "tier_1",
+      "min_deposit": 0,
+      "overall_rating": null
+    },
+    {
+      "name": "Investous [year]",
+      "slug": "investous-year",
+      "regulation_tier": "tier_1",
+      "min_deposit": 0,
+      "overall_rating": null
+    },
+    {
+      "name": "IQ Option [year]",
+      "slug": "iq-option-year",
+      "regulation_tier": "tier_1",
+      "min_deposit": 10,
+      "overall_rating": null
+    },
+    {
+      "name": "IronFX [year]- Pros & Cons Revealed",
+      "slug": "ironfx-year-pros-cons-revealed",
+      "regulation_tier": "tier_1",
+      "min_deposit": 50,
+      "overall_rating": null
+    },
+    {
+      "name": "Kraken [year] - Pros & Cons Revealed",
+      "slug": "kraken-year-pros-cons-revealed",
+      "regulation_tier": "tier_1",
+      "min_deposit": 0,
+      "overall_rating": null
+    },
+    {
+      "name": "Legacy FX [year]",
+      "slug": "legacy-fx-year",
+      "regulation_tier": "tier_1",
+      "min_deposit": 0,
+      "overall_rating": null
+    },
+    {
+      "name": "Libertex [year]",
+      "slug": "libertex-year",
+      "regulation_tier": "tier_1",
+      "min_deposit": 100,
+      "overall_rating": null
+    },
+    {
+      "name": "LiteFinance [year]",
+      "slug": "litefinance-year",
+      "regulation_tier": "tier_1",
+      "min_deposit": 0,
+      "overall_rating": null
+    },
+    {
+      "name": "Markets.com [year]",
+      "slug": "markets-com-year",
+      "regulation_tier": "tier_1",
+      "min_deposit": 100,
+      "overall_rating": null
+    },
+    {
+      "name": "MetaTrader 4 Product [year]",
+      "slug": "metatrader-4-product-year",
+      "regulation_tier": "tier_1",
+      "min_deposit": null,
+      "overall_rating": null
+    },
+    {
+      "name": "Moomoo [year]",
+      "slug": "moomoo-year",
+      "regulation_tier": "tier_1",
+      "min_deposit": 0,
+      "overall_rating": null
+    },
+    {
+      "name": "MTrading [year]",
+      "slug": "mtrading-year",
+      "regulation_tier": "tier_1",
+      "min_deposit": 0,
+      "overall_rating": null
+    },
+    {
+      "name": "My Funded Futures",
+      "slug": "my-funded-futures",
+      "regulation_tier": "tier_1",
+      "min_deposit": null,
+      "overall_rating": null
+    },
+    {
+      "name": "Nadex [year]",
+      "slug": "nadex-year",
+      "regulation_tier": "tier_1",
+      "min_deposit": 11,
+      "overall_rating": null
+    },
+    {
+      "name": "NAGA [year]",
+      "slug": "naga-year",
+      "regulation_tier": "tier_1",
+      "min_deposit": 50,
+      "overall_rating": null
+    },
+    {
+      "name": "Nord FX [year]",
+      "slug": "nord-fx-year",
+      "regulation_tier": "tier_1",
+      "min_deposit": 10,
+      "overall_rating": null
+    },
+    {
+      "name": "OANDA [year]",
+      "slug": "oanda-year",
+      "regulation_tier": "tier_1",
+      "min_deposit": 0,
+      "overall_rating": null
+    },
+    {
+      "name": "Octa - Updated [year] - All You Need to Know!",
+      "slug": "octa-updated-year-all-you-need-to-know",
+      "regulation_tier": "tier_1",
+      "min_deposit": 25,
+      "overall_rating": null
+    },
+    {
+      "name": "Pax [year]",
+      "slug": "pax-year",
+      "regulation_tier": "tier_1",
+      "min_deposit": 4,
+      "overall_rating": null
+    },
+    {
+      "name": "Pepperstone [year]",
+      "slug": "pepperstone-year",
+      "regulation_tier": "tier_1",
+      "min_deposit": 0,
+      "overall_rating": null
+    },
+    {
+      "name": "PipFarm 2024 - Pros & Cons Revealed",
+      "slug": "pipfarm-2024-pros-cons-revealed",
+      "regulation_tier": "tier_1",
+      "min_deposit": null,
+      "overall_rating": null
+    },
+    {
+      "name": "Plus500 [year]",
+      "slug": "plus500-year",
+      "regulation_tier": "tier_1",
+      "min_deposit": 500,
+      "overall_rating": null
+    },
+    {
+      "name": "PrimeXBT [year]",
+      "slug": "primexbt-year",
+      "regulation_tier": "tier_1",
+      "min_deposit": 10,
+      "overall_rating": null
+    },
+    {
+      "name": "Profitex [year] - Pros & Cons Revealed",
+      "slug": "profitex-year-pros-cons-revealed",
+      "regulation_tier": "tier_1",
+      "min_deposit": null,
+      "overall_rating": null
+    },
+    {
+      "name": "PU Prime - Pros & Cons Revealed",
+      "slug": "pu-prime-pros-cons-revealed",
+      "regulation_tier": "tier_1",
+      "min_deposit": 2,
+      "overall_rating": null
+    },
+    {
+      "name": "Purple Trading [year]",
+      "slug": "purple-trading-year",
+      "regulation_tier": "tier_1",
+      "min_deposit": 100,
+      "overall_rating": null
+    },
+    {
+      "name": "Questrade [year]",
+      "slug": "questrade-year",
+      "regulation_tier": "tier_1",
+      "min_deposit": 1000,
+      "overall_rating": null
+    },
+    {
+      "name": "Rebels Funding [year]",
+      "slug": "rebels-funding-year",
+      "regulation_tier": "tier_1",
+      "min_deposit": null,
+      "overall_rating": null
+    },
+    {
+      "name": "Regulations",
+      "slug": "regulations",
+      "regulation_tier": "tier_1",
+      "min_deposit": 10000,
+      "overall_rating": null
+    },
+    {
+      "name": "Revolut [year]",
+      "slug": "revolut-year",
+      "regulation_tier": "tier_1",
+      "min_deposit": 0,
+      "overall_rating": null
+    },
+    {
+      "name": "Robinhood [year]",
+      "slug": "robinhood-year",
+      "regulation_tier": "tier_1",
+      "min_deposit": 0,
+      "overall_rating": null
+    },
+    {
+      "name": "Robo [year]",
+      "slug": "robo-year",
+      "regulation_tier": "tier_1",
+      "min_deposit": 10,
+      "overall_rating": null
+    },
+    {
+      "name": "Sabiotrade [year]",
+      "slug": "sabiotrade-year",
+      "regulation_tier": "tier_1",
+      "min_deposit": null,
+      "overall_rating": null
+    },
+    {
+      "name": "Saxo Bank [year]",
+      "slug": "saxo-bank-year",
+      "regulation_tier": "tier_1",
+      "min_deposit": 500,
+      "overall_rating": null
+    },
+    {
+      "name": "Saxo Capital Markets [year]",
+      "slug": "saxo-capital-markets-year",
+      "regulation_tier": "tier_1",
+      "min_deposit": 0,
+      "overall_rating": null
+    },
+    {
+      "name": "Squared Financial [year]",
+      "slug": "squared-financial-year",
+      "regulation_tier": "tier_1",
+      "min_deposit": 5000,
+      "overall_rating": null
+    },
+    {
+      "name": "Swissquote [year]",
+      "slug": "swissquote-year",
+      "regulation_tier": "tier_1",
+      "min_deposit": 0,
+      "overall_rating": null
+    },
+    {
+      "name": "tastyfx and Rating",
+      "slug": "tastyfx-and-rating",
+      "regulation_tier": "tier_1",
+      "min_deposit": 250,
+      "overall_rating": null
+    },
+    {
+      "name": "TD Ameritrade [year]",
+      "slug": "td-ameritrade-year",
+      "regulation_tier": "tier_1",
+      "min_deposit": 50,
+      "overall_rating": null
+    },
+    {
+      "name": "ThinkMarkets [year]",
+      "slug": "thinkmarkets-year",
+      "regulation_tier": "tier_1",
+      "min_deposit": 0,
+      "overall_rating": null
+    },
+    {
+      "name": "Tickmill [year]",
+      "slug": "tickmill-year",
+      "regulation_tier": "tier_1",
+      "min_deposit": 100,
+      "overall_rating": null
+    },
+    {
+      "name": "TopStep - Pros & Cons Revealed",
+      "slug": "topstep-pros-cons-revealed",
+      "regulation_tier": "tier_1",
+      "min_deposit": 3,
+      "overall_rating": null
+    },
+    {
+      "name": "TopTier Trader - Pros & Cons Revealed",
+      "slug": "toptier-trader-pros-cons-revealed",
+      "regulation_tier": "tier_1",
+      "min_deposit": null,
+      "overall_rating": null
+    },
+    {
+      "name": "Trade Nation [year] - Pros & Cons Revealed",
+      "slug": "trade-nation-year-pros-cons-revealed",
+      "regulation_tier": "tier_1",
+      "min_deposit": 0,
+      "overall_rating": null
+    },
+    {
+      "name": "Trade360 [year]",
+      "slug": "trade360-year",
+      "regulation_tier": "tier_1",
+      "min_deposit": 500,
+      "overall_rating": null
+    },
+    {
+      "name": "Traders Way [year]",
+      "slug": "traders-way-year",
+      "regulation_tier": "tier_1",
+      "min_deposit": 10,
+      "overall_rating": null
+    },
+    {
+      "name": "TradeStation [year]",
+      "slug": "tradestation-year",
+      "regulation_tier": "tier_1",
+      "min_deposit": 2000,
+      "overall_rating": null
+    },
+    {
+      "name": "Trading 212 [year]",
+      "slug": "trading-212-year",
+      "regulation_tier": "tier_1",
+      "min_deposit": 1,
+      "overall_rating": null
+    },
+    {
+      "name": "Vanguard [year]",
+      "slug": "vanguard-year",
+      "regulation_tier": "tier_1",
+      "min_deposit": 0,
+      "overall_rating": null
+    },
+    {
+      "name": "Vantage FX [year]",
+      "slug": "vantage-fx-year",
+      "regulation_tier": "tier_1",
+      "min_deposit": 0,
+      "overall_rating": null
+    },
+    {
+      "name": "Webull [year]",
+      "slug": "webull-year",
+      "regulation_tier": "tier_1",
+      "min_deposit": 0,
+      "overall_rating": null
+    },
+    {
+      "name": "XM [year]",
+      "slug": "xm-year",
+      "regulation_tier": "tier_1",
+      "min_deposit": 2,
+      "overall_rating": null
+    },
+    {
+      "name": "XTB [year]",
+      "slug": "xtb-year",
+      "regulation_tier": "tier_1",
+      "min_deposit": 0,
+      "overall_rating": null
+    },
+    {
+      "name": "ZuluTrade [year]",
+      "slug": "zulutrade-year",
+      "regulation_tier": "tier_1",
+      "min_deposit": 0,
+      "overall_rating": null
+    }
+  ]
+}

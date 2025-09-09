@@ -1,16 +1,16 @@
-import { useState, useRef, useEffect } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Button } from '@/components/ui/button';
-import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
-import { Input } from '@/components/ui/input';
-import { Avatar, AvatarFallback } from '@/components/ui/avatar';
-import { Bot, X, Send, MessageSquare, Loader2 } from 'lucide-react';
-import { useChat } from '@/hooks/useChat';
+import { Button } from '../ui/button';
+import { Card, CardContent, CardHeader, CardTitle } from '../ui/card';
+import { Input } from '../ui/input';
+import { Avatar, AvatarFallback } from '../ui/avatar';
+import { MessageCircle, X, Send, RotateCcw, Trash2 } from 'lucide-react';
+import { useChat } from '../../hooks/useChat';
 import { ChatMessage } from './ChatMessage';
 
 export function ChatWidget() {
   const [isOpen, setIsOpen] = useState(false);
-  const { messages, isLoading, sendMessage, setMessages } = useChat();
+  const { messages, sendMessage, isLoading, error, clearMessages, retryLastMessage } = useChat();
   const [input, setInput] = useState('');
   const messagesEndRef = useRef<HTMLDivElement>(null);
 
@@ -18,102 +18,136 @@ export function ChatWidget() {
     messagesEndRef.current?.scrollIntoView({ behavior: 'smooth' });
   };
 
-  useEffect(scrollToBottom, [messages]);
-  
   useEffect(() => {
-    if (isOpen && messages.length === 0) {
-        // Add initial welcome message
-        setTimeout(() => {
-            setMessages([{
-                id: 'initial',
-                text: 'Hello! I am the BrokerAnalysis AI assistant. How can I help you today?',
-                sender: 'ai',
-                timestamp: new Date().toISOString()
-            }]);
-        }, 500);
-    }
-  }, [isOpen, messages.length, setMessages]);
+    scrollToBottom();
+  }, [messages]);
 
-  const handleSend = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    if (input.trim()) {
-      sendMessage(input);
-      setInput('');
-    }
+    if (!input.trim() || isLoading) return;
+
+    const message = input.trim();
+    setInput('');
+    await sendMessage(message);
+  };
+
+  const handleClearChat = () => {
+    clearMessages();
+  };
+
+  const handleRetry = () => {
+    retryLastMessage();
   };
 
   return (
     <>
-      <div className="fixed bottom-6 right-6 z-50">
-        <AnimatePresence>
-          {isOpen && (
-            <motion.div
-              initial={{ opacity: 0, y: 50, scale: 0.8 }}
-              animate={{ opacity: 1, y: 0, scale: 1 }}
-              exit={{ opacity: 0, y: 50, scale: 0.8 }}
-              transition={{ duration: 0.3, ease: 'easeInOut' }}
-              className="w-[calc(100vw-3rem)] max-w-sm"
-            >
-              <Card className="h-[60vh] flex flex-col shadow-2xl">
-                <CardHeader className="flex flex-row items-center justify-between border-b p-4">
-                  <div className="flex items-center gap-3">
-                    <Bot className="h-6 w-6 text-primary" />
-                    <div>
-                      <CardTitle className="text-base">AI Assistant</CardTitle>
-                      <CardDescription className="text-xs">BrokerAnalysis Chat</CardDescription>
-                    </div>
+      {/* Chat Toggle Button */}
+      <motion.div
+        className="fixed bottom-6 right-6 z-50"
+        initial={{ scale: 0 }}
+        animate={{ scale: 1 }}
+        transition={{ delay: 1 }}
+      >
+        <Button
+          onClick={() => setIsOpen(!isOpen)}
+          className="h-14 w-14 rounded-full shadow-lg bg-primary hover:bg-primary/90"
+          size="icon"
+        >
+          {isOpen ? <X className="h-6 w-6" /> : <MessageCircle className="h-6 w-6" />}
+        </Button>
+      </motion.div>
+
+      {/* Chat Window */}
+      <AnimatePresence>
+        {isOpen && (
+          <motion.div
+            className="fixed bottom-24 right-6 z-40 w-80 h-96"
+            initial={{ opacity: 0, y: 20, scale: 0.95 }}
+            animate={{ opacity: 1, y: 0, scale: 1 }}
+            exit={{ opacity: 0, y: 20, scale: 0.95 }}
+            transition={{ duration: 0.2 }}
+          >
+            <Card className="h-full flex flex-col shadow-xl bg-card border border-border">
+              <CardHeader className="pb-3 bg-card border-b border-border">
+                <CardTitle className="flex items-center justify-between text-sm">
+                  <div className="flex items-center gap-2">
+                    <Avatar className="h-6 w-6">
+                      <AvatarFallback className="text-xs bg-primary text-primary-foreground">
+                        BA
+                      </AvatarFallback>
+                    </Avatar>
+                    Broker Analysis Assistant
                   </div>
-                  <Button variant="ghost" size="icon" onClick={() => setIsOpen(false)}>
-                    <X className="h-4 w-4" />
-                  </Button>
-                </CardHeader>
-                <CardContent className="flex-1 overflow-y-auto p-4 space-y-4">
-                  {messages.map((msg) => (
-                    <ChatMessage key={msg.id} message={msg} />
+                  <div className="flex gap-1">
+                    <Button
+                      variant="ghost"
+                      size="icon"
+                      className="h-6 w-6"
+                      onClick={handleClearChat}
+                      title="Clear chat"
+                    >
+                      <Trash2 className="h-3 w-3" />
+                    </Button>
+                  </div>
+                </CardTitle>
+              </CardHeader>
+              
+              <CardContent className="flex-1 flex flex-col p-0 bg-card">
+                {/* Messages */}
+                <div className="flex-1 overflow-y-auto p-4 space-y-3 bg-card">
+                  {messages.map((message) => (
+                    <ChatMessage key={message.id} message={message} />
                   ))}
                   {isLoading && (
-                    <div className="flex items-center gap-2">
-                       <Avatar className="h-8 w-8 bg-primary text-primary-foreground">
-                        <AvatarFallback><Bot className="h-5 w-5" /></AvatarFallback>
-                       </Avatar>
-                       <Loader2 className="h-5 w-5 animate-spin text-muted-foreground" />
+                    <div className="flex justify-start">
+                      <div className="bg-muted rounded-lg p-3 max-w-[80%]">
+                        <div className="flex space-x-1">
+                          <div className="w-2 h-2 bg-muted-foreground rounded-full animate-bounce" />
+                          <div className="w-2 h-2 bg-muted-foreground rounded-full animate-bounce" style={{ animationDelay: '0.1s' }} />
+                          <div className="w-2 h-2 bg-muted-foreground rounded-full animate-bounce" style={{ animationDelay: '0.2s' }} />
+                        </div>
+                      </div>
+                    </div>
+                  )}
+                  {error && (
+                    <div className="flex justify-center">
+                      <div className="bg-destructive/10 border border-destructive/20 rounded-lg p-3 max-w-[90%]">
+                        <p className="text-sm text-destructive mb-2">Connection error occurred</p>
+                        <Button
+                          variant="outline"
+                          size="sm"
+                          onClick={handleRetry}
+                          className="w-full"
+                        >
+                          <RotateCcw className="h-3 w-3 mr-1" />
+                          Retry
+                        </Button>
+                      </div>
                     </div>
                   )}
                   <div ref={messagesEndRef} />
-                </CardContent>
-                <div className="border-t p-4">
-                  <form onSubmit={handleSend} className="flex items-center gap-2">
+                </div>
+
+                {/* Input Form */}
+                <form onSubmit={handleSubmit} className="p-4 border-t border-border bg-card">
+                  <div className="flex gap-2">
                     <Input
                       value={input}
                       onChange={(e) => setInput(e.target.value)}
                       placeholder="Ask about brokers..."
-                      autoComplete="off"
                       disabled={isLoading}
+                      className="flex-1 bg-background"
                     />
-                    <Button type="submit" size="icon" disabled={isLoading || !input.trim()}>
+                    <Button type="submit" disabled={isLoading || !input.trim()} size="icon">
                       <Send className="h-4 w-4" />
                     </Button>
-                  </form>
-                </div>
-              </Card>
-            </motion.div>
-          )}
-        </AnimatePresence>
-        <motion.div
-          whileHover={{ scale: 1.1 }}
-          whileTap={{ scale: 0.9 }}
-          className="mt-4 flex justify-end"
-        >
-          <Button
-            size="lg"
-            className="rounded-full w-16 h-16 shadow-lg"
-            onClick={() => setIsOpen(!isOpen)}
-            aria-label="Toggle Chat"
-          >
-            {isOpen ? <X className="h-6 w-6" /> : <MessageSquare className="h-6 w-6" />}
-          </Button>
-        </motion.div>
-      </div>
+                  </div>
+                </form>
+              </CardContent>
+            </Card>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </>
   );
 }

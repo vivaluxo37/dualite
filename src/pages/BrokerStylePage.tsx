@@ -35,7 +35,7 @@ const tradingStyles: Record<string, StyleInfo> = {
     recommendedFeatures: [
       'ECN/STP execution',
       'Low latency servers',
-      'Tight spreads (< 1 pip)',
+      'Tight spreads (&lt; 1 pip)',
       'No dealing desk'
     ]
   },

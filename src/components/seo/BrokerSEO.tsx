@@ -1,0 +1,272 @@
+// BrokerSEO Component - Implements comprehensive SEO for broker pages
+// Follows 2025 SEO best practices with meta tags, structured data, and internal linking
+
+import React, { useEffect } from 'react'
+import { Broker } from '../../types'
+import { 
+  generateBrokerSEO, 
+  generateBrokerFAQSchema, 
+  generateBreadcrumbSchema,
+  generateInternalLinks
+} from '../../utils/seo'
+
+interface BrokerSEOProps {
+  broker: Broker
+  additionalKeywords?: string[]
+  customDescription?: string
+}
+
+export const BrokerSEO: React.FC<BrokerSEOProps> = ({ 
+  broker, 
+  additionalKeywords = [], 
+  customDescription 
+}) => {
+  const seoData = generateBrokerSEO(broker)
+  const faqSchema = generateBrokerFAQSchema(broker)
+  const breadcrumbSchema = generateBreadcrumbSchema(broker)
+  
+  // Combine default keywords with additional ones
+  const allKeywords = [...seoData.keywords, ...additionalKeywords]
+  
+  // Use custom description if provided, otherwise use generated one
+  const description = customDescription || seoData.description
+  
+  useEffect(() => {
+    // Update document title
+    document.title = seoData.title
+    
+    // Function to update or create meta tag
+    const updateMetaTag = (name: string, content: string, property?: string) => {
+      const selector = property ? `meta[property="${property}"]` : `meta[name="${name}"]`
+      let meta = document.querySelector(selector) as HTMLMetaElement
+      
+      if (!meta) {
+        meta = document.createElement('meta')
+        if (property) {
+          meta.setAttribute('property', property)
+        } else {
+          meta.setAttribute('name', name)
+        }
+        document.head.appendChild(meta)
+      }
+      meta.setAttribute('content', content)
+    }
+    
+    // Function to update or create link tag
+    const updateLinkTag = (rel: string, href: string) => {
+      let link = document.querySelector(`link[rel="${rel}"]`) as HTMLLinkElement
+      
+      if (!link) {
+        link = document.createElement('link')
+        link.setAttribute('rel', rel)
+        document.head.appendChild(link)
+      }
+      link.setAttribute('href', href)
+    }
+    
+    // Function to add structured data
+    const addStructuredData = (data: object, id: string) => {
+      // Remove existing script if present
+      const existing = document.getElementById(id)
+      if (existing) {
+        existing.remove()
+      }
+      
+      const script = document.createElement('script')
+      script.type = 'application/ld+json'
+      script.id = id
+      script.textContent = JSON.stringify(data)
+      document.head.appendChild(script)
+    }
+    
+    // Primary Meta Tags
+    updateMetaTag('description', description)
+    updateMetaTag('keywords', allKeywords.join(', '))
+    updateLinkTag('canonical', seoData.canonicalUrl)
+    
+    // Open Graph Meta Tags
+    updateMetaTag('', seoData.ogType, 'og:type')
+    updateMetaTag('', seoData.ogTitle, 'og:title')
+    updateMetaTag('', seoData.ogDescription, 'og:description')
+    updateMetaTag('', seoData.ogImage, 'og:image')
+    updateMetaTag('', seoData.canonicalUrl, 'og:url')
+    updateMetaTag('', 'Broker Analysis', 'og:site_name')
+    updateMetaTag('', 'en_US', 'og:locale')
+    
+    // Twitter Card Meta Tags
+    updateMetaTag('twitter:card', seoData.twitterCard)
+    updateMetaTag('twitter:site', '@BrokerAnalysis')
+    updateMetaTag('twitter:creator', '@BrokerAnalysis')
+    updateMetaTag('twitter:title', seoData.twitterTitle)
+    updateMetaTag('twitter:description', seoData.twitterDescription)
+    updateMetaTag('twitter:image', seoData.twitterImage)
+    
+    // Additional SEO Meta Tags
+    updateMetaTag('robots', 'index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1')
+    updateMetaTag('googlebot', 'index, follow')
+    updateMetaTag('bingbot', 'index, follow')
+    updateMetaTag('author', 'Broker Analysis Editorial Team')
+    updateMetaTag('publisher', 'Broker Analysis')
+    updateMetaTag('copyright', '© 2025 Broker Analysis. All rights reserved.')
+    
+    // Geo Meta Tags
+    if (broker.country) {
+      updateMetaTag('geo.region', broker.country)
+      updateMetaTag('geo.placename', broker.country)
+    }
+    
+    // Structured Data
+    addStructuredData(seoData.structuredData, 'broker-review-schema')
+    addStructuredData(faqSchema, 'broker-faq-schema')
+    addStructuredData(breadcrumbSchema, 'broker-breadcrumb-schema')
+    
+    // Organization Schema
+    addStructuredData({
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Broker Analysis",
+      "url": "https://brokeranalysis.com",
+      "logo": "https://brokeranalysis.com/logo.png",
+      "description": "Independent forex broker reviews and comparisons. Expert analysis of trading platforms, spreads, fees, and regulation.",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "30 N Gould St Ste R",
+        "addressLocality": "Sheridan",
+        "addressRegion": "WY",
+        "postalCode": "82801",
+        "addressCountry": "US"
+      },
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+1-801-893-2577",
+        "contactType": "customer service",
+        "availableLanguage": "English"
+      },
+      "sameAs": [
+        "https://twitter.com/BrokerAnalysis",
+        "https://facebook.com/BrokerAnalysis",
+        "https://linkedin.com/company/broker-analysis"
+      ]
+    }, 'organization-schema')
+    
+    // WebSite Schema with Search Action
+    addStructuredData({
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "Broker Analysis",
+      "url": "https://brokeranalysis.com",
+      "description": "Independent forex broker reviews and comparisons",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": {
+          "@type": "EntryPoint",
+          "urlTemplate": "https://brokeranalysis.com/search?q={search_term_string}"
+        },
+        "query-input": "required name=search_term_string"
+      }
+    }, 'website-schema')
+    
+    // Cleanup function to remove added elements when component unmounts
+    return () => {
+      const schemas = ['broker-review-schema', 'broker-faq-schema', 'broker-breadcrumb-schema', 'organization-schema', 'website-schema']
+      schemas.forEach(id => {
+        const element = document.getElementById(id)
+        if (element) {
+          element.remove()
+        }
+      })
+    }
+  }, [broker, seoData, faqSchema, breadcrumbSchema, allKeywords, description])
+  
+  return null // This component only manages document head, no visual output
+}
+
+// SEO Breadcrumb Component
+interface SEOBreadcrumbProps {
+  broker: Broker
+  className?: string
+}
+
+export const SEOBreadcrumb: React.FC<SEOBreadcrumbProps> = ({ broker, className = '' }) => {
+  return (
+    <nav className={`text-sm text-gray-600 mb-4 ${className}`} aria-label="Breadcrumb">
+      <ol className="flex items-center space-x-2">
+        <li>
+          <a href="/" className="hover:text-blue-600 transition-colors">
+            Home
+          </a>
+        </li>
+        <li className="flex items-center">
+          <span className="mx-2">/</span>
+          <a href="/reviews" className="hover:text-blue-600 transition-colors">
+            Forex Broker Reviews
+          </a>
+        </li>
+        <li className="flex items-center">
+          <span className="mx-2">/</span>
+          <span className="text-gray-900 font-medium">
+            {broker.name} Review
+          </span>
+        </li>
+      </ol>
+    </nav>
+  )
+}
+
+// Internal Links Component for SEO
+interface InternalLinksProps {
+  broker: Broker
+  className?: string
+}
+
+export const InternalLinksSection: React.FC<InternalLinksProps> = ({ broker, className = '' }) => {
+  const internalLinks = generateInternalLinks(broker)
+  
+  return (
+    <div className={`bg-gray-50 p-6 rounded-lg ${className}`}>
+      <h3 className="text-lg font-semibold mb-4 text-gray-900">
+        Related Resources
+      </h3>
+      
+      <div className="grid md:grid-cols-2 gap-6">
+        <div>
+          <h4 className="font-medium text-gray-800 mb-2">Compare Brokers</h4>
+          <div className="space-y-1 text-sm">
+            {internalLinks.relatedBrokers.slice(0, 3).map((link, index) => (
+              <div key={index} dangerouslySetInnerHTML={{ __html: link }} />
+            ))}
+          </div>
+        </div>
+        
+        <div>
+          <h4 className="font-medium text-gray-800 mb-2">Trading Resources</h4>
+          <div className="space-y-1 text-sm">
+            {internalLinks.resourceLinks.slice(0, 3).map((link, index) => (
+              <div key={index} dangerouslySetInnerHTML={{ __html: link }} />
+            ))}
+          </div>
+        </div>
+        
+        <div>
+          <h4 className="font-medium text-gray-800 mb-2">Broker Categories</h4>
+          <div className="space-y-1 text-sm">
+            {internalLinks.categoryLinks.slice(0, 3).map((link, index) => (
+              <div key={index} dangerouslySetInnerHTML={{ __html: link }} />
+            ))}
+          </div>
+        </div>
+        
+        <div>
+          <h4 className="font-medium text-gray-800 mb-2">Trading Tools</h4>
+          <div className="space-y-1 text-sm">
+            {internalLinks.contextualLinks.slice(0, 3).map((link, index) => (
+              <div key={index} dangerouslySetInnerHTML={{ __html: link }} />
+            ))}
+          </div>
+        </div>
+      </div>
+    </div>
+  )
+}
+
+export default BrokerSEO

@@ -1,0 +1,167 @@
+{
+  "summary": {
+    "totalLogosDownloaded": 30,
+    "readyForIntegration": 29,
+    "needManualReview": 1,
+    "sqlStatementsGenerated": 58
+  },
+  "readyLogos": [
+    {
+      "filename": "avatrade.jpg",
+      "brokerName": "AvaTrade",
+      "logoPath": "/logos/scraped/avatrade.jpg"
+    },
+    {
+      "filename": "axitrader.webp",
+      "brokerName": "AxiTrader",
+      "logoPath": "/logos/scraped/axitrader.webp"
+    },
+    {
+      "filename": "cfi-trade.webp",
+      "brokerName": "CFI Trade",
+      "logoPath": "/logos/scraped/cfi-trade.webp"
+    },
+    {
+      "filename": "dna-funded.webp",
+      "brokerName": "DNA Funded",
+      "logoPath": "/logos/scraped/dna-funded.webp"
+    },
+    {
+      "filename": "easymarkets.png",
+      "brokerName": "EasyMarkets",
+      "logoPath": "/logos/scraped/easymarkets.png"
+    },
+    {
+      "filename": "etoro.jpg",
+      "brokerName": "eToro",
+      "logoPath": "/logos/scraped/etoro.jpg"
+    },
+    {
+      "filename": "europefx.jpg",
+      "brokerName": "EuropeFX",
+      "logoPath": "/logos/scraped/europefx.jpg"
+    },
+    {
+      "filename": "exness.webp",
+      "brokerName": "Exness",
+      "logoPath": "/logos/scraped/exness.webp"
+    },
+    {
+      "filename": "forex.jpeg",
+      "brokerName": "Forex.com",
+      "logoPath": "/logos/scraped/forex.jpeg"
+    },
+    {
+      "filename": "fp-markets.webp",
+      "brokerName": "FP Markets",
+      "logoPath": "/logos/scraped/fp-markets.webp"
+    },
+    {
+      "filename": "funded-prime.webp",
+      "brokerName": "Funded Prime",
+      "logoPath": "/logos/scraped/funded-prime.webp"
+    },
+    {
+      "filename": "fxcc.jpg",
+      "brokerName": "FXCC",
+      "logoPath": "/logos/scraped/fxcc.jpg"
+    },
+    {
+      "filename": "hola-prime.webp",
+      "brokerName": "Hola Prime",
+      "logoPath": "/logos/scraped/hola-prime.webp"
+    },
+    {
+      "filename": "ifc-markets.webp",
+      "brokerName": "IFC Markets",
+      "logoPath": "/logos/scraped/ifc-markets.webp"
+    },
+    {
+      "filename": "ig.webp",
+      "brokerName": "IG",
+      "logoPath": "/logos/scraped/ig.webp"
+    },
+    {
+      "filename": "instaforex.png",
+      "brokerName": "InstaForex",
+      "logoPath": "/logos/scraped/instaforex.png"
+    },
+    {
+      "filename": "legacy-fx.jpg",
+      "brokerName": "Legacy FX",
+      "logoPath": "/logos/scraped/legacy-fx.jpg"
+    },
+    {
+      "filename": "mtrading.jpg",
+      "brokerName": "MTrading",
+      "logoPath": "/logos/scraped/mtrading.jpg"
+    },
+    {
+      "filename": "pepperstone.webp",
+      "brokerName": "Pepperstone",
+      "logoPath": "/logos/scraped/pepperstone.webp"
+    },
+    {
+      "filename": "pipfarm.webp",
+      "brokerName": "PipFarm",
+      "logoPath": "/logos/scraped/pipfarm.webp"
+    },
+    {
+      "filename": "plus500.jpeg",
+      "brokerName": "Plus500",
+      "logoPath": "/logos/scraped/plus500.jpeg"
+    },
+    {
+      "filename": "primexbt.webp",
+      "brokerName": "PrimeXBT",
+      "logoPath": "/logos/scraped/primexbt.webp"
+    },
+    {
+      "filename": "pu-prime.webp",
+      "brokerName": "PU Prime",
+      "logoPath": "/logos/scraped/pu-prime.webp"
+    },
+    {
+      "filename": "rebels-funding.webp",
+      "brokerName": "Rebels Funding",
+      "logoPath": "/logos/scraped/rebels-funding.webp"
+    },
+    {
+      "filename": "roboforex.webp",
+      "brokerName": "RoboForex",
+      "logoPath": "/logos/scraped/roboforex.webp"
+    },
+    {
+      "filename": "saxo-bank.png",
+      "brokerName": "Saxo Bank",
+      "logoPath": "/logos/scraped/saxo-bank.png"
+    },
+    {
+      "filename": "tickmill.png",
+      "brokerName": "Tickmill",
+      "logoPath": "/logos/scraped/tickmill.png"
+    },
+    {
+      "filename": "trading-212.png",
+      "brokerName": "Trading 212",
+      "logoPath": "/logos/scraped/trading-212.png"
+    },
+    {
+      "filename": "zulutrade.png",
+      "brokerName": "ZuluTrade",
+      "logoPath": "/logos/scraped/zulutrade.png"
+    }
+  ],
+  "manualReviewNeeded": [
+    {
+      "filename": "instaforex-ltd.png",
+      "scrapedName": "Instaforex Ltd"
+    }
+  ],
+  "nextSteps": [
+    "Review update-scraped-logos.sql",
+    "Execute SQL updates in database",
+    "Verify frontend logo display",
+    "Update any remaining manual mappings"
+  ]
+}

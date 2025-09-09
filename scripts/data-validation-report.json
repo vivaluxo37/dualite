@@ -1,0 +1,43 @@
+{
+  "timestamp": "2025-09-06T10:17:34.434Z",
+  "total_brokers": 124,
+  "regulation_tiers": {
+    "tier2": 103,
+    "tier1": 11,
+    "unregulated": 10
+  },
+  "brokers_with_min_deposit": 67,
+  "data_quality_issues": [],
+  "sample_brokers": [
+    {
+      "name": "Octa - Updated - All You Need to Know!",
+      "slug": "octa-updated-year-all-you-need-to-know",
+      "tier": "tier2",
+      "min_deposit": 25
+    },
+    {
+      "name": "XM Group",
+      "slug": "xm-group",
+      "tier": "tier2",
+      "min_deposit": 5
+    },
+    {
+      "name": "FXTM",
+      "slug": "fxtm",
+      "tier": "tier2",
+      "min_deposit": 10
+    },
+    {
+      "name": "Webull",
+      "slug": "webull-year",
+      "tier": "tier2",
+      "min_deposit": null
+    },
+    {
+      "name": "Admirals",
+      "slug": "admirals-year",
+      "tier": "tier1",
+      "min_deposit": 100
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+<svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="80" height="80" rx="12" fill="#FF6B35"/>
+  <path d="M20 25h40v8H28v8h24v8H28v8h32v8H20V25z" fill="white"/>
+  <circle cx="60" cy="20" r="8" fill="#FF6B35" stroke="white" stroke-width="2"/>
+  <text x="40" y="70" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="10" font-weight="bold">PEPPERSTONE</text>
+</svg>

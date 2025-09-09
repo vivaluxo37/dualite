@@ -1,0 +1,269 @@
+{
+  "timestamp": "2025-09-06T16:54:59.713Z",
+  "summary": {
+    "totalBrokers": 61,
+    "successfulDownloads": 30,
+    "skippedBrokers": 29,
+    "failedDownloads": 2
+  },
+  "downloads": [
+    {
+      "brokerName": "Avatrade",
+      "originalUrl": "https://www.dailyforex.com/files/ava4 (1) (2) (1).jpg",
+      "fullUrl": "https://www.dailyforex.com/files/ava4 (1) (2) (1).jpg",
+      "filename": "avatrade.jpg",
+      "filepath": "public\\logos\\scraped\\avatrade.jpg",
+      "status": "success"
+    },
+    {
+      "brokerName": "Axitrader",
+      "originalUrl": "../files/logo_110x40/110x40%20red.webp",
+      "fullUrl": "https://www.dailyforex.com/files/logo_110x40/110x40%20red.webp",
+      "filename": "axitrader.webp",
+      "filepath": "public\\logos\\scraped\\axitrader.webp",
+      "status": "success"
+    },
+    {
+      "brokerName": "Cfi Trade",
+      "originalUrl": "../files/logo_110x40/cfi%20new2%20110x40.webp",
+      "fullUrl": "https://www.dailyforex.com/files/logo_110x40/cfi%20new2%20110x40.webp",
+      "filename": "cfi-trade.webp",
+      "filepath": "public\\logos\\scraped\\cfi-trade.webp",
+      "status": "success"
+    },
+    {
+      "brokerName": "Dna Funded",
+      "originalUrl": "../files/logo_110x40/dna%20funded%20110x40.webp",
+      "fullUrl": "https://www.dailyforex.com/files/logo_110x40/dna%20funded%20110x40.webp",
+      "filename": "dna-funded.webp",
+      "filepath": "public\\logos\\scraped\\dna-funded.webp",
+      "status": "success"
+    },
+    {
+      "brokerName": "Easymarkets",
+      "originalUrl": "https://www.dailyforex.com/files/easymarkets cysec authorization.png",
+      "fullUrl": "https://www.dailyforex.com/files/easymarkets cysec authorization.png",
+      "filename": "easymarkets.png",
+      "filepath": "public\\logos\\scraped\\easymarkets.png",
+      "status": "success"
+    },
+    {
+      "brokerName": "Etoro",
+      "originalUrl": "https://www.dailyforex.com/files/et1 (1) (1).jpg",
+      "fullUrl": "https://www.dailyforex.com/files/et1 (1) (1).jpg",
+      "filename": "etoro.jpg",
+      "filepath": "public\\logos\\scraped\\etoro.jpg",
+      "status": "success"
+    },
+    {
+      "brokerName": "Europefx",
+      "originalUrl": "https://www.dailyforex.com/files/picture1 (1).jpg",
+      "fullUrl": "https://www.dailyforex.com/files/picture1 (1).jpg",
+      "filename": "europefx.jpg",
+      "filepath": "public\\logos\\scraped\\europefx.jpg",
+      "status": "success"
+    },
+    {
+      "brokerName": "Exness",
+      "originalUrl": "../files/logo_110x40/exness%20110x40%20tranparent.webp",
+      "fullUrl": "https://www.dailyforex.com/files/logo_110x40/exness%20110x40%20tranparent.webp",
+      "filename": "exness.webp",
+      "filepath": "public\\logos\\scraped\\exness.webp",
+      "status": "success"
+    },
+    {
+      "brokerName": "Forex",
+      "originalUrl": "https://www.dailyforex.com/files/forex.com 17042024 image01new.jpeg",
+      "fullUrl": "https://www.dailyforex.com/files/forex.com 17042024 image01new.jpeg",
+      "filename": "forex.jpeg",
+      "filepath": "public\\logos\\scraped\\forex.jpeg",
+      "status": "success"
+    },
+    {
+      "brokerName": "Fp Markets",
+      "originalUrl": "../files/logo_110x40/fp%20markets%2020%20years%20110x40%20.webp",
+      "fullUrl": "https://www.dailyforex.com/files/logo_110x40/fp%20markets%2020%20years%20110x40%20.webp",
+      "filename": "fp-markets.webp",
+      "filepath": "public\\logos\\scraped\\fp-markets.webp",
+      "status": "success"
+    },
+    {
+      "brokerName": "Funded Prime",
+      "originalUrl": "../files/logo_110x40/fundedprime%20110x40.webp",
+      "fullUrl": "https://www.dailyforex.com/files/logo_110x40/fundedprime%20110x40.webp",
+      "filename": "funded-prime.webp",
+      "filepath": "public\\logos\\scraped\\funded-prime.webp",
+      "status": "success"
+    },
+    {
+      "brokerName": "Fundednext",
+      "originalUrl": "../files/fundednext%20customer%20support.jpg",
+      "fullUrl": "https://www.dailyforex.com/files/fundednext%20customer%20support.jpg",
+      "filename": null,
+      "filepath": null,
+      "status": "error",
+      "error": "HTTP 403: Forbidden"
+    },
+    {
+      "brokerName": "Fxcc",
+      "originalUrl": "https://www.dailyforex.com/files/fxcc9 (1).jpg",
+      "fullUrl": "https://www.dailyforex.com/files/fxcc9 (1).jpg",
+      "filename": "fxcc.jpg",
+      "filepath": "public\\logos\\scraped\\fxcc.jpg",
+      "status": "success"
+    },
+    {
+      "brokerName": "Hola Prime",
+      "originalUrl": "../files/logo_110x40/hola%20prime%20110x40%20(1).webp",
+      "fullUrl": "https://www.dailyforex.com/files/logo_110x40/hola%20prime%20110x40%20(1).webp",
+      "filename": "hola-prime.webp",
+      "filepath": "public\\logos\\scraped\\hola-prime.webp",
+      "status": "success"
+    },
+    {
+      "brokerName": "Ifc Markets",
+      "originalUrl": "../files/logo_110x40/ifc%2019years%20110x40.webp",
+      "fullUrl": "https://www.dailyforex.com/files/logo_110x40/ifc%2019years%20110x40.webp",
+      "filename": "ifc-markets.webp",
+      "filepath": "public\\logos\\scraped\\ifc-markets.webp",
+      "status": "success"
+    },
+    {
+      "brokerName": "Ig",
+      "originalUrl": "../files/logo_110x40/ig%20110x540.webp",
+      "fullUrl": "https://www.dailyforex.com/files/logo_110x40/ig%20110x540.webp",
+      "filename": "ig.webp",
+      "filepath": "public\\logos\\scraped\\ig.webp",
+      "status": "success"
+    },
+    {
+      "brokerName": "Instaforex Ltd",
+      "originalUrl": "https://www.dailyforex.com/files/asset sampling.png",
+      "fullUrl": "https://www.dailyforex.com/files/asset sampling.png",
+      "filename": "instaforex-ltd.png",
+      "filepath": "public\\logos\\scraped\\instaforex-ltd.png",
+      "status": "success"
+    },
+    {
+      "brokerName": "Instaforex",
+      "originalUrl": "https://www.dailyforex.com/files/instaforex currency offerings.png",
+      "fullUrl": "https://www.dailyforex.com/files/instaforex currency offerings.png",
+      "filename": "instaforex.png",
+      "filepath": "public\\logos\\scraped\\instaforex.png",
+      "status": "success"
+    },
+    {
+      "brokerName": "Kraken",
+      "originalUrl": "../files/karken%20security.jpg",
+      "fullUrl": "https://www.dailyforex.com/files/karken%20security.jpg",
+      "filename": null,
+      "filepath": null,
+      "status": "error",
+      "error": "HTTP 403: Forbidden"
+    },
+    {
+      "brokerName": "Legacy Fx",
+      "originalUrl": "https://www.dailyforex.com/files/legacyfx long term investment protections.jpg",
+      "fullUrl": "https://www.dailyforex.com/files/legacyfx long term investment protections.jpg",
+      "filename": "legacy-fx.jpg",
+      "filepath": "public\\logos\\scraped\\legacy-fx.jpg",
+      "status": "success"
+    },
+    {
+      "brokerName": "Mtrading",
+      "originalUrl": "https://www.dailyforex.com/files/picturefgg4 (1) (1).jpg",
+      "fullUrl": "https://www.dailyforex.com/files/picturefgg4 (1) (1).jpg",
+      "filename": "mtrading.jpg",
+      "filepath": "public\\logos\\scraped\\mtrading.jpg",
+      "status": "success"
+    },
+    {
+      "brokerName": "Pepperstone",
+      "originalUrl": "../files/logo_110x40/brokers%20logo%20110x40pepperstone.webp",
+      "fullUrl": "https://www.dailyforex.com/files/logo_110x40/brokers%20logo%20110x40pepperstone.webp",
+      "filename": "pepperstone.webp",
+      "filepath": "public\\logos\\scraped\\pepperstone.webp",
+      "status": "success"
+    },
+    {
+      "brokerName": "Pipfarm",
+      "originalUrl": "../files/logo_110x40/pipfarm110x40%20(1).webp",
+      "fullUrl": "https://www.dailyforex.com/files/logo_110x40/pipfarm110x40%20(1).webp",
+      "filename": "pipfarm.webp",
+      "filepath": "public\\logos\\scraped\\pipfarm.webp",
+      "status": "success"
+    },
+    {
+      "brokerName": "Plus500",
+      "originalUrl": "https://www.dailyforex.com/files/big-plus500 image 01_27042023.jpeg",
+      "fullUrl": "https://www.dailyforex.com/files/big-plus500 image 01_27042023.jpeg",
+      "filename": "plus500.jpeg",
+      "filepath": "public\\logos\\scraped\\plus500.jpeg",
+      "status": "success"
+    },
+    {
+      "brokerName": "Primexbt",
+      "originalUrl": "../files/logo_110x40/primexbt%20110x40.webp",
+      "fullUrl": "https://www.dailyforex.com/files/logo_110x40/primexbt%20110x40.webp",
+      "filename": "primexbt.webp",
+      "filepath": "public\\logos\\scraped\\primexbt.webp",
+      "status": "success"
+    },
+    {
+      "brokerName": "Pu Prime",
+      "originalUrl": "../files/logo_110x40/puprime%20110x40.webp",
+      "fullUrl": "https://www.dailyforex.com/files/logo_110x40/puprime%20110x40.webp",
+      "filename": "pu-prime.webp",
+      "filepath": "public\\logos\\scraped\\pu-prime.webp",
+      "status": "success"
+    },
+    {
+      "brokerName": "Rebels Funding",
+      "originalUrl": "https://assets.dailyforex.com/files/rebelsfunding image 01.webp",
+      "fullUrl": "https://assets.dailyforex.com/files/rebelsfunding image 01.webp",
+      "filename": "rebels-funding.webp",
+      "filepath": "public\\logos\\scraped\\rebels-funding.webp",
+      "status": "success"
+    },
+    {
+      "brokerName": "Roboforex",
+      "originalUrl": "https://assets.dailyforex.com/files/roboforex image 01 12122024 (1).webp",
+      "fullUrl": "https://assets.dailyforex.com/files/roboforex image 01 12122024 (1).webp",
+      "filename": "roboforex.webp",
+      "filepath": "public\\logos\\scraped\\roboforex.webp",
+      "status": "success"
+    },
+    {
+      "brokerName": "Saxo Bank",
+      "originalUrl": "https://www.dailyforex.com/files/saxo bank compliance confirmation.png",
+      "fullUrl": "https://www.dailyforex.com/files/saxo bank compliance confirmation.png",
+      "filename": "saxo-bank.png",
+      "filepath": "public\\logos\\scraped\\saxo-bank.png",
+      "status": "success"
+    },
+    {
+      "brokerName": "Tickmill",
+      "originalUrl": "https://www.dailyforex.com/files/tickmill regulators.png",
+      "fullUrl": "https://www.dailyforex.com/files/tickmill regulators.png",
+      "filename": "tickmill.png",
+      "filepath": "public\\logos\\scraped\\tickmill.png",
+      "status": "success"
+    },
+    {
+      "brokerName": "Trading 212",
+      "originalUrl": "https://www.dailyforex.com/files/economic calendar.png",
+      "fullUrl": "https://www.dailyforex.com/files/economic calendar.png",
+      "filename": "trading-212.png",
+      "filepath": "public\\logos\\scraped\\trading-212.png",
+      "status": "success"
+    },
+    {
+      "brokerName": "Zulutrade",
+      "originalUrl": "https://www.dailyforex.com/files/market research.png",
+      "fullUrl": "https://www.dailyforex.com/files/market research.png",
+      "filename": "zulutrade.png",
+      "filepath": "public\\logos\\scraped\\zulutrade.png",
+      "status": "success"
+    }
+  ]
+}

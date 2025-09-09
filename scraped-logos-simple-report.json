@@ -1,0 +1,608 @@
+{
+  "timestamp": "2025-09-06T16:48:05.083Z",
+  "summary": {
+    "totalFiles": 113,
+    "filesWithLogos": 61,
+    "totalLogosFound": 232
+  },
+  "results": [
+    {
+      "file": "alpari-international-review.html",
+      "brokerName": "Alpari International",
+      "logoUrls": [
+        "https://www.dailyforex.com/files/alpari broker review 01.jpeg",
+        "https://www.dailyforex.com/files/alpari broker review 02.jpeg",
+        "https://www.dailyforex.com/files/alpari broker review 03.jpeg",
+        "https://www.dailyforex.com/files/alpari broker review 04.jpeg",
+        "https://www.dailyforex.com/files/alpari broker review 05.jpeg"
+      ]
+    },
+    {
+      "file": "avatrade-review.html",
+      "brokerName": "Avatrade",
+      "logoUrls": [
+        "https://www.dailyforex.com/files/ava4 (1) (2) (1).jpg"
+      ]
+    },
+    {
+      "file": "axitrader-review.html",
+      "brokerName": "Axitrader",
+      "logoUrls": [
+        "../files/logo_110x40/110x40%20red.webp",
+        "https://www.dailyforex.com/files/ax7 (1).jpg"
+      ]
+    },
+    {
+      "file": "bdswiss-review.html",
+      "brokerName": "Bdswiss",
+      "logoUrls": [
+        "../files/bdswiss%20review%2001.jpg",
+        "../files/bdswiss%20review%2002.jpg",
+        "../files/bdswiss%20review%2003.jpg",
+        "../files/bdswiss%20review%2004.jpg",
+        "../files/bdswiss%20review%2005.jpg"
+      ]
+    },
+    {
+      "file": "binance-review.html",
+      "brokerName": "Binance",
+      "logoUrls": [
+        "../files/binance%20safety.jpg",
+        "../files/binance%20client%20assets.jpg",
+        "../files/binance%20fees.jpg",
+        "../files/binance%20financing.jpg",
+        "../files/binance%20sub-account.jpg"
+      ]
+    },
+    {
+      "file": "blackbull-markets-review.html",
+      "brokerName": "Blackbull Markets",
+      "logoUrls": [
+        "https://assets.dailyforex.com/files/blackbull markets review 01.webp",
+        "https://assets.dailyforex.com/files/blackbull markets review 03.webp",
+        "https://assets.dailyforex.com/files/blackbull markets review 04.webp",
+        "https://assets.dailyforex.com/files/blackbull markets review 06.webp",
+        "https://assets.dailyforex.com/files/blackbull markets review 08.webp"
+      ]
+    },
+    {
+      "file": "cfi-trade-review.html",
+      "brokerName": "Cfi Trade",
+      "logoUrls": [
+        "../files/logo_110x40/cfi%20new2%20110x40.webp"
+      ]
+    },
+    {
+      "file": "city-index-review.html",
+      "brokerName": "City Index",
+      "logoUrls": [
+        "https://www.dailyforex.com/files/city index review landing page screenshot.png",
+        "https://www.dailyforex.com/files/city index review financial strength and security.png",
+        "https://www.dailyforex.com/files/city index review stable foundation.png",
+        "https://www.dailyforex.com/files/city index review pricing environment 1.png",
+        "https://www.dailyforex.com/files/city index review pricing environment 2.png"
+      ]
+    },
+    {
+      "file": "cmc-markets-review.html",
+      "brokerName": "Cmc Markets",
+      "logoUrls": [
+        "https://www.dailyforex.com/files/cmc markets homepage.png",
+        "https://www.dailyforex.com/files/cmc package.png",
+        "https://www.dailyforex.com/files/cmc markets fca regulation.png",
+        "https://www.dailyforex.com/files/cmc markets transparent fee structure.png",
+        "https://www.dailyforex.com/files/cmc markets account type.png"
+      ]
+    },
+    {
+      "file": "coinbase-review.html",
+      "brokerName": "Coinbase",
+      "logoUrls": [
+        "https://www.dailyforex.com/files/coinbase review landing page.png",
+        "https://www.dailyforex.com/files/coinbase review regulatory oversight.png",
+        "https://www.dailyforex.com/files/coinbase review user agreement.png",
+        "https://www.dailyforex.com/files/coinbase review four tier fee structure.png",
+        "https://www.dailyforex.com/files/coinbase review transaction fees info.png"
+      ]
+    },
+    {
+      "file": "degiro-review.html",
+      "brokerName": "Degiro",
+      "logoUrls": [
+        "https://www.dailyforex.com/files/degiro broker review 01.jpeg",
+        "https://www.dailyforex.com/files/degiro broker review 02.jpeg",
+        "https://www.dailyforex.com/files/degiro broker review 03.jpeg",
+        "https://www.dailyforex.com/files/degiro broker review 04.jpeg"
+      ]
+    },
+    {
+      "file": "deriv-review.html",
+      "brokerName": "Deriv",
+      "logoUrls": [
+        "https://www.dailyforex.com/files/deriv broker review 01.jpeg",
+        "https://www.dailyforex.com/files/deriv broker review 03.jpeg"
+      ]
+    },
+    {
+      "file": "dna-funded-review.html",
+      "brokerName": "Dna Funded",
+      "logoUrls": [
+        "../files/logo_110x40/dna%20funded%20110x40.webp",
+        "https://assets.dailyforex.com/files/dna funded review 01.webp",
+        "https://assets.dailyforex.com/files/dna funded review 02.webp",
+        "https://assets.dailyforex.com/files/dna funded review 03.webp"
+      ]
+    },
+    {
+      "file": "easymarkets-review.html",
+      "brokerName": "Easymarkets",
+      "logoUrls": [
+        "https://www.dailyforex.com/files/easymarkets homepage.png",
+        "https://www.dailyforex.com/files/easymarkets cysec authorization.png",
+        "https://www.dailyforex.com/files/easymarkets asic authorization.png",
+        "https://www.dailyforex.com/files/easymarkets forex asset selection.png",
+        "https://www.dailyforex.com/files/easymarkets metals asset selection.png"
+      ]
+    },
+    {
+      "file": "etoro-review.html",
+      "brokerName": "Etoro",
+      "logoUrls": [
+        "https://www.dailyforex.com/files/et1 (1) (1).jpg",
+        "https://www.dailyforex.com/files/imgpsh_fullsize_anim (8).jpg",
+        "https://www.dailyforex.com/files/imgpsh_fullsize_anim (3) (1).jpg",
+        "https://www.dailyforex.com/files/imgpsh_fullsize_anim (5).jpg"
+      ]
+    },
+    {
+      "file": "europefx-review.html",
+      "brokerName": "Europefx",
+      "logoUrls": [
+        "https://www.dailyforex.com/files/europefx regulation.png",
+        "https://www.dailyforex.com/files/picture1 (1).jpg"
+      ]
+    },
+    {
+      "file": "exness-review.html",
+      "brokerName": "Exness",
+      "logoUrls": [
+        "../files/logo_110x40/exness%20110x40%20tranparent.webp",
+        "https://assets.dailyforex.com/files/customer support.webp",
+        "https://assets.dailyforex.com/files/opening an account.webp",
+        "https://assets.dailyforex.com/files/deposits and withdrawals.webp"
+      ]
+    },
+    {
+      "file": "fbs-review.html",
+      "brokerName": "Fbs",
+      "logoUrls": [
+        "../files/logo_110x40/fbs%20110x40%20transparent.webp"
+      ]
+    },
+    {
+      "file": "fidelity-review.html",
+      "brokerName": "Fidelity",
+      "logoUrls": [
+        "https://www.dailyforex.com/files/fidelity broker review 01.jpeg",
+        "https://www.dailyforex.com/files/fidelity broker review 02.jpeg",
+        "https://www.dailyforex.com/files/fidelity broker review 03.jpeg",
+        "https://www.dailyforex.com/files/fidelity broker review 04.jpeg",
+        "https://www.dailyforex.com/files/fidelity broker review 05.jpeg"
+      ]
+    },
+    {
+      "file": "fineco-bank-review.html",
+      "brokerName": "Fineco Bank",
+      "logoUrls": [
+        "https://www.dailyforex.com/files/fineco bank review 01.png",
+        "https://www.dailyforex.com/files/fineco bank review 02.png",
+        "https://www.dailyforex.com/files/fineco bank review 03.png",
+        "https://www.dailyforex.com/files/fineco bank review 04.png",
+        "https://www.dailyforex.com/files/fineco bank review 05.png"
+      ]
+    },
+    {
+      "file": "forex-review.html",
+      "brokerName": "Forex",
+      "logoUrls": [
+        "https://www.dailyforex.com/files/forex.com 17042024 image01new.jpeg",
+        "../files/forex.com%20new%20image%20review%2002_11042024.jpg",
+        "https://www.dailyforex.com/files/forex.com new image review 03_11042024.jpeg",
+        "https://www.dailyforex.com/files/forex.com 17042024 image02new.jpeg",
+        "https://www.dailyforex.com/files/forex.com broker review 13.jpeg"
+      ]
+    },
+    {
+      "file": "fp-markets-review.html",
+      "brokerName": "Fp Markets",
+      "logoUrls": [
+        "../files/logo_110x40/fp%20markets%2020%20years%20110x40%20.webp",
+        "https://assets.dailyforex.com/files/fp markets review 01.webp",
+        "https://assets.dailyforex.com/files/fp markets review 02.webp",
+        "../files/fp%20markets%20broker%20review%2002.jpg",
+        "https://assets.dailyforex.com/files/fp markets review 03.webp"
+      ]
+    },
+    {
+      "file": "friedberg-direct-review.html",
+      "brokerName": "Friedberg Direct",
+      "logoUrls": [
+        "https://www.dailyforex.com/files/friedberg direct review landing page 1.png",
+        "https://www.dailyforex.com/files/friedberg direct review landing page 2.png",
+        "https://www.dailyforex.com/files/friedberg direct review regulatory oversight.png",
+        "https://www.dailyforex.com/files/friedberg direct review asset list.png",
+        "https://www.dailyforex.com/files/friedberg direct review marketing hype.png"
+      ]
+    },
+    {
+      "file": "funded-prime-review.html",
+      "brokerName": "Funded Prime",
+      "logoUrls": [
+        "../files/logo_110x40/fundedprime%20110x40.webp"
+      ]
+    },
+    {
+      "file": "fundednext-review.html",
+      "brokerName": "Fundednext",
+      "logoUrls": [
+        "../files/fundednext%20safety.jpg",
+        "../files/fundednext%20fees.jpg",
+        "../files/fundednext%20account%20types.jpg",
+        "../files/fundednext%20customer%20support.jpg",
+        "../files/fundednext%20account%20opening.jpg"
+      ]
+    },
+    {
+      "file": "fxcc-review.html",
+      "brokerName": "Fxcc",
+      "logoUrls": [
+        "https://www.dailyforex.com/files/fxcc9 (1).jpg",
+        "https://www.dailyforex.com/files/fxcc10 (1).jpg",
+        "https://www.dailyforex.com/files/fxcc16 (1).jpg"
+      ]
+    },
+    {
+      "file": "fxcm-review.html",
+      "brokerName": "Fxcm",
+      "logoUrls": [
+        "https://www.dailyforex.com/files/fxcm broker review 01.jpeg",
+        "https://www.dailyforex.com/files/fxcm broker review 02.jpeg"
+      ]
+    },
+    {
+      "file": "fxgt-review.html",
+      "brokerName": "Fxgt",
+      "logoUrls": [
+        "https://www.dailyforex.com/files/fxgt broker review 01.jpeg",
+        "https://www.dailyforex.com/files/fxgt broker review 02.jpeg",
+        "https://www.dailyforex.com/files/global gt broker review 03.png",
+        "https://www.dailyforex.com/files/fxgt broker review 03.jpeg",
+        "https://www.dailyforex.com/files/fxgt broker review 04.jpeg"
+      ]
+    },
+    {
+      "file": "fxpro-review.html",
+      "brokerName": "Fxpro",
+      "logoUrls": [
+        "https://www.dailyforex.com/files/fxpro review.jpg",
+        "https://www.dailyforex.com/files/fxpro fca regulation.png",
+        "https://www.dailyforex.com/files/fxpro cysec regulation.png",
+        "https://www.dailyforex.com/files/fxpro fsp regulation.png",
+        "https://www.dailyforex.com/files/fxpro bahamas regulation.png"
+      ]
+    },
+    {
+      "file": "fxtm-review.html",
+      "brokerName": "Fxtm",
+      "logoUrls": [
+        "../files/logo_110x40/fxtm%20new%20transparent%20dark%20110x40.webp",
+        "https://www.dailyforex.com/files/fxtm broker review update 02.jpeg",
+        "https://www.dailyforex.com/files/fxtm broker review update 05.jpeg",
+        "https://assets.dailyforex.com/files/fxtm review image01 03122024.webp",
+        "https://www.dailyforex.com/files/fxtm broker review update 07.jpeg"
+      ]
+    },
+    {
+      "file": "hola-prime-review.html",
+      "brokerName": "Hola Prime",
+      "logoUrls": [
+        "../files/logo_110x40/hola%20prime%20110x40%20(1).webp"
+      ]
+    },
+    {
+      "file": "hotforex-review.html",
+      "brokerName": "Hotforex",
+      "logoUrls": [
+        "https://www.dailyforex.com/files/hfm broker review 06 v2.jpg"
+      ]
+    },
+    {
+      "file": "hugo-s-way-review.html",
+      "brokerName": "Hugo S Way",
+      "logoUrls": [
+        "https://www.dailyforex.com/files/hugo’s way review landing page.png",
+        "https://www.dailyforex.com/files/hugo’s way review very basic information.png",
+        "https://www.dailyforex.com/files/hugo’s way review ambiguity re regulator.png",
+        "https://www.dailyforex.com/files/hugo’s way review client funds info.png",
+        "https://www.dailyforex.com/files/hugo’s way review crypto commission info.png"
+      ]
+    },
+    {
+      "file": "ifc-markets-review.html",
+      "brokerName": "Ifc Markets",
+      "logoUrls": [
+        "../files/logo_110x40/ifc%2019years%20110x40.webp",
+        "https://assets.dailyforex.com/files/ifc markets review 01.webp",
+        "https://assets.dailyforex.com/files/ifc markets review 02.webp",
+        "https://assets.dailyforex.com/files/ifc markets review 03.webp",
+        "https://assets.dailyforex.com/files/ifc markets review 04.webp"
+      ]
+    },
+    {
+      "file": "ig-review.html",
+      "brokerName": "Ig",
+      "logoUrls": [
+        "../files/logo_110x40/ig%20110x540.webp",
+        "https://assets.dailyforex.com/files/ig review 2025 edit 01.webp",
+        "https://assets.dailyforex.com/files/ig review 2025 edit 02.webp",
+        "https://assets.dailyforex.com/files/ig review 2025 edit 03.webp",
+        "https://assets.dailyforex.com/files/ig review 2025 edit 04.webp"
+      ]
+    },
+    {
+      "file": "instaforex-ltd-review.html",
+      "brokerName": "Instaforex Ltd",
+      "logoUrls": [
+        "https://www.dailyforex.com/files/instaforex ltd homepage.png",
+        "https://www.dailyforex.com/files/instaforex ltd regulation.png",
+        "https://www.dailyforex.com/files/instaforex ltd segregated accounts.png",
+        "https://www.dailyforex.com/files/asset sampling.png",
+        "https://www.dailyforex.com/files/instaforex account types.png"
+      ]
+    },
+    {
+      "file": "instaforex-review.html",
+      "brokerName": "Instaforex",
+      "logoUrls": [
+        "https://www.dailyforex.com/files/instaforex homepage.png",
+        "https://www.dailyforex.com/files/instaforex cysec regulation.png",
+        "https://www.dailyforex.com/files/instaforex currency offerings.png",
+        "https://www.dailyforex.com/files/instaforex account comparison.png",
+        "https://www.dailyforex.com/files/instaforex mt4 offering.png"
+      ]
+    },
+    {
+      "file": "iq-option-review.html",
+      "brokerName": "Iq Option",
+      "logoUrls": [
+        "../files/iq%20option%20broker%20review%2001%20(1).jpg",
+        "../files/iq%20option%20broker%20review%2002.jpg",
+        "../files/iq%20option%20broker%20review%2003.jpg",
+        "../files/iq%20option%20broker%20review%2004.jpg",
+        "../files/iq%20option%20broker%20review%2005.jpg"
+      ]
+    },
+    {
+      "file": "kraken-review.html",
+      "brokerName": "Kraken",
+      "logoUrls": [
+        "../files/karken%20security.jpg",
+        "../files/karken%20accounts.jpg",
+        "../files/karken%20customer%20support.jpg",
+        "../files/karken%20open%20account.jpg",
+        "../files/karken%20payment.jpg"
+      ]
+    },
+    {
+      "file": "legacy-fx-review.html",
+      "brokerName": "Legacy Fx",
+      "logoUrls": [
+        "https://www.dailyforex.com/files/legacyfx long term investment protections.jpg",
+        "https://www.dailyforex.com/files/pictsre1 (1).jpg",
+        "https://www.dailyforex.com/files/legacyfx broker review 05 (1).jpg",
+        "https://www.dailyforex.com/files/legacyfx broker review 07.jpg",
+        "https://www.dailyforex.com/files/legacyfx broker review 08.jpg"
+      ]
+    },
+    {
+      "file": "libertex-review.html",
+      "brokerName": "Libertex",
+      "logoUrls": [
+        "https://assets.dailyforex.com/files/libertex review edit 01.webp",
+        "https://assets.dailyforex.com/files/libertex review edit 02.webp",
+        "https://assets.dailyforex.com/files/libertex review edit 03.webp",
+        "https://assets.dailyforex.com/files/libertex review edit 04.webp",
+        "https://assets.dailyforex.com/files/libertex review edit 05.webp"
+      ]
+    },
+    {
+      "file": "moomoo-review.html",
+      "brokerName": "Moomoo",
+      "logoUrls": [
+        "https://www.dailyforex.com/files/moomoo broker review 01.jpeg",
+        "https://www.dailyforex.com/files/moomoo broker review 02.jpeg",
+        "https://www.dailyforex.com/files/moomoo broker review 03.jpeg",
+        "https://www.dailyforex.com/files/moomoo broker review 04.jpeg"
+      ]
+    },
+    {
+      "file": "mtrading-review.html",
+      "brokerName": "Mtrading",
+      "logoUrls": [
+        "https://www.dailyforex.com/files/picturefgg4 (1) (1).jpg"
+      ]
+    },
+    {
+      "file": "nord-fx-review.html",
+      "brokerName": "Nord Fx",
+      "logoUrls": [
+        "https://www.dailyforex.com/files/nordfx homepage.png"
+      ]
+    },
+    {
+      "file": "pepperstone-review.html",
+      "brokerName": "Pepperstone",
+      "logoUrls": [
+        "../files/logo_110x40/brokers%20logo%20110x40pepperstone.webp",
+        "https://assets.dailyforex.com/files/pepperstone image0107102024.webp",
+        "https://www.dailyforex.com/files/pepperstone demo account.png",
+        "https://assets.dailyforex.com/files/pepperstone image0207102024.webp",
+        "https://assets.dailyforex.com/files/pepperstone image0307102024.webp"
+      ]
+    },
+    {
+      "file": "pipfarm-review.html",
+      "brokerName": "Pipfarm",
+      "logoUrls": [
+        "../files/logo_110x40/pipfarm110x40%20(1).webp",
+        "https://assets.dailyforex.com/files/pipfarm review 01.webp",
+        "https://assets.dailyforex.com/files/pipfarm review 02.webp",
+        "https://assets.dailyforex.com/files/pipfarm review 03.webp"
+      ]
+    },
+    {
+      "file": "plus500-review.html",
+      "brokerName": "Plus500",
+      "logoUrls": [
+        "https://www.dailyforex.com/files/big-plus500 image 01_27042023.jpeg"
+      ]
+    },
+    {
+      "file": "primexbt-review.html",
+      "brokerName": "Primexbt",
+      "logoUrls": [
+        "../files/logo_110x40/primexbt%20110x40.webp"
+      ]
+    },
+    {
+      "file": "pu-prime-review.html",
+      "brokerName": "Pu Prime",
+      "logoUrls": [
+        "../files/logo_110x40/puprime%20110x40.webp",
+        "../files/pu%20prime%20review%2002.jpg",
+        "../files/pu%20prime%20review%2003.jpg",
+        "../files/pu%20prime%20review%2004.jpg",
+        "../files/pu%20prime%20review%2005.jpg"
+      ]
+    },
+    {
+      "file": "rebels-funding-review.html",
+      "brokerName": "Rebels Funding",
+      "logoUrls": [
+        "../files/logo_110x40/rebelsfunding%20%20transparentx.webp",
+        "https://assets.dailyforex.com/files/rebelsfunding image 01.webp",
+        "https://assets.dailyforex.com/files/rebelsfunding image 02.webp"
+      ]
+    },
+    {
+      "file": "revolut-review.html",
+      "brokerName": "Revolut",
+      "logoUrls": [
+        "https://www.dailyforex.com/files/revolut broker review 01.jpeg",
+        "https://www.dailyforex.com/files/revolut broker review 02.jpeg",
+        "https://www.dailyforex.com/files/revolut broker review 03.jpeg",
+        "https://www.dailyforex.com/files/revolut broker review 04.jpeg",
+        "https://www.dailyforex.com/files/revolut broker review 05.jpeg"
+      ]
+    },
+    {
+      "file": "robinhood-review.html",
+      "brokerName": "Robinhood",
+      "logoUrls": [
+        "https://www.dailyforex.com/files/robinhood review landing page.png",
+        "https://www.dailyforex.com/files/robinhood review regulatory oversight.png",
+        "https://www.dailyforex.com/files/robinhood review fee schedule 1.png",
+        "https://www.dailyforex.com/files/robinhood review fee schedule 2.png",
+        "https://www.dailyforex.com/files/robinhood review fee schedule 3.png"
+      ]
+    },
+    {
+      "file": "roboforex-review.html",
+      "brokerName": "Roboforex",
+      "logoUrls": [
+        "../files/logo_110x40/roboforex%20110x40%20transparent.webp",
+        "https://assets.dailyforex.com/files/roboforex image 01 12122024 (1).webp"
+      ]
+    },
+    {
+      "file": "saxo-bank-review.html",
+      "brokerName": "Saxo Bank",
+      "logoUrls": [
+        "https://www.dailyforex.com/files/saxo bank homepage.png",
+        "https://www.dailyforex.com/files/saxo bank regulation.png",
+        "https://www.dailyforex.com/files/saxo bank fca regulation.png",
+        "https://www.dailyforex.com/files/saxo bank compliance confirmation.png",
+        "https://www.dailyforex.com/files/saxo bank trust statement.png"
+      ]
+    },
+    {
+      "file": "saxo-capital-markets-review.html",
+      "brokerName": "Saxo Capital Markets",
+      "logoUrls": [
+        "https://www.dailyforex.com/files/saxo capital markets review landing page.jpg",
+        "https://www.dailyforex.com/files/saxo capital markets review asic regulator.png",
+        "https://www.dailyforex.com/files/saxo capital markets review pricing environment3.png",
+        "https://www.dailyforex.com/files/saxo capital markets review commissions 1.png",
+        "https://www.dailyforex.com/files/saxo capital markets review transparent costs.png"
+      ]
+    },
+    {
+      "file": "thinkforex-review.html",
+      "brokerName": "Thinkforex",
+      "logoUrls": [
+        "../files/thinkmarkets%20review%20landing%20page.png",
+        "../files/thinkmarkets%20review%20regulatory%20environment.png",
+        "../files/thinkmarkets%20review%20competitive%20pricing%20environment.png",
+        "../files/thinkmarkets%20review%20asset%20list.png",
+        "../files/thinkmarkets%20review%20account%20types.png"
+      ]
+    },
+    {
+      "file": "tickmill-review.html",
+      "brokerName": "Tickmill",
+      "logoUrls": [
+        "https://www.dailyforex.com/files/tickmill landing page screenshot.png",
+        "https://www.dailyforex.com/files/tickmill regulators.png",
+        "https://www.dailyforex.com/files/tickmill forex pairs.png",
+        "https://www.dailyforex.com/files/tickmill stock indices.png",
+        "https://www.dailyforex.com/files/tickmill precious metals.png"
+      ]
+    },
+    {
+      "file": "topstep-review.html",
+      "brokerName": "Topstep",
+      "logoUrls": [
+        "../files/topstep%20review%2001.jpg",
+        "../files/topstep%20review%2002.jpg",
+        "../files/topstep%20review%2003.jpg",
+        "../files/topstep%20review%2004.jpg"
+      ]
+    },
+    {
+      "file": "trading-212-review.html",
+      "brokerName": "Trading 212",
+      "logoUrls": [
+        "https://www.dailyforex.com/files/economic calendar.png",
+        "https://www.dailyforex.com/files/analysis of basic assets.png",
+        "https://www.dailyforex.com/files/contact form.png",
+        "https://www.dailyforex.com/files/open account page.png"
+      ]
+    },
+    {
+      "file": "xm-review.html",
+      "brokerName": "Xm",
+      "logoUrls": [
+        "../files/logo_110x40/xm15years%20110x40%20transparent%20%20(1).webp",
+        "https://www.dailyforex.com/files/xm broker review 01.jpeg"
+      ]
+    },
+    {
+      "file": "zulutrade-review.html",
+      "brokerName": "Zulutrade",
+      "logoUrls": [
+        "https://www.dailyforex.com/files/account protection.png",
+        "https://www.dailyforex.com/files/market research.png"
+      ]
+    }
+  ]
+}

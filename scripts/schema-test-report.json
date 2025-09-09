@@ -1,0 +1,112 @@
+{
+  "timestamp": "2025-09-06T05:55:34.522Z",
+  "summary": {
+    "totalTests": 11,
+    "passed": 0,
+    "failed": 11,
+    "successRate": "0%"
+  },
+  "details": [
+    {
+      "test": "Broker Insertion",
+      "status": "FAILED",
+      "error": "Broker insertion failed: Could not find the 'account_types' column of 'brokers' in the schema cache"
+    },
+    {
+      "test": "Trading Conditions Insertion",
+      "status": "FAILED",
+      "error": "Test broker not created"
+    },
+    {
+      "test": "Instruments Insertion",
+      "status": "FAILED",
+      "error": "Test broker not created"
+    },
+    {
+      "test": "Payment Methods Insertion",
+      "status": "FAILED",
+      "error": "Test broker not created"
+    },
+    {
+      "test": "Bonuses Insertion",
+      "status": "FAILED",
+      "error": "Test broker not created"
+    },
+    {
+      "test": "Support Channels Insertion",
+      "status": "FAILED",
+      "error": "Test broker not created"
+    },
+    {
+      "test": "Regulations Insertion",
+      "status": "FAILED",
+      "error": "Test broker not created"
+    },
+    {
+      "test": "Data Retrieval with Relationships",
+      "status": "FAILED",
+      "error": "Test broker not created"
+    },
+    {
+      "test": "Data Validation and Constraints",
+      "status": "FAILED",
+      "error": "Test broker not created"
+    },
+    {
+      "test": "Index Performance",
+      "status": "FAILED",
+      "error": "Index performance test failed: column brokers.overall_rating does not exist"
+    },
+    {
+      "test": "Database Triggers",
+      "status": "FAILED",
+      "error": "Test broker not created"
+    }
+  ],
+  "errors": [
+    {
+      "test": "Broker Insertion",
+      "error": "Broker insertion failed: Could not find the 'account_types' column of 'brokers' in the schema cache"
+    },
+    {
+      "test": "Trading Conditions Insertion",
+      "error": "Test broker not created"
+    },
+    {
+      "test": "Instruments Insertion",
+      "error": "Test broker not created"
+    },
+    {
+      "test": "Payment Methods Insertion",
+      "error": "Test broker not created"
+    },
+    {
+      "test": "Bonuses Insertion",
+      "error": "Test broker not created"
+    },
+    {
+      "test": "Support Channels Insertion",
+      "error": "Test broker not created"
+    },
+    {
+      "test": "Regulations Insertion",
+      "error": "Test broker not created"
+    },
+    {
+      "test": "Data Retrieval with Relationships",
+      "error": "Test broker not created"
+    },
+    {
+      "test": "Data Validation and Constraints",
+      "error": "Test broker not created"
+    },
+    {
+      "test": "Index Performance",
+      "error": "Index performance test failed: column brokers.overall_rating does not exist"
+    },
+    {
+      "test": "Database Triggers",
+      "error": "Test broker not created"
+    }
+  ]
+}
