@@ -1,0 +1,4 @@
+page,header_found,footer_found,notes
+home,true,true,Header and footer present with proper navigation
+brokers,true,true,Header and footer present with proper navigation  
+nonexistent-page,true,true,404 page has header and footer with helpful navigation

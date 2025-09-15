@@ -1,7 +1,7 @@
-import { Outlet } from 'react-router-dom'
-import { Header } from './Header'
-import { Footer } from './Footer'
-import { ChatWidget } from '../chatbot/ChatWidget'
+import { Outlet } from 'react-router-dom';
+import { Header } from './Header';
+import { Footer } from './Footer';
+import { ChatWidget } from '../chatbot/ChatWidget';
 
 export function Layout() {
   return (
@@ -13,5 +13,5 @@ export function Layout() {
       <Footer />
       <ChatWidget />
     </div>
-  )
+  );
 }

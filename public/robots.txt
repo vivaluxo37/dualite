@@ -1,0 +1,42 @@
+# Robots.txt for BrokerAnalysis.com
+# Website: https://brokeranalysis.com
+
+User-agent: *
+Allow: /
+
+# Sitemaps
+Sitemap: https://brokeranalysis.com/sitemap.xml
+Sitemap: https://brokeranalysis.com/forex-brokers-sitemap.xml
+
+# Crawl delay (optional)
+Crawl-delay: 1
+
+# Blocked paths (if any)
+# Disallow: /admin/
+# Disallow: /private/
+# Disallow: /api/
+
+# Allow search engines to crawl the forex brokers section
+Allow: /forex-brokers/
+Allow: /forex-brokers/regions/
+Allow: /forex-brokers/trading-types/
+
+# Important pages for search engines
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+# Block bad bots
+User-agent: SemrushBot
+Disallow: /
+
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: DotBot
+Disallow: /

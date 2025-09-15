@@ -1,0 +1,134 @@
+{
+  "timestamp": "2025-09-10T16:54:40.386Z",
+  "overall_consistency": {
+    "total_pages": 22,
+    "structure_consistency": {
+      "hasHeader": {
+        "count": 22,
+        "percentage": 100
+      },
+      "hasContainer": {
+        "count": 22,
+        "percentage": 100
+      },
+      "hasBrokerGrid": {
+        "count": 22,
+        "percentage": 100
+      },
+      "hasGuideSection": {
+        "count": 22,
+        "percentage": 100
+      },
+      "hasFooter": {
+        "count": 8,
+        "percentage": 36
+      }
+    },
+    "category_count": 10
+  },
+  "category_consistency": {
+    "regional": {
+      "count": 8,
+      "totalScore": 737,
+      "avgOpenGraph": 100,
+      "avgStructuredData": 100,
+      "avgCSSVariables": 100,
+      "avgScore": 92
+    },
+    "trading-types": {
+      "count": 6,
+      "totalScore": 551,
+      "avgOpenGraph": 100,
+      "avgStructuredData": 100,
+      "avgCSSVariables": 100,
+      "avgScore": 92
+    },
+    "regions/dubai": {
+      "count": 1,
+      "totalScore": 86,
+      "avgOpenGraph": 100,
+      "avgStructuredData": 100,
+      "avgCSSVariables": 100,
+      "avgScore": 86
+    },
+    "regions/india": {
+      "count": 1,
+      "totalScore": 93,
+      "avgOpenGraph": 100,
+      "avgStructuredData": 100,
+      "avgCSSVariables": 100,
+      "avgScore": 93
+    },
+    "regions/malaysia": {
+      "count": 1,
+      "totalScore": 100,
+      "avgOpenGraph": 100,
+      "avgStructuredData": 100,
+      "avgCSSVariables": 100,
+      "avgScore": 100
+    },
+    "regions/nepal": {
+      "count": 1,
+      "totalScore": 93,
+      "avgOpenGraph": 100,
+      "avgStructuredData": 100,
+      "avgCSSVariables": 100,
+      "avgScore": 93
+    },
+    "regions/pakistan": {
+      "count": 1,
+      "totalScore": 93,
+      "avgOpenGraph": 100,
+      "avgStructuredData": 100,
+      "avgCSSVariables": 100,
+      "avgScore": 93
+    },
+    "regions/singapore": {
+      "count": 1,
+      "totalScore": 93,
+      "avgOpenGraph": 100,
+      "avgStructuredData": 100,
+      "avgCSSVariables": 100,
+      "avgScore": 93
+    },
+    "regions/south-africa": {
+      "count": 1,
+      "totalScore": 86,
+      "avgOpenGraph": 100,
+      "avgStructuredData": 100,
+      "avgCSSVariables": 100,
+      "avgScore": 86
+    },
+    "regions/usa": {
+      "count": 1,
+      "totalScore": 86,
+      "avgOpenGraph": 100,
+      "avgStructuredData": 100,
+      "avgCSSVariables": 100,
+      "avgScore": 86
+    }
+  },
+  "structure_consistency": {
+    "hasHeader": {
+      "count": 22,
+      "percentage": 100
+    },
+    "hasContainer": {
+      "count": 22,
+      "percentage": 100
+    },
+    "hasBrokerGrid": {
+      "count": 22,
+      "percentage": 100
+    },
+    "hasGuideSection": {
+      "count": 22,
+      "percentage": 100
+    },
+    "hasFooter": {
+      "count": 8,
+      "percentage": 36
+    }
+  },
+  "recommendations": []
+}

@@ -1,14 +1,14 @@
-import { useState } from 'react'
-import { useForm } from 'react-hook-form'
-import { zodResolver } from '@hookform/resolvers/zod'
-import * as z from 'zod'
+import { useState } from 'react';
+import { useForm } from 'react-hook-form';
+import { zodResolver } from '@hookform/resolvers/zod';
+import * as z from 'zod';
 import {
   Dialog,
   DialogContent,
   DialogDescription,
   DialogHeader,
   DialogTitle,
-} from '@/components/ui/dialog'
+} from '@/components/ui/dialog';
 import {
   Form,
   FormControl,
@@ -16,12 +16,12 @@ import {
   FormItem,
   FormLabel,
   FormMessage,
-} from '@/components/ui/form'
-import { Input } from '@/components/ui/input'
-import { Button } from '@/components/ui/button'
-import { useAuthContext } from '@/contexts/AuthContext'
-import { toast } from 'sonner'
-import { Loader2 } from 'lucide-react'
+} from '@/components/ui/form';
+import { Input } from '@/components/ui/input';
+import { Button } from '@/components/ui/button';
+import { useAuthContext } from '@/contexts/AuthContext';
+import { toast } from 'sonner';
+import { Loader2 } from 'lucide-react';
 
 const registerSchema = z.object({
   displayName: z.string().min(2, 'Display name must be at least 2 characters'),
@@ -29,20 +29,20 @@ const registerSchema = z.object({
   password: z.string().min(6, 'Password must be at least 6 characters'),
   confirmPassword: z.string(),
 }).refine((data) => data.password === data.confirmPassword, {
-  message: 'Passwords don\'t match',
+  message: "Passwords don't match",
   path: ['confirmPassword'],
-})
+});
 
-type RegisterForm = z.infer<typeof registerSchema>
+type RegisterForm = z.infer<typeof registerSchema>;
 
 interface RegisterDialogProps {
-  open: boolean
-  onOpenChange: (open: boolean) => void
+  open: boolean;
+  onOpenChange: (open: boolean) => void;
 }
 
 export function RegisterDialog({ open, onOpenChange }: RegisterDialogProps) {
-  const [isLoading, setIsLoading] = useState(false)
-  const { signUp } = useAuthContext()
+  const [isLoading, setIsLoading] = useState(false);
+  const { signUp } = useAuthContext();
 
   const form = useForm<RegisterForm>({
     resolver: zodResolver(registerSchema),
@@ -52,26 +52,21 @@ export function RegisterDialog({ open, onOpenChange }: RegisterDialogProps) {
       password: '',
       confirmPassword: '',
     },
-  })
+  });
 
   const onSubmit = async (data: RegisterForm) => {
-    setIsLoading(true)
+    setIsLoading(true);
     try {
-      const { error } = await signUp(data.email, data.password, data.displayName)
-      
-      if (error) {
-        toast.error(error.message)
-      } else {
-        toast.success('Account created successfully! Please check your email for verification.')
-        onOpenChange(false)
-        form.reset()
-      }
-    } catch {
-      toast.error('An unexpected error occurred')
+      await signUp(data.email, data.password, data.displayName);
+      toast.success('Account created successfully! Please check your email for verification.');
+      onOpenChange(false);
+      form.reset();
+    } catch (error: any) {
+      toast.error(error.message);
     } finally {
-      setIsLoading(false)
+      setIsLoading(false);
     }
-  }
+  };
 
   return (
     <Dialog open={open} onOpenChange={onOpenChange}>
@@ -91,10 +86,7 @@ export function RegisterDialog({ open, onOpenChange }: RegisterDialogProps) {
                 <FormItem>
                   <FormLabel>Display Name</FormLabel>
                   <FormControl>
-                    <Input
-                      placeholder="Enter your display name"
-                      {...field}
-                    />
+                    <Input placeholder="Enter your display name" {...field} />
                   </FormControl>
                   <FormMessage />
                 </FormItem>
@@ -151,11 +143,7 @@ export function RegisterDialog({ open, onOpenChange }: RegisterDialogProps) {
                 </FormItem>
               )}
             />
-            <Button
-              type="submit"
-              className="w-full"
-              disabled={isLoading}
-            >
+            <Button type="submit" className="w-full" disabled={isLoading}>
               {isLoading && <Loader2 className="mr-2 h-4 w-4 animate-spin" />}
               Create Account
             </Button>
@@ -163,5 +151,5 @@ export function RegisterDialog({ open, onOpenChange }: RegisterDialogProps) {
         </Form>
       </DialogContent>
     </Dialog>
-  )
+  );
 }

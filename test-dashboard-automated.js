@@ -69,7 +69,7 @@ async function testAuthentication() {
   
   // Test sign up
   try {
-    const testEmail = `test-${Date.now()}@dualite.com`
+    const testEmail = `test-${Date.now()}@brokeranalysis.com`
     const { data, error } = await supabase.auth.signUp({
       email: testEmail,
       password: 'testpass123',

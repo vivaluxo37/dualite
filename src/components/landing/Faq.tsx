@@ -1,9 +1,4 @@
-import {
-  Accordion,
-  AccordionContent,
-  AccordionItem,
-  AccordionTrigger,
-} from "@/components/ui/accordion"
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { Button } from "../ui/button";
 import { Link } from "react-router-dom";
 
@@ -31,20 +26,22 @@ const faqItems = [
   {
     question: "Can I request a review for a broker not listed?",
     answer: "Absolutely! Please use our contact form to suggest a broker. We are constantly expanding our database and prioritize requests from our community."
-  },
+  }
 ];
 
 export function Faq() {
-
   return (
     <section id="faq" className="py-24 border-t">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-5xl font-bold mb-4 tracking-tighter">Frequently Asked Questions</h2>
-            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Find answers to common questions about our platform and how we operate.
-            </p>
+          <h2 className="text-3xl md:text-5xl font-bold mb-4 tracking-tighter">
+            Frequently Asked Questions
+          </h2>
+          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+            Find answers to common questions about our platform and how we operate.
+          </p>
         </div>
+        
         <div className="max-w-4xl mx-auto">
           <Accordion type="single" collapsible className="w-full">
             {faqItems.map((item, index) => (
@@ -55,6 +52,7 @@ export function Faq() {
             ))}
           </Accordion>
         </div>
+        
         <div className="text-center mt-12">
           <p className="text-muted-foreground mb-4">Still have questions?</p>
           <Button asChild>

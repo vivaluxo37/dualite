@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <!-- Main Pages -->
+    <url>
+        <loc>https://brokeranalysis.com/</loc>
+        <lastmod>2025-01-10</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+    </url>
+    
+    <url>
+        <loc>https://brokeranalysis.com/brokers</loc>
+        <lastmod>2025-01-10</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.9</priority>
+    </url>
+    
+    <url>
+        <loc>https://brokeranalysis.com/forex-brokers</loc>
+        <lastmod>2025-01-10</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    
+    <url>
+        <loc>https://brokeranalysis.com/compare</loc>
+        <lastmod>2025-01-10</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+    <url>
+        <loc>https://brokeranalysis.com/ai-match</loc>
+        <lastmod>2025-01-10</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+    <!-- Tools -->
+    <url>
+        <loc>https://brokeranalysis.com/quiz</loc>
+        <lastmod>2025-01-10</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    
+    <url>
+        <loc>https://brokeranalysis.com/calculators</loc>
+        <lastmod>2025-01-10</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    
+    <url>
+        <loc>https://brokeranalysis.com/simulator</loc>
+        <lastmod>2025-01-10</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    
+    <!-- Learning -->
+    <url>
+        <loc>https://brokeranalysis.com/learn</loc>
+        <lastmod>2025-01-10</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+    <url>
+        <loc>https://brokeranalysis.com/learn/market-analysis</loc>
+        <lastmod>2025-01-10</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    
+    <url>
+        <loc>https://brokeranalysis.com/regulation-guide</loc>
+        <lastmod>2025-01-10</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    
+    <!-- Support -->
+    <url>
+        <loc>https://brokeranalysis.com/contact</loc>
+        <lastmod>2025-01-10</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.5</priority>
+    </url>
+    
+    <url>
+        <loc>https://brokeranalysis.com/about</loc>
+        <lastmod>2025-01-10</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    
+    <url>
+        <loc>https://brokeranalysis.com/faq</loc>
+        <lastmod>2025-01-10</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    
+    <url>
+        <loc>https://brokeranalysis.com/help</loc>
+        <lastmod>2025-01-10</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+    </url>
+    
+    <!-- Legal -->
+    <url>
+        <loc>https://brokeranalysis.com/privacy-policy</loc>
+        <lastmod>2025-01-10</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.3</priority>
+    </url>
+    
+    <url>
+        <loc>https://brokeranalysis.com/terms-of-service</loc>
+        <lastmod>2025-01-10</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.3</priority>
+    </url>
+    
+    <!-- Regional Pages -->
+    <url>
+        <loc>https://brokeranalysis.com/brokers/usa</loc>
+        <lastmod>2025-01-10</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+    <url>
+        <loc>https://brokeranalysis.com/brokers/uk</loc>
+        <lastmod>2025-01-10</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+    <url>
+        <loc>https://brokeranalysis.com/brokers/australia</loc>
+        <lastmod>2025-01-10</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+    <!-- Lazy Loaded Pages -->
+    <url>
+        <loc>https://brokeranalysis.com/brokers/north-america</loc>
+        <lastmod>2025-01-10</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    
+    <url>
+        <loc>https://brokeranalysis.com/brokers/europe</loc>
+        <lastmod>2025-01-10</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    
+    <url>
+        <loc>https://brokeranalysis.com/brokers/asia-pacific</loc>
+        <lastmod>2025-01-10</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    
+    <url>
+        <loc>https://brokeranalysis.com/brokers/middle-east-africa</loc>
+        <lastmod>2025-01-10</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    
+    <url>
+        <loc>https://brokeranalysis.com/brokers/south-asia</loc>
+        <lastmod>2025-01-10</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    
+    <url>
+        <loc>https://brokeranalysis.com/brokers/style/high-leverage</loc>
+        <lastmod>2025-01-10</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    
+    <url>
+        <loc>https://brokeranalysis.com/reviews</loc>
+        <lastmod>2025-01-10</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.8</priority>
+    </url>
+</urlset>

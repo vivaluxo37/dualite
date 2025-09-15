@@ -1,0 +1,167 @@
+{
+  "execution_date": "2025-09-10T16:06:51.668Z",
+  "total_brokers": 18,
+  "brokers_processed": 18,
+  "seo_improvements": {
+    "meta_titles_optimized": 18,
+    "meta_descriptions_optimized": 18,
+    "structured_data_generated": 18,
+    "faq_structured_data_generated": 18,
+    "sitemap_updated": true
+  },
+  "broker_details": [
+    {
+      "name": "FXTM",
+      "slug": "fxtm",
+      "has_seo_title": true,
+      "has_seo_description": true,
+      "has_structured_data": false,
+      "has_faq_data": false
+    },
+    {
+      "name": "IG Group",
+      "slug": "ig-group",
+      "has_seo_title": true,
+      "has_seo_description": true,
+      "has_structured_data": false,
+      "has_faq_data": false
+    },
+    {
+      "name": "OANDA",
+      "slug": "oanda",
+      "has_seo_title": true,
+      "has_seo_description": true,
+      "has_structured_data": false,
+      "has_faq_data": false
+    },
+    {
+      "name": "CMC Markets",
+      "slug": "cmc-markets",
+      "has_seo_title": true,
+      "has_seo_description": true,
+      "has_structured_data": false,
+      "has_faq_data": false
+    },
+    {
+      "name": "Pepperstone",
+      "slug": "pepperstone",
+      "has_seo_title": true,
+      "has_seo_description": true,
+      "has_structured_data": false,
+      "has_faq_data": false
+    },
+    {
+      "name": "IC Markets",
+      "slug": "ic-markets",
+      "has_seo_title": true,
+      "has_seo_description": true,
+      "has_structured_data": false,
+      "has_faq_data": false
+    },
+    {
+      "name": "Plus500",
+      "slug": "plus500",
+      "has_seo_title": true,
+      "has_seo_description": true,
+      "has_structured_data": false,
+      "has_faq_data": false
+    },
+    {
+      "name": "FP Markets",
+      "slug": "fp-markets",
+      "has_seo_title": true,
+      "has_seo_description": true,
+      "has_structured_data": false,
+      "has_faq_data": false
+    },
+    {
+      "name": "HotForex",
+      "slug": "hotforex",
+      "has_seo_title": true,
+      "has_seo_description": true,
+      "has_structured_data": false,
+      "has_faq_data": false
+    },
+    {
+      "name": "Admirals",
+      "slug": "admirals",
+      "has_seo_title": true,
+      "has_seo_description": true,
+      "has_structured_data": false,
+      "has_faq_data": false
+    },
+    {
+      "name": "AvaTrade",
+      "slug": "avatrade",
+      "has_seo_title": true,
+      "has_seo_description": true,
+      "has_structured_data": false,
+      "has_faq_data": false
+    },
+    {
+      "name": "Exness",
+      "slug": "exness",
+      "has_seo_title": true,
+      "has_seo_description": true,
+      "has_structured_data": false,
+      "has_faq_data": false
+    },
+    {
+      "name": "XM Group",
+      "slug": "xm-group",
+      "has_seo_title": true,
+      "has_seo_description": true,
+      "has_structured_data": false,
+      "has_faq_data": false
+    },
+    {
+      "name": "Forex.com",
+      "slug": "forex-com",
+      "has_seo_title": true,
+      "has_seo_description": true,
+      "has_structured_data": false,
+      "has_faq_data": false
+    },
+    {
+      "name": "Saxo Bank",
+      "slug": "saxo-bank",
+      "has_seo_title": true,
+      "has_seo_description": true,
+      "has_structured_data": false,
+      "has_faq_data": false
+    },
+    {
+      "name": "Tickmill",
+      "slug": "tickmill",
+      "has_seo_title": true,
+      "has_seo_description": true,
+      "has_structured_data": false,
+      "has_faq_data": false
+    },
+    {
+      "name": "XM",
+      "slug": "xm",
+      "has_seo_title": true,
+      "has_seo_description": true,
+      "has_structured_data": false,
+      "has_faq_data": false
+    },
+    {
+      "name": "IG Markets",
+      "slug": "ig-markets",
+      "has_seo_title": true,
+      "has_seo_description": true,
+      "has_structured_data": false,
+      "has_faq_data": false
+    }
+  ],
+  "recommendations": [
+    "Monitor keyword rankings regularly",
+    "Update content quarterly with fresh information",
+    "Build high-quality backlinks to broker pages",
+    "Optimize page loading speed",
+    "Implement mobile-first design principles",
+    "Add customer testimonials and reviews",
+    "Create comparison content between brokers"
+  ]
+}

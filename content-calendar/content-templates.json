@@ -1,0 +1,121 @@
+[
+  {
+    "name": "Broker Review Template",
+    "contentType": "review",
+    "sections": [
+      "Introduction",
+      "Broker Overview",
+      "Regulation & Safety",
+      "Trading Conditions",
+      "Platform Review",
+      "Account Types",
+      "Customer Support",
+      "Pros & Cons",
+      "Final Verdict",
+      "FAQ"
+    ],
+    "wordCount": 1500,
+    "keyElements": [
+      "regulatory info",
+      "trading costs",
+      "platform features",
+      "user experience"
+    ],
+    "checklist": [
+      "Include regulatory information",
+      "Detail trading costs and fees",
+      "Review platform usability",
+      "Include customer support channels",
+      "Add pros and cons summary"
+    ]
+  },
+  {
+    "name": "Educational Tutorial Template",
+    "contentType": "tutorial",
+    "sections": [
+      "Introduction",
+      "What You'll Learn",
+      "Prerequisites",
+      "Step-by-Step Instructions",
+      "Visual Examples",
+      "Common Mistakes",
+      "Tips for Success",
+      "Practice Exercises",
+      "Next Steps",
+      "Resources"
+    ],
+    "wordCount": 1800,
+    "keyElements": [
+      "clear instructions",
+      "visual aids",
+      "practice examples",
+      "progressive learning"
+    ],
+    "checklist": [
+      "Define learning objectives",
+      "Break down complex concepts",
+      "Include visual examples",
+      "Add practice exercises",
+      "Provide additional resources"
+    ]
+  },
+  {
+    "name": "Trading Strategy Guide",
+    "contentType": "guide",
+    "sections": [
+      "Strategy Overview",
+      "How It Works",
+      "Best Timeframes",
+      "Entry & Exit Rules",
+      "Risk Management",
+      "Examples & Case Studies",
+      "Backtesting Results",
+      "Pros & Cons",
+      "Required Tools",
+      "Implementation Tips"
+    ],
+    "wordCount": 2500,
+    "keyElements": [
+      "clear rules",
+      "risk management",
+      "examples",
+      "performance metrics"
+    ],
+    "checklist": [
+      "Define clear entry/exit rules",
+      "Include risk management guidelines",
+      "Provide real examples",
+      "Include performance data",
+      "List required tools/resources"
+    ]
+  },
+  {
+    "name": "Comparison Article Template",
+    "contentType": "comparison",
+    "sections": [
+      "Introduction",
+      "Comparison Criteria",
+      "Option 1 Review",
+      "Option 2 Review",
+      "Option 3 Review",
+      "Side-by-Side Comparison",
+      "Head-to-Head Analysis",
+      "Use Case Scenarios",
+      "Recommendations",
+      "Final Verdict"
+    ],
+    "wordCount": 2000,
+    "keyElements": [
+      "objective criteria",
+      "detailed analysis",
+      "clear recommendations"
+    ],
+    "checklist": [
+      "Define comparison criteria",
+      "Analyze each option objectively",
+      "Include side-by-side comparison table",
+      "Provide specific recommendations",
+      "Add use case scenarios"
+    ]
+  }
+]

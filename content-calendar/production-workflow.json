@@ -1,0 +1,121 @@
+{
+  "stages": [
+    {
+      "name": "Content Planning",
+      "duration": "1-2 days",
+      "responsible": "Content Strategist",
+      "deliverables": [
+        "Content brief",
+        "Keyword selection",
+        "Outline"
+      ],
+      "checklist": [
+        "Research keyword thoroughly",
+        "Define content goals",
+        "Create detailed outline",
+        "Assign to writer"
+      ]
+    },
+    {
+      "name": "Content Creation",
+      "duration": "2-3 days",
+      "responsible": "Content Writer",
+      "deliverables": [
+        "First draft",
+        "Images",
+        "Internal links"
+      ],
+      "checklist": [
+        "Follow content template",
+        "Include SEO optimization",
+        "Add internal links",
+        "Include relevant images"
+      ]
+    },
+    {
+      "name": "Content Review",
+      "duration": "1 day",
+      "responsible": "Content Editor",
+      "deliverables": [
+        "Reviewed content",
+        "Edits documented"
+      ],
+      "checklist": [
+        "Check for accuracy",
+        "Ensure SEO optimization",
+        "Verify readability",
+        "Check brand voice consistency"
+      ]
+    },
+    {
+      "name": "Quality Assurance",
+      "duration": "1 day",
+      "responsible": "QA Specialist",
+      "deliverables": [
+        "QA report",
+        "Final approval"
+      ],
+      "checklist": [
+        "Grammar and spell check",
+        "Fact verification",
+        "Link validation",
+        "Mobile responsiveness check"
+      ]
+    },
+    {
+      "name": "SEO Optimization",
+      "duration": "0.5 days",
+      "responsible": "SEO Specialist",
+      "deliverables": [
+        "Meta tags",
+        "Structured data",
+        "Internal linking"
+      ],
+      "checklist": [
+        "Optimize title and meta description",
+        "Add structured data",
+        "Internal link optimization",
+        "Image optimization"
+      ]
+    },
+    {
+      "name": "Publishing",
+      "duration": "0.5 days",
+      "responsible": "Content Manager",
+      "deliverables": [
+        "Published content",
+        "Social media posts"
+      ],
+      "checklist": [
+        "Schedule publishing",
+        "Create social media assets",
+        "Set up distribution",
+        "Monitor initial performance"
+      ]
+    }
+  ],
+  "totalProductionTime": "6-8 days",
+  "teamRoles": [
+    "Content Strategist",
+    "Content Writer",
+    "Content Editor",
+    "QA Specialist",
+    "SEO Specialist",
+    "Content Manager"
+  ],
+  "qualityStandards": {
+    "minWordCount": 1000,
+    "maxReadabilityScore": 60,
+    "requiredSections": [
+      "introduction",
+      "conclusion",
+      "call_to_action"
+    ],
+    "seoRequirements": [
+      "meta_title",
+      "meta_description",
+      "focus_keyword",
+      "internal_links"
+    ]
+  }
+}

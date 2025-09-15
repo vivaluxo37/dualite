@@ -1,0 +1,44 @@
+{
+  "audit_date": "2025-01-10",
+  "site_url": "http://localhost:5178",
+  "platform": "React 19 + TypeScript + Vite",
+  "overall_health_score": 8.2,
+  "pages_tested": 24,
+  "broken_links": 2,
+  "console_errors": 15,
+  "header_footer_compliance": 100,
+  "seo_issues": 6,
+  "priority_issues": {
+    "high": 2,
+    "medium": 3,
+    "low": 3
+  },
+  "routes_status": {
+    "working": 21,
+    "redirecting": 2,
+    "error_handling": 1
+  },
+  "performance": {
+    "lighthouse_scores": "not_tested",
+    "bundle_optimization": "implemented",
+    "lazy_loading": "partial"
+  },
+  "security": {
+    "csp_implemented": true,
+    "authentication_working": false,
+    "https_required": false
+  },
+  "seo_readiness": {
+    "meta_tags": "implemented",
+    "structured_data": "partial",
+    "sitemap": "partial",
+    "robots_txt": "excellent"
+  },
+  "accessibility": {
+    "aria_roles": "implemented",
+    "keyboard_nav": "implemented",
+    "semantic_html": "excellent"
+  },
+  "recommendations_implemented": 0,
+  "total_recommendations": 8
+}

@@ -1,0 +1,8 @@
+page,timestamp,error_type,message,source
+home,2025-01-10T00:00:00Z,CSP_ERROR,"The Content Security Policy directive 'frame-ancestors' is ignored when delivered via a <meta> element.",src/hooks/useSecurity.ts:70
+home,2025-01-10T00:00:00Z,CSP_ERROR,"Unrecognized Content-Security-Policy directive 'prefetch-src'.",src/hooks/useSecurity.ts:70
+home,2025-01-10T00:00:00Z,CSP_ERROR,"Unrecognized Content-Security-Policy directive 'navigate-to'.",src/hooks/useSecurity.ts:70
+home,2025-01-10T00:00:00Z,CSP_ERROR,"X-Frame-Options may only be set via an HTTP header sent along with a document. It may not be set inside <meta>.",src/hooks/useSecurity.ts:70
+home,2025-01-10T00:00:00Z,NETWORK_ERROR,"Failed to load resource: the server responded with a status of 404 (Not Found)",favicon.ico
+home,2025-01-10T00:00:00Z,CSP_VIOLATION,"Refused to load the script 'https://actual-shark-31.clerk.accounts.dev/npm/@clerk/clerk-js@5.92.1/dist/clerk.browser.js' because it violates the following Content Security Policy directive",-
+home,2025-01-10T00:00:00Z,CLERK_ERROR,"Error: Clerk: Failed to load Clerk",@clerk/clerk-react.js

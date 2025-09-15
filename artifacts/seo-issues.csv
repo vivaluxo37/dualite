@@ -1,0 +1,7 @@
+page,seo_issue,severity,description,recommendation
+home,MISSING_SITEMAP_XML,MEDIUM,Main sitemap.xml file not found in public folder,Create sitemap.xml with all page URLs
+home,CSP_VIOLATION,HIGH,Content Security Policy blocking Clerk authentication scripts,Update CSP to allow Clerk domains
+home,MISSING_FAVICON,LOW,favicon.ico returning 404,Add favicon.ico to public folder
+home,SECURITY_HEADERS,MEDIUM,Security headers implemented via meta tags (less effective),Move security headers to server configuration
+all,PAGE_SPEED,MEDIUM,No performance optimization data,Run Lighthouse audit and implement optimizations
+all,STRUCTURED_DATA,LOW,Limited structured data implementation,Add comprehensive JSON-LD structured data

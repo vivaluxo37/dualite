@@ -1,0 +1,35 @@
+diff --git a/src/pages/HomePage.tsx b/src/pages/HomePage.tsx
+index 1234567..89abcde 100644
+--- a/src/pages/HomePage.tsx
++++ b/src/pages/HomePage.tsx
+@@ -13,7 +13,7 @@ export function HomePage() {
+   const [currentUrl, setCurrentUrl] = useState("");
+ 
+   useEffect(() => {
+     setSiteUrl(window.location.origin);
+     setCurrentUrl(window.location.href);
+   }, []);
+   
++  const ogImage = `${siteUrl}/og-image.jpg`; // Replace with actual image path
+   const structuredData = {
+     "@context": "https://schema.org",
+     "@type": "WebSite",
+@@ -95,7 +96,7 @@ export function HomePage() {
+   return (
+     <>
+       <SEO
+         title="Dualite - Best Forex Broker Reviews & Comparison 2025"
+-        description="Comprehensive forex broker reviews, comparison tools, and trading education. Find the best forex broker for your trading needs."
++        description="Comprehensive forex broker reviews, comparison tools, and trading education. Find the best forex broker for your trading needs with our AI-powered matching system."
+         keywords="forex brokers, broker reviews, trading platforms, forex trading, broker comparison"
+         canonicalUrl={currentUrl}
+         ogTitle="Dualite - Best Forex Broker Reviews & Comparison 2025"
+@@ -103,7 +104,7 @@ export function HomePage() {
+         ogType="website"
+         ogImage={ogImage}
+         twitterCard="summary_large_image"
+-        twitterTitle="Dualite - Best Forex Broker Reviews & Comparison 2025"
++        twitterTitle="Find Your Perfect Forex Broker | Dualite"
+         twitterDescription="Comprehensive forex broker reviews, comparison tools, and trading education. Find the best forex broker for your trading needs."
+         structuredData={[structuredData, breadcrumbStructuredData]}
+         additionalMetaTags={[

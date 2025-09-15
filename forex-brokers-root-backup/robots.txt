@@ -1,0 +1,21 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://brokeranalysis.com/forex-brokers/sitemap.xml
+
+# Crawl delay
+Crawl-delay: 1
+
+# Allow specific file types
+Allow: *.css
+Allow: *.js
+Allow: *.jpg
+Allow: *.png
+Allow: *.gif
+Allow: *.webp
+
+# Block unnecessary paths
+Disallow: /admin/
+Disallow: /private/
+Disallow: /temp/

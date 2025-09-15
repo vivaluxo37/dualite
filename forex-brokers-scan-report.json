@@ -1,0 +1,895 @@
+{
+  "summary": {
+    "total": 121,
+    "critical": 20,
+    "high": 83,
+    "medium": 18,
+    "low": 0,
+    "byType": {
+      "404": 20,
+      "theme": 0,
+      "routing": 18,
+      "data": 83
+    }
+  },
+  "results": [
+    {
+      "type": "404",
+      "severity": "critical",
+      "file": "C:\\Users\\LENOVO\\Desktop\\dualite\\src\\pages\\forex-brokers\\ForexBrokersRouter.tsx",
+      "message": "Missing lazy-loaded component: ./RegionBrokerPage",
+      "details": {
+        "importPath": "./RegionBrokerPage",
+        "fullPath": "C:\\Users\\LENOVO\\Desktop\\dualite\\src\\RegionBrokerPage"
+      }
+    },
+    {
+      "type": "404",
+      "severity": "critical",
+      "file": "C:\\Users\\LENOVO\\Desktop\\dualite\\src\\pages\\forex-brokers\\ForexBrokersRouter.tsx",
+      "message": "Missing lazy-loaded component: ./TradingTypePage",
+      "details": {
+        "importPath": "./TradingTypePage",
+        "fullPath": "C:\\Users\\LENOVO\\Desktop\\dualite\\src\\TradingTypePage"
+      }
+    },
+    {
+      "type": "404",
+      "severity": "critical",
+      "file": "C:\\Users\\LENOVO\\Desktop\\dualite\\src\\pages\\forex-brokers\\ForexBrokersRouter.tsx",
+      "message": "Missing lazy-loaded component: ./RegionalPage",
+      "details": {
+        "importPath": "./RegionalPage",
+        "fullPath": "C:\\Users\\LENOVO\\Desktop\\dualite\\src\\RegionalPage"
+      }
+    },
+    {
+      "type": "404",
+      "severity": "critical",
+      "file": "C:\\Users\\LENOVO\\Desktop\\dualite\\src\\pages\\forex-brokers\\ForexBrokersRouter.tsx",
+      "message": "Missing lazy-loaded component: ./NepalRegionalPage",
+      "details": {
+        "importPath": "./NepalRegionalPage",
+        "fullPath": "C:\\Users\\LENOVO\\Desktop\\dualite\\src\\NepalRegionalPage"
+      }
+    },
+    {
+      "type": "404",
+      "severity": "critical",
+      "file": "C:\\Users\\LENOVO\\Desktop\\dualite\\src\\pages\\forex-brokers\\ForexBrokersRouter.tsx",
+      "message": "Missing lazy-loaded component: ./USForexBrokersPage",
+      "details": {
+        "importPath": "./USForexBrokersPage",
+        "fullPath": "C:\\Users\\LENOVO\\Desktop\\dualite\\src\\USForexBrokersPage"
+      }
+    },
+    {
+      "type": "404",
+      "severity": "critical",
+      "file": "C:\\Users\\LENOVO\\Desktop\\dualite\\src\\pages\\forex-brokers\\ForexBrokersRouter.tsx",
+      "message": "Missing lazy-loaded component: ./CanadaForexBrokersPage",
+      "details": {
+        "importPath": "./CanadaForexBrokersPage",
+        "fullPath": "C:\\Users\\LENOVO\\Desktop\\dualite\\src\\CanadaForexBrokersPage"
+      }
+    },
+    {
+      "type": "404",
+      "severity": "critical",
+      "file": "C:\\Users\\LENOVO\\Desktop\\dualite\\src\\pages\\forex-brokers\\ForexBrokersRouter.tsx",
+      "message": "Missing lazy-loaded component: ./DubaiRegionalPage",
+      "details": {
+        "importPath": "./DubaiRegionalPage",
+        "fullPath": "C:\\Users\\LENOVO\\Desktop\\dualite\\src\\DubaiRegionalPage"
+      }
+    },
+    {
+      "type": "404",
+      "severity": "critical",
+      "file": "C:\\Users\\LENOVO\\Desktop\\dualite\\src\\pages\\forex-brokers\\ForexBrokersRouter.tsx",
+      "message": "Missing lazy-loaded component: ./BeginnersForexBrokersPage",
+      "details": {
+        "importPath": "./BeginnersForexBrokersPage",
+        "fullPath": "C:\\Users\\LENOVO\\Desktop\\dualite\\src\\BeginnersForexBrokersPage"
+      }
+    },
+    {
+      "type": "404",
+      "severity": "critical",
+      "file": "C:\\Users\\LENOVO\\Desktop\\dualite\\src\\pages\\forex-brokers\\ForexBrokersRouter.tsx",
+      "message": "Missing lazy-loaded component: ./IslamicForexBrokersPage",
+      "details": {
+        "importPath": "./IslamicForexBrokersPage",
+        "fullPath": "C:\\Users\\LENOVO\\Desktop\\dualite\\src\\IslamicForexBrokersPage"
+      }
+    },
+    {
+      "type": "404",
+      "severity": "critical",
+      "file": "C:\\Users\\LENOVO\\Desktop\\dualite\\src\\pages\\forex-brokers\\ForexBrokersRouter.tsx",
+      "message": "Missing lazy-loaded component: ./LowestSpreadPage",
+      "details": {
+        "importPath": "./LowestSpreadPage",
+        "fullPath": "C:\\Users\\LENOVO\\Desktop\\dualite\\src\\LowestSpreadPage"
+      }
+    },
+    {
+      "type": "404",
+      "severity": "critical",
+      "file": "C:\\Users\\LENOVO\\Desktop\\dualite\\src\\pages\\forex-brokers\\ForexBrokersRouter.tsx",
+      "message": "Missing lazy-loaded component: ./AutoTradingPage",
+      "details": {
+        "importPath": "./AutoTradingPage",
+        "fullPath": "C:\\Users\\LENOVO\\Desktop\\dualite\\src\\AutoTradingPage"
+      }
+    },
+    {
+      "type": "404",
+      "severity": "critical",
+      "file": "C:\\Users\\LENOVO\\Desktop\\dualite\\src\\pages\\forex-brokers\\ForexBrokersRouter.tsx",
+      "message": "Missing lazy-loaded component: ./CopyTradingPage",
+      "details": {
+        "importPath": "./CopyTradingPage",
+        "fullPath": "C:\\Users\\LENOVO\\Desktop\\dualite\\src\\CopyTradingPage"
+      }
+    },
+    {
+      "type": "404",
+      "severity": "critical",
+      "file": "C:\\Users\\LENOVO\\Desktop\\dualite\\src\\pages\\forex-brokers\\ForexBrokersRouter.tsx",
+      "message": "Missing lazy-loaded component: ./DemoAccountsPage",
+      "details": {
+        "importPath": "./DemoAccountsPage",
+        "fullPath": "C:\\Users\\LENOVO\\Desktop\\dualite\\src\\DemoAccountsPage"
+      }
+    },
+    {
+      "type": "404",
+      "severity": "critical",
+      "file": "C:\\Users\\LENOVO\\Desktop\\dualite\\src\\pages\\forex-brokers\\ForexBrokersRouter.tsx",
+      "message": "Missing lazy-loaded component: ./OilTradingPage",
+      "details": {
+        "importPath": "./OilTradingPage",
+        "fullPath": "C:\\Users\\LENOVO\\Desktop\\dualite\\src\\OilTradingPage"
+      }
+    },
+    {
+      "type": "404",
+      "severity": "critical",
+      "file": "C:\\Users\\LENOVO\\Desktop\\dualite\\src\\pages\\forex-brokers\\ForexBrokersRouter.tsx",
+      "message": "Missing lazy-loaded component: ./ECNBrokersPage",
+      "details": {
+        "importPath": "./ECNBrokersPage",
+        "fullPath": "C:\\Users\\LENOVO\\Desktop\\dualite\\src\\ECNBrokersPage"
+      }
+    },
+    {
+      "type": "404",
+      "severity": "critical",
+      "file": "C:\\Users\\LENOVO\\Desktop\\dualite\\src\\pages\\forex-brokers\\ForexBrokersRouter.tsx",
+      "message": "Missing lazy-loaded component: ./trading-types/StockTradingBrokersPage",
+      "details": {
+        "importPath": "./trading-types/StockTradingBrokersPage",
+        "fullPath": "C:\\Users\\LENOVO\\Desktop\\dualite\\src\\trading-types\\StockTradingBrokersPage"
+      }
+    },
+    {
+      "type": "404",
+      "severity": "critical",
+      "file": "C:\\Users\\LENOVO\\Desktop\\dualite\\src\\pages\\forex-brokers\\ForexBrokersRouter.tsx",
+      "message": "Missing lazy-loaded component: ./ScalpingPage",
+      "details": {
+        "importPath": "./ScalpingPage",
+        "fullPath": "C:\\Users\\LENOVO\\Desktop\\dualite\\src\\ScalpingPage"
+      }
+    },
+    {
+      "type": "404",
+      "severity": "critical",
+      "file": "C:\\Users\\LENOVO\\Desktop\\dualite\\src\\pages\\forex-brokers\\ForexBrokersRouter.tsx",
+      "message": "Missing lazy-loaded component: ./HighLeveragePage",
+      "details": {
+        "importPath": "./HighLeveragePage",
+        "fullPath": "C:\\Users\\LENOVO\\Desktop\\dualite\\src\\HighLeveragePage"
+      }
+    },
+    {
+      "type": "404",
+      "severity": "critical",
+      "file": "C:\\Users\\LENOVO\\Desktop\\dualite\\src\\pages\\forex-brokers\\ForexBrokersRouter.tsx",
+      "message": "Missing lazy-loaded component: ./regions/malaysia",
+      "details": {
+        "importPath": "./regions/malaysia",
+        "fullPath": "C:\\Users\\LENOVO\\Desktop\\dualite\\src\\regions\\malaysia"
+      }
+    },
+    {
+      "type": "404",
+      "severity": "critical",
+      "file": "C:\\Users\\LENOVO\\Desktop\\dualite\\src\\pages\\forex-brokers\\ForexBrokersRouter.tsx",
+      "message": "Missing lazy-loaded component: ./regions/australia",
+      "details": {
+        "importPath": "./regions/australia",
+        "fullPath": "C:\\Users\\LENOVO\\Desktop\\dualite\\src\\regions\\australia"
+      }
+    },
+    {
+      "type": "data",
+      "severity": "high",
+      "file": "C:\\Users\\LENOVO\\Desktop\\dualite\\src\\data\\forex-brokers\\trading-types\\auto-trading.ts",
+      "message": "Broker 'auto-trading' missing required field: logo"
+    },
+    {
+      "type": "data",
+      "severity": "high",
+      "file": "C:\\Users\\LENOVO\\Desktop\\dualite\\src\\data\\forex-brokers\\trading-types\\auto-trading.ts",
+      "message": "Broker 'auto-trading' missing required field: rating"
+    },
+    {
+      "type": "data",
+      "severity": "high",
+      "file": "C:\\Users\\LENOVO\\Desktop\\dualite\\src\\data\\forex-brokers\\trading-types\\auto-trading.ts",
+      "message": "Broker 'auto-trading' missing required field: regulation"
+    },
+    {
+      "type": "data",
+      "severity": "high",
+      "file": "C:\\Users\\LENOVO\\Desktop\\dualite\\src\\data\\forex-brokers\\trading-types\\auto-trading.ts",
+      "message": "Broker 'auto-trading' missing required field: minDeposit"
+    },
+    {
+      "type": "data",
+      "severity": "high",
+      "file": "C:\\Users\\LENOVO\\Desktop\\dualite\\src\\data\\forex-brokers\\trading-types\\auto-trading.ts",
+      "message": "Broker 'auto-trading' missing required field: spread"
+    },
+    {
+      "type": "data",
+      "severity": "high",
+      "file": "C:\\Users\\LENOVO\\Desktop\\dualite\\src\\data\\forex-brokers\\trading-types\\auto-trading.ts",
+      "message": "Broker 'auto-trading' missing required field: leverage"
+    },
+    {
+      "type": "data",
+      "severity": "high",
+      "file": "C:\\Users\\LENOVO\\Desktop\\dualite\\src\\data\\forex-brokers\\trading-types\\auto-trading.ts",
+      "message": "Broker 'auto-trading' missing required field: platforms"
+    },
+    {
+      "type": "data",
+      "severity": "high",
+      "file": "C:\\Users\\LENOVO\\Desktop\\dualite\\src\\data\\forex-brokers\\trading-types\\copy-trading.ts",
+      "message": "Broker 'copy-trading' missing required field: logo"
+    },
+    {
+      "type": "data",
+      "severity": "high",
+      "file": "C:\\Users\\LENOVO\\Desktop\\dualite\\src\\data\\forex-brokers\\trading-types\\copy-trading.ts",
+      "message": "Broker 'copy-trading' missing required field: rating"
+    },
+    {
+      "type": "data",
+      "severity": "high",
+      "file": "C:\\Users\\LENOVO\\Desktop\\dualite\\src\\data\\forex-brokers\\trading-types\\copy-trading.ts",
+      "message": "Broker 'copy-trading' missing required field: regulation"
+    },
+    {
+      "type": "data",
+      "severity": "high",
+      "file": "C:\\Users\\LENOVO\\Desktop\\dualite\\src\\data\\forex-brokers\\trading-types\\copy-trading.ts",
+      "message": "Broker 'copy-trading' missing required field: minDeposit"
+    },
+    {
+      "type": "data",
+      "severity": "high",
+      "file": "C:\\Users\\LENOVO\\Desktop\\dualite\\src\\data\\forex-brokers\\trading-types\\copy-trading.ts",
+      "message": "Broker 'copy-trading' missing required field: spread"
+    },
+    {
+      "type": "data",
+      "severity": "high",
+      "file": "C:\\Users\\LENOVO\\Desktop\\dualite\\src\\data\\forex-brokers\\trading-types\\copy-trading.ts",
+      "message": "Broker 'copy-trading' missing required field: leverage"
+    },
+    {
+      "type": "data",
+      "severity": "high",
+      "file": "C:\\Users\\LENOVO\\Desktop\\dualite\\src\\data\\forex-brokers\\trading-types\\copy-trading.ts",
+      "message": "Broker 'copy-trading' missing required field: platforms"
+    },
+    {
+      "type": "data",
+      "severity": "high",
+      "file": "C:\\Users\\LENOVO\\Desktop\\dualite\\src\\data\\forex-brokers\\trading-types\\demo-accounts.ts",
+      "message": "Broker 'demo-accounts' missing required field: logo"
+    },
+    {
+      "type": "data",
+      "severity": "high",
+      "file": "C:\\Users\\LENOVO\\Desktop\\dualite\\src\\data\\forex-brokers\\trading-types\\demo-accounts.ts",
+      "message": "Broker 'demo-accounts' missing required field: rating"
+    },
+    {
+      "type": "data",
+      "severity": "high",
+      "file": "C:\\Users\\LENOVO\\Desktop\\dualite\\src\\data\\forex-brokers\\trading-types\\demo-accounts.ts",
+      "message": "Broker 'demo-accounts' missing required field: regulation"
+    },
+    {
+      "type": "data",
+      "severity": "high",
+      "file": "C:\\Users\\LENOVO\\Desktop\\dualite\\src\\data\\forex-brokers\\trading-types\\demo-accounts.ts",
+      "message": "Broker 'demo-accounts' missing required field: minDeposit"
+    },
+    {
+      "type": "data",
+      "severity": "high",
+      "file": "C:\\Users\\LENOVO\\Desktop\\dualite\\src\\data\\forex-brokers\\trading-types\\demo-accounts.ts",
+      "message": "Broker 'demo-accounts' missing required field: spread"
+    },
+    {
+      "type": "data",
+      "severity": "high",
+      "file": "C:\\Users\\LENOVO\\Desktop\\dualite\\src\\data\\forex-brokers\\trading-types\\demo-accounts.ts",
+      "message": "Broker 'demo-accounts' missing required field: leverage"
+    },
+    {
+      "type": "data",
+      "severity": "high",
+      "file": "C:\\Users\\LENOVO\\Desktop\\dualite\\src\\data\\forex-brokers\\trading-types\\demo-accounts.ts",
+      "message": "Broker 'demo-accounts' missing required field: platforms"
+    },
+    {
+      "type": "data",
+      "severity": "high",
+      "file": "C:\\Users\\LENOVO\\Desktop\\dualite\\src\\data\\forex-brokers\\trading-types\\ecn.ts",
+      "message": "Broker 'ecn' missing required field: logo"
+    },
+    {
+      "type": "data",
+      "severity": "high",
+      "file": "C:\\Users\\LENOVO\\Desktop\\dualite\\src\\data\\forex-brokers\\trading-types\\ecn.ts",
+      "message": "Broker 'ecn' missing required field: rating"
+    },
+    {
+      "type": "data",
+      "severity": "high",
+      "file": "C:\\Users\\LENOVO\\Desktop\\dualite\\src\\data\\forex-brokers\\trading-types\\ecn.ts",
+      "message": "Broker 'ecn' missing required field: regulation"
+    },
+    {
+      "type": "data",
+      "severity": "high",
+      "file": "C:\\Users\\LENOVO\\Desktop\\dualite\\src\\data\\forex-brokers\\trading-types\\ecn.ts",
+      "message": "Broker 'ecn' missing required field: minDeposit"
+    },
+    {
+      "type": "data",
+      "severity": "high",
+      "file": "C:\\Users\\LENOVO\\Desktop\\dualite\\src\\data\\forex-brokers\\trading-types\\ecn.ts",
+      "message": "Broker 'ecn' missing required field: spread"
+    },
+    {
+      "type": "data",
+      "severity": "high",
+      "file": "C:\\Users\\LENOVO\\Desktop\\dualite\\src\\data\\forex-brokers\\trading-types\\ecn.ts",
+      "message": "Broker 'ecn' missing required field: leverage"
+    },
+    {
+      "type": "data",
+      "severity": "high",
+      "file": "C:\\Users\\LENOVO\\Desktop\\dualite\\src\\data\\forex-brokers\\trading-types\\ecn.ts",
+      "message": "Broker 'ecn' missing required field: platforms"
+    },
+    {
+      "type": "data",
+      "severity": "high",
+      "file": "C:\\Users\\LENOVO\\Desktop\\dualite\\src\\data\\forex-brokers\\trading-types\\high-leverage.ts",
+      "message": "Broker 'high-leverage' missing required field: logo"
+    },
+    {
+      "type": "data",
+      "severity": "high",
+      "file": "C:\\Users\\LENOVO\\Desktop\\dualite\\src\\data\\forex-brokers\\trading-types\\high-leverage.ts",
+      "message": "Broker 'high-leverage' missing required field: rating"
+    },
+    {
+      "type": "data",
+      "severity": "high",
+      "file": "C:\\Users\\LENOVO\\Desktop\\dualite\\src\\data\\forex-brokers\\trading-types\\high-leverage.ts",
+      "message": "Broker 'high-leverage' missing required field: regulation"
+    },
+    {
+      "type": "data",
+      "severity": "high",
+      "file": "C:\\Users\\LENOVO\\Desktop\\dualite\\src\\data\\forex-brokers\\trading-types\\high-leverage.ts",
+      "message": "Broker 'high-leverage' missing required field: minDeposit"
+    },
+    {
+      "type": "data",
+      "severity": "high",
+      "file": "C:\\Users\\LENOVO\\Desktop\\dualite\\src\\data\\forex-brokers\\trading-types\\high-leverage.ts",
+      "message": "Broker 'high-leverage' missing required field: spread"
+    },
+    {
+      "type": "data",
+      "severity": "high",
+      "file": "C:\\Users\\LENOVO\\Desktop\\dualite\\src\\data\\forex-brokers\\trading-types\\high-leverage.ts",
+      "message": "Broker 'high-leverage' missing required field: leverage"
+    },
+    {
+      "type": "data",
+      "severity": "high",
+      "file": "C:\\Users\\LENOVO\\Desktop\\dualite\\src\\data\\forex-brokers\\trading-types\\high-leverage.ts",
+      "message": "Broker 'high-leverage' missing required field: platforms"
+    },
+    {
+      "type": "data",
+      "severity": "high",
+      "file": "C:\\Users\\LENOVO\\Desktop\\dualite\\src\\data\\forex-brokers\\trading-types\\islamic.ts",
+      "message": "Broker 'islamic' missing required field: logo"
+    },
+    {
+      "type": "data",
+      "severity": "high",
+      "file": "C:\\Users\\LENOVO\\Desktop\\dualite\\src\\data\\forex-brokers\\trading-types\\islamic.ts",
+      "message": "Broker 'islamic' missing required field: rating"
+    },
+    {
+      "type": "data",
+      "severity": "high",
+      "file": "C:\\Users\\LENOVO\\Desktop\\dualite\\src\\data\\forex-brokers\\trading-types\\islamic.ts",
+      "message": "Broker 'islamic' missing required field: regulation"
+    },
+    {
+      "type": "data",
+      "severity": "high",
+      "file": "C:\\Users\\LENOVO\\Desktop\\dualite\\src\\data\\forex-brokers\\trading-types\\islamic.ts",
+      "message": "Broker 'islamic' missing required field: minDeposit"
+    },
+    {
+      "type": "data",
+      "severity": "high",
+      "file": "C:\\Users\\LENOVO\\Desktop\\dualite\\src\\data\\forex-brokers\\trading-types\\islamic.ts",
+      "message": "Broker 'islamic' missing required field: spread"
+    },
+    {
+      "type": "data",
+      "severity": "high",
+      "file": "C:\\Users\\LENOVO\\Desktop\\dualite\\src\\data\\forex-brokers\\trading-types\\islamic.ts",
+      "message": "Broker 'islamic' missing required field: leverage"
+    },
+    {
+      "type": "data",
+      "severity": "high",
+      "file": "C:\\Users\\LENOVO\\Desktop\\dualite\\src\\data\\forex-brokers\\trading-types\\islamic.ts",
+      "message": "Broker 'islamic' missing required field: platforms"
+    },
+    {
+      "type": "data",
+      "severity": "high",
+      "file": "C:\\Users\\LENOVO\\Desktop\\dualite\\src\\data\\forex-brokers\\trading-types\\low-spread.ts",
+      "message": "Broker 'low-spread' missing required field: logo"
+    },
+    {
+      "type": "data",
+      "severity": "high",
+      "file": "C:\\Users\\LENOVO\\Desktop\\dualite\\src\\data\\forex-brokers\\trading-types\\low-spread.ts",
+      "message": "Broker 'low-spread' missing required field: rating"
+    },
+    {
+      "type": "data",
+      "severity": "high",
+      "file": "C:\\Users\\LENOVO\\Desktop\\dualite\\src\\data\\forex-brokers\\trading-types\\low-spread.ts",
+      "message": "Broker 'low-spread' missing required field: regulation"
+    },
+    {
+      "type": "data",
+      "severity": "high",
+      "file": "C:\\Users\\LENOVO\\Desktop\\dualite\\src\\data\\forex-brokers\\trading-types\\low-spread.ts",
+      "message": "Broker 'low-spread' missing required field: minDeposit"
+    },
+    {
+      "type": "data",
+      "severity": "high",
+      "file": "C:\\Users\\LENOVO\\Desktop\\dualite\\src\\data\\forex-brokers\\trading-types\\low-spread.ts",
+      "message": "Broker 'low-spread' missing required field: spread"
+    },
+    {
+      "type": "data",
+      "severity": "high",
+      "file": "C:\\Users\\LENOVO\\Desktop\\dualite\\src\\data\\forex-brokers\\trading-types\\low-spread.ts",
+      "message": "Broker 'low-spread' missing required field: leverage"
+    },
+    {
+      "type": "data",
+      "severity": "high",
+      "file": "C:\\Users\\LENOVO\\Desktop\\dualite\\src\\data\\forex-brokers\\trading-types\\low-spread.ts",
+      "message": "Broker 'low-spread' missing required field: platforms"
+    },
+    {
+      "type": "data",
+      "severity": "high",
+      "file": "C:\\Users\\LENOVO\\Desktop\\dualite\\src\\data\\forex-brokers\\trading-types\\mt4.ts",
+      "message": "Broker 'mt4' missing required field: logo"
+    },
+    {
+      "type": "data",
+      "severity": "high",
+      "file": "C:\\Users\\LENOVO\\Desktop\\dualite\\src\\data\\forex-brokers\\trading-types\\mt4.ts",
+      "message": "Broker 'mt4' missing required field: rating"
+    },
+    {
+      "type": "data",
+      "severity": "high",
+      "file": "C:\\Users\\LENOVO\\Desktop\\dualite\\src\\data\\forex-brokers\\trading-types\\mt4.ts",
+      "message": "Broker 'mt4' missing required field: regulation"
+    },
+    {
+      "type": "data",
+      "severity": "high",
+      "file": "C:\\Users\\LENOVO\\Desktop\\dualite\\src\\data\\forex-brokers\\trading-types\\mt4.ts",
+      "message": "Broker 'mt4' missing required field: minDeposit"
+    },
+    {
+      "type": "data",
+      "severity": "high",
+      "file": "C:\\Users\\LENOVO\\Desktop\\dualite\\src\\data\\forex-brokers\\trading-types\\mt4.ts",
+      "message": "Broker 'mt4' missing required field: spread"
+    },
+    {
+      "type": "data",
+      "severity": "high",
+      "file": "C:\\Users\\LENOVO\\Desktop\\dualite\\src\\data\\forex-brokers\\trading-types\\mt4.ts",
+      "message": "Broker 'mt4' missing required field: leverage"
+    },
+    {
+      "type": "data",
+      "severity": "high",
+      "file": "C:\\Users\\LENOVO\\Desktop\\dualite\\src\\data\\forex-brokers\\trading-types\\mt4.ts",
+      "message": "Broker 'mt4' missing required field: platforms"
+    },
+    {
+      "type": "data",
+      "severity": "high",
+      "file": "C:\\Users\\LENOVO\\Desktop\\dualite\\src\\data\\forex-brokers\\trading-types\\oil-trading.ts",
+      "message": "Broker 'oil-trading' missing required field: logo"
+    },
+    {
+      "type": "data",
+      "severity": "high",
+      "file": "C:\\Users\\LENOVO\\Desktop\\dualite\\src\\data\\forex-brokers\\trading-types\\oil-trading.ts",
+      "message": "Broker 'oil-trading' missing required field: rating"
+    },
+    {
+      "type": "data",
+      "severity": "high",
+      "file": "C:\\Users\\LENOVO\\Desktop\\dualite\\src\\data\\forex-brokers\\trading-types\\oil-trading.ts",
+      "message": "Broker 'oil-trading' missing required field: regulation"
+    },
+    {
+      "type": "data",
+      "severity": "high",
+      "file": "C:\\Users\\LENOVO\\Desktop\\dualite\\src\\data\\forex-brokers\\trading-types\\oil-trading.ts",
+      "message": "Broker 'oil-trading' missing required field: minDeposit"
+    },
+    {
+      "type": "data",
+      "severity": "high",
+      "file": "C:\\Users\\LENOVO\\Desktop\\dualite\\src\\data\\forex-brokers\\trading-types\\oil-trading.ts",
+      "message": "Broker 'oil-trading' missing required field: spread"
+    },
+    {
+      "type": "data",
+      "severity": "high",
+      "file": "C:\\Users\\LENOVO\\Desktop\\dualite\\src\\data\\forex-brokers\\trading-types\\oil-trading.ts",
+      "message": "Broker 'oil-trading' missing required field: leverage"
+    },
+    {
+      "type": "data",
+      "severity": "high",
+      "file": "C:\\Users\\LENOVO\\Desktop\\dualite\\src\\data\\forex-brokers\\trading-types\\oil-trading.ts",
+      "message": "Broker 'oil-trading' missing required field: platforms"
+    },
+    {
+      "type": "data",
+      "severity": "high",
+      "file": "C:\\Users\\LENOVO\\Desktop\\dualite\\src\\data\\forex-brokers\\trading-types\\scalping.ts",
+      "message": "Broker 'scalping' missing required field: logo"
+    },
+    {
+      "type": "data",
+      "severity": "high",
+      "file": "C:\\Users\\LENOVO\\Desktop\\dualite\\src\\data\\forex-brokers\\trading-types\\scalping.ts",
+      "message": "Broker 'scalping' missing required field: rating"
+    },
+    {
+      "type": "data",
+      "severity": "high",
+      "file": "C:\\Users\\LENOVO\\Desktop\\dualite\\src\\data\\forex-brokers\\trading-types\\scalping.ts",
+      "message": "Broker 'scalping' missing required field: regulation"
+    },
+    {
+      "type": "data",
+      "severity": "high",
+      "file": "C:\\Users\\LENOVO\\Desktop\\dualite\\src\\data\\forex-brokers\\trading-types\\scalping.ts",
+      "message": "Broker 'scalping' missing required field: minDeposit"
+    },
+    {
+      "type": "data",
+      "severity": "high",
+      "file": "C:\\Users\\LENOVO\\Desktop\\dualite\\src\\data\\forex-brokers\\trading-types\\scalping.ts",
+      "message": "Broker 'scalping' missing required field: spread"
+    },
+    {
+      "type": "data",
+      "severity": "high",
+      "file": "C:\\Users\\LENOVO\\Desktop\\dualite\\src\\data\\forex-brokers\\trading-types\\scalping.ts",
+      "message": "Broker 'scalping' missing required field: leverage"
+    },
+    {
+      "type": "data",
+      "severity": "high",
+      "file": "C:\\Users\\LENOVO\\Desktop\\dualite\\src\\data\\forex-brokers\\trading-types\\scalping.ts",
+      "message": "Broker 'scalping' missing required field: platforms"
+    },
+    {
+      "type": "data",
+      "severity": "high",
+      "file": "C:\\Users\\LENOVO\\Desktop\\dualite\\src\\data\\forex-brokers\\trading-types\\stock-trading.ts",
+      "message": "Broker 'stock-trading' missing required field: logo"
+    },
+    {
+      "type": "data",
+      "severity": "high",
+      "file": "C:\\Users\\LENOVO\\Desktop\\dualite\\src\\data\\forex-brokers\\trading-types\\stock-trading.ts",
+      "message": "Broker 'stock-trading' missing required field: rating"
+    },
+    {
+      "type": "data",
+      "severity": "high",
+      "file": "C:\\Users\\LENOVO\\Desktop\\dualite\\src\\data\\forex-brokers\\trading-types\\stock-trading.ts",
+      "message": "Broker 'stock-trading' missing required field: regulation"
+    },
+    {
+      "type": "data",
+      "severity": "high",
+      "file": "C:\\Users\\LENOVO\\Desktop\\dualite\\src\\data\\forex-brokers\\trading-types\\stock-trading.ts",
+      "message": "Broker 'stock-trading' missing required field: minDeposit"
+    },
+    {
+      "type": "data",
+      "severity": "high",
+      "file": "C:\\Users\\LENOVO\\Desktop\\dualite\\src\\data\\forex-brokers\\trading-types\\stock-trading.ts",
+      "message": "Broker 'stock-trading' missing required field: spread"
+    },
+    {
+      "type": "data",
+      "severity": "high",
+      "file": "C:\\Users\\LENOVO\\Desktop\\dualite\\src\\data\\forex-brokers\\trading-types\\stock-trading.ts",
+      "message": "Broker 'stock-trading' missing required field: leverage"
+    },
+    {
+      "type": "data",
+      "severity": "high",
+      "file": "C:\\Users\\LENOVO\\Desktop\\dualite\\src\\data\\forex-brokers\\trading-types\\stock-trading.ts",
+      "message": "Broker 'stock-trading' missing required field: platforms"
+    },
+    {
+      "type": "data",
+      "severity": "high",
+      "file": "C:\\Users\\LENOVO\\Desktop\\dualite\\src\\data\\forex-brokers\\trading-types\\stock-trading.ts",
+      "message": "Broker 'stock-fxtm' missing required field: logo"
+    },
+    {
+      "type": "data",
+      "severity": "high",
+      "file": "C:\\Users\\LENOVO\\Desktop\\dualite\\src\\data\\forex-brokers\\trading-types\\stock-trading.ts",
+      "message": "Broker 'stock-fpmarkets' missing required field: logo"
+    },
+    {
+      "type": "data",
+      "severity": "high",
+      "file": "C:\\Users\\LENOVO\\Desktop\\dualite\\src\\data\\forex-brokers\\trading-types\\stock-trading.ts",
+      "message": "Broker 'stock-pepperstone' missing required field: logo"
+    },
+    {
+      "type": "data",
+      "severity": "high",
+      "file": "C:\\Users\\LENOVO\\Desktop\\dualite\\src\\data\\forex-brokers\\trading-types\\stock-trading.ts",
+      "message": "Broker 'stock-eightcap' missing required field: logo"
+    },
+    {
+      "type": "data",
+      "severity": "high",
+      "file": "C:\\Users\\LENOVO\\Desktop\\dualite\\src\\data\\forex-brokers\\trading-types\\stock-trading.ts",
+      "message": "Broker 'stock-blackbull' missing required field: logo"
+    },
+    {
+      "type": "data",
+      "severity": "high",
+      "file": "C:\\Users\\LENOVO\\Desktop\\dualite\\src\\data\\forex-brokers\\trading-types\\stock-trading.ts",
+      "message": "Broker 'stock-avatrade' missing required field: logo"
+    },
+    {
+      "type": "routing",
+      "severity": "medium",
+      "file": "C:\\Users\\LENOVO\\Desktop\\dualite\\src\\pages\\forex-brokers\\ForexBrokersRouter.tsx",
+      "message": "URL mapping may be malformed: ecn-brokers -> ecn",
+      "details": {
+        "url": "ecn-brokers",
+        "key": "ecn"
+      }
+    },
+    {
+      "type": "routing",
+      "severity": "medium",
+      "file": "C:\\Users\\LENOVO\\Desktop\\dualite\\src\\pages\\forex-brokers\\ForexBrokersRouter.tsx",
+      "message": "URL mapping may be malformed: ecn -> ecn",
+      "details": {
+        "url": "ecn",
+        "key": "ecn"
+      }
+    },
+    {
+      "type": "routing",
+      "severity": "medium",
+      "file": "C:\\Users\\LENOVO\\Desktop\\dualite\\src\\pages\\forex-brokers\\ForexBrokersRouter.tsx",
+      "message": "URL mapping may be malformed: crude-oil-brokers -> oil-trading",
+      "details": {
+        "url": "crude-oil-brokers",
+        "key": "oil-trading"
+      }
+    },
+    {
+      "type": "routing",
+      "severity": "medium",
+      "file": "C:\\Users\\LENOVO\\Desktop\\dualite\\src\\pages\\forex-brokers\\ForexBrokersRouter.tsx",
+      "message": "URL mapping may be malformed: oil-trading -> oil-trading",
+      "details": {
+        "url": "oil-trading",
+        "key": "oil-trading"
+      }
+    },
+    {
+      "type": "routing",
+      "severity": "medium",
+      "file": "C:\\Users\\LENOVO\\Desktop\\dualite\\src\\pages\\forex-brokers\\ForexBrokersRouter.tsx",
+      "message": "URL mapping may be malformed: mt4 -> mt4",
+      "details": {
+        "url": "mt4",
+        "key": "mt4"
+      }
+    },
+    {
+      "type": "routing",
+      "severity": "medium",
+      "file": "C:\\Users\\LENOVO\\Desktop\\dualite\\src\\pages\\forex-brokers\\ForexBrokersRouter.tsx",
+      "message": "URL mapping may be malformed: demo-accounts -> demo-accounts",
+      "details": {
+        "url": "demo-accounts",
+        "key": "demo-accounts"
+      }
+    },
+    {
+      "type": "routing",
+      "severity": "medium",
+      "file": "C:\\Users\\LENOVO\\Desktop\\dualite\\src\\pages\\forex-brokers\\ForexBrokersRouter.tsx",
+      "message": "URL mapping may be malformed: beginners -> beginners",
+      "details": {
+        "url": "beginners",
+        "key": "beginners"
+      }
+    },
+    {
+      "type": "routing",
+      "severity": "medium",
+      "file": "C:\\Users\\LENOVO\\Desktop\\dualite\\src\\pages\\forex-brokers\\ForexBrokersRouter.tsx",
+      "message": "URL mapping may be malformed: auto-trading -> auto-trading",
+      "details": {
+        "url": "auto-trading",
+        "key": "auto-trading"
+      }
+    },
+    {
+      "type": "routing",
+      "severity": "medium",
+      "file": "C:\\Users\\LENOVO\\Desktop\\dualite\\src\\pages\\forex-brokers\\ForexBrokersRouter.tsx",
+      "message": "URL mapping may be malformed: copy-trading -> copy-trading",
+      "details": {
+        "url": "copy-trading",
+        "key": "copy-trading"
+      }
+    },
+    {
+      "type": "routing",
+      "severity": "medium",
+      "file": "C:\\Users\\LENOVO\\Desktop\\dualite\\src\\pages\\forex-brokers\\ForexBrokersRouter.tsx",
+      "message": "URL mapping may be malformed: islamic -> islamic",
+      "details": {
+        "url": "islamic",
+        "key": "islamic"
+      }
+    },
+    {
+      "type": "routing",
+      "severity": "medium",
+      "file": "C:\\Users\\LENOVO\\Desktop\\dualite\\src\\pages\\forex-brokers\\ForexBrokersRouter.tsx",
+      "message": "URL mapping may be malformed: low-spread -> low-spread",
+      "details": {
+        "url": "low-spread",
+        "key": "low-spread"
+      }
+    },
+    {
+      "type": "routing",
+      "severity": "medium",
+      "file": "C:\\Users\\LENOVO\\Desktop\\dualite\\src\\pages\\forex-brokers\\ForexBrokersRouter.tsx",
+      "message": "URL mapping may be malformed: stock-trading-brokers -> stock-trading",
+      "details": {
+        "url": "stock-trading-brokers",
+        "key": "stock-trading"
+      }
+    },
+    {
+      "type": "routing",
+      "severity": "medium",
+      "file": "C:\\Users\\LENOVO\\Desktop\\dualite\\src\\pages\\forex-brokers\\ForexBrokersRouter.tsx",
+      "message": "URL mapping may be malformed: stock-trading -> stock-trading",
+      "details": {
+        "url": "stock-trading",
+        "key": "stock-trading"
+      }
+    },
+    {
+      "type": "routing",
+      "severity": "medium",
+      "file": "C:\\Users\\LENOVO\\Desktop\\dualite\\src\\pages\\forex-brokers\\ForexBrokersRouter.tsx",
+      "message": "URL mapping may be malformed: scalping -> scalping",
+      "details": {
+        "url": "scalping",
+        "key": "scalping"
+      }
+    },
+    {
+      "type": "routing",
+      "severity": "medium",
+      "file": "C:\\Users\\LENOVO\\Desktop\\dualite\\src\\pages\\forex-brokers\\ForexBrokersRouter.tsx",
+      "message": "URL mapping may be malformed: scalping-brokers -> scalping",
+      "details": {
+        "url": "scalping-brokers",
+        "key": "scalping"
+      }
+    },
+    {
+      "type": "routing",
+      "severity": "medium",
+      "file": "C:\\Users\\LENOVO\\Desktop\\dualite\\src\\pages\\forex-brokers\\ForexBrokersRouter.tsx",
+      "message": "URL mapping may be malformed: high-leverage -> high-leverage",
+      "details": {
+        "url": "high-leverage",
+        "key": "high-leverage"
+      }
+    },
+    {
+      "type": "routing",
+      "severity": "medium",
+      "file": "C:\\Users\\LENOVO\\Desktop\\dualite\\src\\pages\\forex-brokers\\ForexBrokersRouter.tsx",
+      "message": "URL mapping may be malformed: high-leverage-brokers -> high-leverage",
+      "details": {
+        "url": "high-leverage-brokers",
+        "key": "high-leverage"
+      }
+    },
+    {
+      "type": "routing",
+      "severity": "medium",
+      "file": "C:\\Users\\LENOVO\\Desktop\\dualite\\src\\pages\\forex-brokers\\ForexBrokersRouter.tsx",
+      "message": "URL mapping may be malformed: leverage -> high-leverage",
+      "details": {
+        "url": "leverage",
+        "key": "high-leverage"
+      }
+    }
+  ]
+}

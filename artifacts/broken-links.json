@@ -1,0 +1,16 @@
+{"broken_links": [
+  {
+    "url": "https://i.ibb.co/9gC0G0g/broker-analysis-og.png",
+    "status": 404,
+    "source": "http://localhost:5178/",
+    "anchor_text": "broker-analysis-og.png",
+    "type": "image"
+  },
+  {
+    "url": "https://brokeranalysis.com/",
+    "status": 0,
+    "source": "http://localhost:5178/",
+    "anchor_text": "brokeranalysis.com",
+    "type": "redirect"
+  }
+], "scanned_links": 6, "scan_time": "1.273 seconds", "timestamp": "2025-01-10T00:00:00Z"}

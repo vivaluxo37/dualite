@@ -1,0 +1,210 @@
+{
+  "timestamp": "2025-09-10T16:54:40.375Z",
+  "total_pages": 22,
+  "successful_verifications": 22,
+  "failed_verifications": 0,
+  "average_score": 92,
+  "score_distribution": {
+    "90-100%": 15,
+    "80-89%": 7,
+    "70-79%": 0,
+    "60-69%": 0,
+    "Below 60%": 0
+  },
+  "common_issues": [
+    {
+      "issue": "Invalid meta description length",
+      "count": 16
+    },
+    {
+      "issue": "Invalid title (length or year)",
+      "count": 10
+    }
+  ],
+  "category_performance": [
+    {
+      "category": "regional",
+      "average_score": 92,
+      "pages": 8
+    },
+    {
+      "category": "trading-types",
+      "average_score": 92,
+      "pages": 6
+    },
+    {
+      "category": "regions/dubai",
+      "average_score": 86,
+      "pages": 1
+    },
+    {
+      "category": "regions/india",
+      "average_score": 93,
+      "pages": 1
+    },
+    {
+      "category": "regions/malaysia",
+      "average_score": 100,
+      "pages": 1
+    },
+    {
+      "category": "regions/nepal",
+      "average_score": 93,
+      "pages": 1
+    },
+    {
+      "category": "regions/pakistan",
+      "average_score": 93,
+      "pages": 1
+    },
+    {
+      "category": "regions/singapore",
+      "average_score": 93,
+      "pages": 1
+    },
+    {
+      "category": "regions/south-africa",
+      "average_score": 86,
+      "pages": 1
+    },
+    {
+      "category": "regions/usa",
+      "average_score": 86,
+      "pages": 1
+    }
+  ],
+  "pages_by_score": [
+    {
+      "path": "regional\\singapore-forex-brokers.html",
+      "category": "regional",
+      "score": 100,
+      "issues": 0
+    },
+    {
+      "path": "trading-types\\low-spread-forex-brokers.html",
+      "category": "trading-types",
+      "score": 100,
+      "issues": 0
+    },
+    {
+      "path": "regions\\malaysia\\index.html",
+      "category": "regions/malaysia",
+      "score": 100,
+      "issues": 0
+    },
+    {
+      "path": "regional\\dubai-forex-brokers.html",
+      "category": "regional",
+      "score": 93,
+      "issues": 1
+    },
+    {
+      "path": "regional\\india-forex-brokers.html",
+      "category": "regional",
+      "score": 93,
+      "issues": 1
+    },
+    {
+      "path": "regional\\malaysia-forex-brokers.html",
+      "category": "regional",
+      "score": 93,
+      "issues": 1
+    },
+    {
+      "path": "regional\\nepal-forex-brokers.html",
+      "category": "regional",
+      "score": 93,
+      "issues": 1
+    },
+    {
+      "path": "regional\\pakistan-forex-brokers.html",
+      "category": "regional",
+      "score": 93,
+      "issues": 1
+    },
+    {
+      "path": "trading-types\\copy-trading-forex-brokers.html",
+      "category": "trading-types",
+      "score": 93,
+      "issues": 1
+    },
+    {
+      "path": "trading-types\\islamic-forex-brokers.html",
+      "category": "trading-types",
+      "score": 93,
+      "issues": 1
+    },
+    {
+      "path": "trading-types\\mt4-forex-brokers.html",
+      "category": "trading-types",
+      "score": 93,
+      "issues": 1
+    },
+    {
+      "path": "regions\\india\\index.html",
+      "category": "regions/india",
+      "score": 93,
+      "issues": 1
+    },
+    {
+      "path": "regions\\nepal\\index.html",
+      "category": "regions/nepal",
+      "score": 93,
+      "issues": 1
+    },
+    {
+      "path": "regions\\pakistan\\index.html",
+      "category": "regions/pakistan",
+      "score": 93,
+      "issues": 1
+    },
+    {
+      "path": "regions\\singapore\\index.html",
+      "category": "regions/singapore",
+      "score": 93,
+      "issues": 1
+    },
+    {
+      "path": "regional\\south-africa-forex-brokers.html",
+      "category": "regional",
+      "score": 86,
+      "issues": 2
+    },
+    {
+      "path": "regional\\us-forex-brokers.html",
+      "category": "regional",
+      "score": 86,
+      "issues": 2
+    },
+    {
+      "path": "trading-types\\auto-trading-forex-brokers.html",
+      "category": "trading-types",
+      "score": 86,
+      "issues": 2
+    },
+    {
+      "path": "trading-types\\beginners-forex-brokers.html",
+      "category": "trading-types",
+      "score": 86,
+      "issues": 2
+    },
+    {
+      "path": "regions\\dubai\\index.html",
+      "category": "regions/dubai",
+      "score": 86,
+      "issues": 2
+    },
+    {
+      "path": "regions\\south-africa\\index.html",
+      "category": "regions/south-africa",
+      "score": 86,
+      "issues": 2
+    },
+    {
+      "path": "regions\\usa\\index.html",
+      "category": "regions/usa",
+      "score": 86,
+      "issues": 2
+    }
+  ]
+}

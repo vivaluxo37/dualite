@@ -10,7 +10,7 @@ async function createTestUser() {
   try {
     // Create test user
     const { data, error } = await supabase.auth.signUp({
-      email: 'test@dualite.com',
+      email: 'test@brokeranalysis.com',
       password: 'testpass123',
       options: {
         data: {
@@ -33,5 +33,5 @@ async function createTestUser() {
 createTestUser()
 
 console.log('Test credentials:')
-console.log('Email: test@dualite.com')
+console.log('Email: test@brokeranalysis.com')
 console.log('Password: testpass123')

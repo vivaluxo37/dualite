@@ -1,14 +1,14 @@
-import { useState } from 'react'
-import { useForm } from 'react-hook-form'
-import { zodResolver } from '@hookform/resolvers/zod'
-import * as z from 'zod'
+import { useState } from 'react';
+import { useForm } from 'react-hook-form';
+import { zodResolver } from '@hookform/resolvers/zod';
+import * as z from 'zod';
 import {
   Dialog,
   DialogContent,
   DialogDescription,
   DialogHeader,
   DialogTitle,
-} from '@/components/ui/dialog'
+} from '@/components/ui/dialog';
 import {
   Form,
   FormControl,
@@ -16,28 +16,28 @@ import {
   FormItem,
   FormLabel,
   FormMessage,
-} from '@/components/ui/form'
-import { Input } from '@/components/ui/input'
-import { Button } from '@/components/ui/button'
-import { useAuthContext } from '@/contexts/AuthContext'
-import { toast } from 'sonner'
-import { Loader2 } from 'lucide-react'
+} from '@/components/ui/form';
+import { Input } from '@/components/ui/input';
+import { Button } from '@/components/ui/button';
+import { useAuthContext } from '@/contexts/AuthContext';
+import { toast } from 'sonner';
+import { Loader2 } from 'lucide-react';
 
 const loginSchema = z.object({
   email: z.string().email('Please enter a valid email address'),
   password: z.string().min(6, 'Password must be at least 6 characters'),
-})
+});
 
-type LoginForm = z.infer<typeof loginSchema>
+type LoginForm = z.infer<typeof loginSchema>;
 
 interface LoginDialogProps {
-  open: boolean
-  onOpenChange: (open: boolean) => void
+  open: boolean;
+  onOpenChange: (open: boolean) => void;
 }
 
 export function LoginDialog({ open, onOpenChange }: LoginDialogProps) {
-  const [isLoading, setIsLoading] = useState(false)
-  const { signIn } = useAuthContext()
+  const [isLoading, setIsLoading] = useState(false);
+  const { signIn } = useAuthContext();
 
   const form = useForm<LoginForm>({
     resolver: zodResolver(loginSchema),
@@ -45,26 +45,21 @@ export function LoginDialog({ open, onOpenChange }: LoginDialogProps) {
       email: '',
       password: '',
     },
-  })
+  });
 
   const onSubmit = async (data: LoginForm) => {
-    setIsLoading(true)
+    setIsLoading(true);
     try {
-      const { error } = await signIn(data.email, data.password)
-      
-      if (error) {
-        toast.error(error.message)
-      } else {
-        toast.success('Welcome back!')
-        onOpenChange(false)
-        form.reset()
-      }
-    } catch {
-      toast.error('An unexpected error occurred')
+      await signIn(data.email, data.password);
+      toast.success('Welcome back!');
+      onOpenChange(false);
+      form.reset();
+    } catch (error: any) {
+      toast.error(error.message);
     } finally {
-      setIsLoading(false)
+      setIsLoading(false);
     }
-  }
+  };
 
   return (
     <Dialog open={open} onOpenChange={onOpenChange}>
@@ -111,11 +106,7 @@ export function LoginDialog({ open, onOpenChange }: LoginDialogProps) {
                 </FormItem>
               )}
             />
-            <Button
-              type="submit"
-              className="w-full"
-              disabled={isLoading}
-            >
+            <Button type="submit" className="w-full" disabled={isLoading}>
               {isLoading && <Loader2 className="mr-2 h-4 w-4 animate-spin" />}
               Sign In
             </Button>
@@ -123,5 +114,5 @@ export function LoginDialog({ open, onOpenChange }: LoginDialogProps) {
         </Form>
       </DialogContent>
     </Dialog>
-  )
+  );
 }

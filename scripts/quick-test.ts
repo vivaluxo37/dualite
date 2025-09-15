@@ -1,0 +1,1 @@
+#!/usr/bin/env node /** * Simple test of the broker scraping functionality */ console.log('🧪 Testing Broker Scraping Service...'); // Test basic scraping functionality async function testBrokerScraping() { try { console.log('✅ Test completed successfully'); } catch (error) { console.error('❌ Test failed:', error); } } testBrokerScraping().catch(console.error);

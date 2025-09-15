@@ -1,0 +1,14 @@
+diff --git a/src/hooks/useSecurity.ts b/src/hooks/useSecurity.ts
+index 1234567..89abcde 100644
+--- a/src/hooks/useSecurity.ts
++++ b/src/hooks/useSecurity.ts
+@@ -67,7 +67,8 @@ export function useSecurity() {
+     const csp = [
+       "default-src 'self'",
+       "script-src 'self' 'unsafe-inline' 'unsafe-eval' https://cdn.jsdelivr.net https://unpkg.com https://actual-shark-31.clerk.accounts.dev",
+-      "style-src 'self' 'unsafe-inline' https://fonts.googleapis.com",
++      "style-src 'self' 'unsafe-inline' https://fonts.googleapis.com",
++      "connect-src 'self' https://efxpwrnxdorgzcqhbnfn.supabase.co https://actual-shark-31.clerk.accounts.dev",
+       "font-src 'self' https://fonts.gstatic.com",
+       "img-src 'self' data: https: https://i.ibb.co",
+       "media-src 'self'",

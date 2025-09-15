@@ -1,0 +1,404 @@
+{
+  "timestamp": "2025-09-10T16:52:55.336Z",
+  "total_pages": 22,
+  "successful_optimizations": 22,
+  "failed_optimizations": 0,
+  "average_optimations_per_page": 7.05,
+  "optimization_types": [
+    {
+      "type": "metaDescriptionOptimized",
+      "count": 22
+    },
+    {
+      "type": "keywordsOptimized",
+      "count": 22
+    },
+    {
+      "type": "twitterCardsEnhanced",
+      "count": 22
+    },
+    {
+      "type": "canonicalEnhanced",
+      "count": 22
+    },
+    {
+      "type": "schemaMarkupAdded",
+      "count": 22
+    },
+    {
+      "type": "titleOptimized",
+      "count": 20
+    },
+    {
+      "type": "headingStructureOptimized",
+      "count": 17
+    },
+    {
+      "type": "internalLinksAdded",
+      "count": 8
+    }
+  ],
+  "category_performance": [
+    {
+      "category": "regional",
+      "average_optimizations": 6.63,
+      "pages": 8
+    },
+    {
+      "category": "trading-types",
+      "average_optimizations": 6.33,
+      "pages": 6
+    },
+    {
+      "category": "regions/dubai",
+      "average_optimizations": 8,
+      "pages": 1
+    },
+    {
+      "category": "regions/india",
+      "average_optimizations": 8,
+      "pages": 1
+    },
+    {
+      "category": "regions/malaysia",
+      "average_optimizations": 8,
+      "pages": 1
+    },
+    {
+      "category": "regions/nepal",
+      "average_optimizations": 8,
+      "pages": 1
+    },
+    {
+      "category": "regions/pakistan",
+      "average_optimizations": 8,
+      "pages": 1
+    },
+    {
+      "category": "regions/singapore",
+      "average_optimizations": 8,
+      "pages": 1
+    },
+    {
+      "category": "regions/south-africa",
+      "average_optimizations": 8,
+      "pages": 1
+    },
+    {
+      "category": "regions/usa",
+      "average_optimizations": 8,
+      "pages": 1
+    }
+  ],
+  "pages_by_optimizations": [
+    {
+      "path": "regions\\dubai\\index.html",
+      "category": "regions/dubai",
+      "total_optimizations": 8,
+      "optimization_types": [
+        "titleOptimized",
+        "metaDescriptionOptimized",
+        "keywordsOptimized",
+        "twitterCardsEnhanced",
+        "canonicalEnhanced",
+        "headingStructureOptimized",
+        "internalLinksAdded",
+        "schemaMarkupAdded"
+      ]
+    },
+    {
+      "path": "regions\\india\\index.html",
+      "category": "regions/india",
+      "total_optimizations": 8,
+      "optimization_types": [
+        "titleOptimized",
+        "metaDescriptionOptimized",
+        "keywordsOptimized",
+        "twitterCardsEnhanced",
+        "canonicalEnhanced",
+        "headingStructureOptimized",
+        "internalLinksAdded",
+        "schemaMarkupAdded"
+      ]
+    },
+    {
+      "path": "regions\\malaysia\\index.html",
+      "category": "regions/malaysia",
+      "total_optimizations": 8,
+      "optimization_types": [
+        "titleOptimized",
+        "metaDescriptionOptimized",
+        "keywordsOptimized",
+        "twitterCardsEnhanced",
+        "canonicalEnhanced",
+        "headingStructureOptimized",
+        "internalLinksAdded",
+        "schemaMarkupAdded"
+      ]
+    },
+    {
+      "path": "regions\\nepal\\index.html",
+      "category": "regions/nepal",
+      "total_optimizations": 8,
+      "optimization_types": [
+        "titleOptimized",
+        "metaDescriptionOptimized",
+        "keywordsOptimized",
+        "twitterCardsEnhanced",
+        "canonicalEnhanced",
+        "headingStructureOptimized",
+        "internalLinksAdded",
+        "schemaMarkupAdded"
+      ]
+    },
+    {
+      "path": "regions\\pakistan\\index.html",
+      "category": "regions/pakistan",
+      "total_optimizations": 8,
+      "optimization_types": [
+        "titleOptimized",
+        "metaDescriptionOptimized",
+        "keywordsOptimized",
+        "twitterCardsEnhanced",
+        "canonicalEnhanced",
+        "headingStructureOptimized",
+        "internalLinksAdded",
+        "schemaMarkupAdded"
+      ]
+    },
+    {
+      "path": "regions\\singapore\\index.html",
+      "category": "regions/singapore",
+      "total_optimizations": 8,
+      "optimization_types": [
+        "titleOptimized",
+        "metaDescriptionOptimized",
+        "keywordsOptimized",
+        "twitterCardsEnhanced",
+        "canonicalEnhanced",
+        "headingStructureOptimized",
+        "internalLinksAdded",
+        "schemaMarkupAdded"
+      ]
+    },
+    {
+      "path": "regions\\south-africa\\index.html",
+      "category": "regions/south-africa",
+      "total_optimizations": 8,
+      "optimization_types": [
+        "titleOptimized",
+        "metaDescriptionOptimized",
+        "keywordsOptimized",
+        "twitterCardsEnhanced",
+        "canonicalEnhanced",
+        "headingStructureOptimized",
+        "internalLinksAdded",
+        "schemaMarkupAdded"
+      ]
+    },
+    {
+      "path": "regions\\usa\\index.html",
+      "category": "regions/usa",
+      "total_optimizations": 8,
+      "optimization_types": [
+        "titleOptimized",
+        "metaDescriptionOptimized",
+        "keywordsOptimized",
+        "twitterCardsEnhanced",
+        "canonicalEnhanced",
+        "headingStructureOptimized",
+        "internalLinksAdded",
+        "schemaMarkupAdded"
+      ]
+    },
+    {
+      "path": "regional\\dubai-forex-brokers.html",
+      "category": "regional",
+      "total_optimizations": 7,
+      "optimization_types": [
+        "titleOptimized",
+        "metaDescriptionOptimized",
+        "keywordsOptimized",
+        "twitterCardsEnhanced",
+        "canonicalEnhanced",
+        "headingStructureOptimized",
+        "schemaMarkupAdded"
+      ]
+    },
+    {
+      "path": "regional\\india-forex-brokers.html",
+      "category": "regional",
+      "total_optimizations": 7,
+      "optimization_types": [
+        "titleOptimized",
+        "metaDescriptionOptimized",
+        "keywordsOptimized",
+        "twitterCardsEnhanced",
+        "canonicalEnhanced",
+        "headingStructureOptimized",
+        "schemaMarkupAdded"
+      ]
+    },
+    {
+      "path": "regional\\nepal-forex-brokers.html",
+      "category": "regional",
+      "total_optimizations": 7,
+      "optimization_types": [
+        "titleOptimized",
+        "metaDescriptionOptimized",
+        "keywordsOptimized",
+        "twitterCardsEnhanced",
+        "canonicalEnhanced",
+        "headingStructureOptimized",
+        "schemaMarkupAdded"
+      ]
+    },
+    {
+      "path": "regional\\south-africa-forex-brokers.html",
+      "category": "regional",
+      "total_optimizations": 7,
+      "optimization_types": [
+        "titleOptimized",
+        "metaDescriptionOptimized",
+        "keywordsOptimized",
+        "twitterCardsEnhanced",
+        "canonicalEnhanced",
+        "headingStructureOptimized",
+        "schemaMarkupAdded"
+      ]
+    },
+    {
+      "path": "regional\\us-forex-brokers.html",
+      "category": "regional",
+      "total_optimizations": 7,
+      "optimization_types": [
+        "titleOptimized",
+        "metaDescriptionOptimized",
+        "keywordsOptimized",
+        "twitterCardsEnhanced",
+        "canonicalEnhanced",
+        "headingStructureOptimized",
+        "schemaMarkupAdded"
+      ]
+    },
+    {
+      "path": "trading-types\\auto-trading-forex-brokers.html",
+      "category": "trading-types",
+      "total_optimizations": 7,
+      "optimization_types": [
+        "titleOptimized",
+        "metaDescriptionOptimized",
+        "keywordsOptimized",
+        "twitterCardsEnhanced",
+        "canonicalEnhanced",
+        "headingStructureOptimized",
+        "schemaMarkupAdded"
+      ]
+    },
+    {
+      "path": "trading-types\\copy-trading-forex-brokers.html",
+      "category": "trading-types",
+      "total_optimizations": 7,
+      "optimization_types": [
+        "titleOptimized",
+        "metaDescriptionOptimized",
+        "keywordsOptimized",
+        "twitterCardsEnhanced",
+        "canonicalEnhanced",
+        "headingStructureOptimized",
+        "schemaMarkupAdded"
+      ]
+    },
+    {
+      "path": "trading-types\\islamic-forex-brokers.html",
+      "category": "trading-types",
+      "total_optimizations": 7,
+      "optimization_types": [
+        "titleOptimized",
+        "metaDescriptionOptimized",
+        "keywordsOptimized",
+        "twitterCardsEnhanced",
+        "canonicalEnhanced",
+        "headingStructureOptimized",
+        "schemaMarkupAdded"
+      ]
+    },
+    {
+      "path": "trading-types\\low-spread-forex-brokers.html",
+      "category": "trading-types",
+      "total_optimizations": 7,
+      "optimization_types": [
+        "titleOptimized",
+        "metaDescriptionOptimized",
+        "keywordsOptimized",
+        "twitterCardsEnhanced",
+        "canonicalEnhanced",
+        "headingStructureOptimized",
+        "schemaMarkupAdded"
+      ]
+    },
+    {
+      "path": "regional\\malaysia-forex-brokers.html",
+      "category": "regional",
+      "total_optimizations": 6,
+      "optimization_types": [
+        "titleOptimized",
+        "metaDescriptionOptimized",
+        "keywordsOptimized",
+        "twitterCardsEnhanced",
+        "canonicalEnhanced",
+        "schemaMarkupAdded"
+      ]
+    },
+    {
+      "path": "regional\\pakistan-forex-brokers.html",
+      "category": "regional",
+      "total_optimizations": 6,
+      "optimization_types": [
+        "titleOptimized",
+        "metaDescriptionOptimized",
+        "keywordsOptimized",
+        "twitterCardsEnhanced",
+        "canonicalEnhanced",
+        "schemaMarkupAdded"
+      ]
+    },
+    {
+      "path": "regional\\singapore-forex-brokers.html",
+      "category": "regional",
+      "total_optimizations": 6,
+      "optimization_types": [
+        "titleOptimized",
+        "metaDescriptionOptimized",
+        "keywordsOptimized",
+        "twitterCardsEnhanced",
+        "canonicalEnhanced",
+        "schemaMarkupAdded"
+      ]
+    },
+    {
+      "path": "trading-types\\beginners-forex-brokers.html",
+      "category": "trading-types",
+      "total_optimizations": 5,
+      "optimization_types": [
+        "metaDescriptionOptimized",
+        "keywordsOptimized",
+        "twitterCardsEnhanced",
+        "canonicalEnhanced",
+        "schemaMarkupAdded"
+      ]
+    },
+    {
+      "path": "trading-types\\mt4-forex-brokers.html",
+      "category": "trading-types",
+      "total_optimizations": 5,
+      "optimization_types": [
+        "metaDescriptionOptimized",
+        "keywordsOptimized",
+        "twitterCardsEnhanced",
+        "canonicalEnhanced",
+        "schemaMarkupAdded"
+      ]
+    }
+  ]
+}
